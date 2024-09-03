@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<schemalist>
+  <schema path="/org/x/captain/" id="org.x.captain">
+    <key name="debug" type="b">
+      <default>false</default>
+      <summary>Whether to print debug information to stdout</summary>
+    </key>
+  </schema>
+</schemalist>

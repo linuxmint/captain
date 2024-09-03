@@ -1,0 +1,4 @@
+#!/bin/bash
+intltool-extract --type=gettext/glade usr/share/captain/captain.ui
+xgettext --language=Python -cTRANSLATORS --keyword=_ --keyword=N_ --output=captain.pot usr/lib/captain/*.py usr/bin/* usr/share/captain/*.ui.h
+rm -f usr/share/captain/*.ui.h

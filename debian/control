@@ -1,0 +1,33 @@
+Source: captain
+Section: admin
+Priority: optional
+Maintainer: Linux Mint <root@linuxmint.com>
+Build-Depends:
+    debhelper (>= 9),
+    dh-python,
+    gir1.2-gtk-3.0,
+    mint-common,
+    python3-all,
+    python3-apt,
+    python3-gi,
+    python3-nose,
+    python3-setuptools,
+    intltool,
+    xvfb,
+    xauth,
+Standards-Version: 3.9.5
+
+Package: captain
+Architecture: all
+Depends:
+    ${misc:Depends},
+    ${python3:Depends},
+    gir1.2-gtk-3.0 (>= 3.22.0),
+    python3-gi,
+    python3-apt,
+    python3-debian,
+    python3-setproctitle,
+    mint-common (>= 2),
+    file,
+Description: Collection of APT tools
+ Captain contains an installer for .deb files and an installer for apt:// urls.
