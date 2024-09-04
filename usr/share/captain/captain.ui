@@ -11,24 +11,23 @@
     <property name="default-height">200</property>
     <property name="type-hint">dialog</property>
     <child internal-child="vbox">
-      <object class="GtkBox" id="dialog-vbox2">
+      <object class="GtkBox">
         <property name="visible">True</property>
         <property name="can-focus">False</property>
         <property name="orientation">vertical</property>
         <property name="spacing">6</property>
         <child internal-child="action_area">
-          <object class="GtkButtonBox" id="dialog-action_area2">
+          <object class="GtkButtonBox">
             <property name="visible">True</property>
             <property name="can-focus">False</property>
             <property name="layout-style">end</property>
             <child>
-              <object class="GtkButton" id="okbutton1">
-                <property name="label">gtk-close</property>
+              <object class="GtkButton" id="button1">
+                <property name="label">Close</property>
                 <property name="visible">True</property>
                 <property name="can-focus">True</property>
                 <property name="can-default">True</property>
                 <property name="receives-default">False</property>
-                <property name="use-stock">True</property>
               </object>
               <packing>
                 <property name="expand">False</property>
@@ -45,18 +44,20 @@
           </packing>
         </child>
         <child>
-          <object class="GtkVBox" id="vbox4">
+          <object class="GtkVBox">
             <property name="visible">True</property>
             <property name="can-focus">False</property>
             <property name="border-width">6</property>
             <property name="spacing">6</property>
             <child>
-              <object class="GtkLabel" id="label10">
+              <object class="GtkLabel">
                 <property name="visible">True</property>
                 <property name="can-focus">False</property>
-                <property name="label" translatable="yes">&lt;b&gt;To install the following changes are required:&lt;/b&gt;</property>
-                <property name="use-markup">True</property>
+                <property name="label" translatable="yes">To install the following changes are required:</property>
                 <property name="xalign">0</property>
+                <attributes>
+                  <attribute name="weight" value="bold"/>
+                </attributes>
               </object>
               <packing>
                 <property name="expand">False</property>
@@ -65,7 +66,7 @@
               </packing>
             </child>
             <child>
-              <object class="GtkScrolledWindow" id="scrolledwindow22">
+              <object class="GtkScrolledWindow">
                 <property name="visible">True</property>
                 <property name="can-focus">True</property>
                 <property name="shadow-type">in</property>
@@ -97,11 +98,11 @@
       </object>
     </child>
     <action-widgets>
-      <action-widget response="-7">okbutton1</action-widget>
+      <action-widget response="-7">button1</action-widget>
     </action-widgets>
   </object>
   <object class="GtkTextBuffer" id="textbuffer_description"/>
-  <object class="GtkWindow" id="main_window">
+  <object class="GtkWindow" id="window">
     <property name="can-focus">False</property>
     <property name="window-position">center</property>
     <property name="default-width">550</property>
@@ -172,7 +173,7 @@
             <property name="can-focus">False</property>
             <property name="orientation">vertical</property>
             <child>
-              <object class="GtkInfoBar" id="infobar1">
+              <object class="GtkInfoBar" id="infobar">
                 <property name="app-paintable">True</property>
                 <property name="can-focus">False</property>
                 <property name="message-type">warning</property>
@@ -189,13 +190,13 @@
                       <placeholder/>
                     </child>
                     <child>
-                      <object class="GtkButton" id="button_details">
+                      <object class="GtkButton" id="details_button">
                         <property name="label" translatable="yes">_Details</property>
                         <property name="can-focus">True</property>
                         <property name="receives-default">True</property>
                         <property name="valign">center</property>
                         <property name="use-underline">True</property>
-                        <signal name="clicked" handler="on_button_details_clicked" swapped="no"/>
+                        <signal name="clicked" handler="on_details_button_clicked" swapped="no"/>
                       </object>
                       <packing>
                         <property name="expand">False</property>
@@ -219,7 +220,7 @@
                       <placeholder/>
                     </child>
                     <child>
-                      <object class="GtkLabel" id="label_status">
+                      <object class="GtkLabel" id="infobar_label">
                         <property name="visible">True</property>
                         <property name="can-focus">False</property>
                         <property name="valign">center</property>
@@ -279,9 +280,11 @@
                           <object class="GtkLabel">
                             <property name="visible">True</property>
                             <property name="can-focus">False</property>
-                            <property name="label" translatable="yes">&lt;b&gt;Maintainer:&lt;/b&gt;</property>
-                            <property name="use-markup">True</property>
+                            <property name="label" translatable="yes">Maintainer:</property>
                             <property name="xalign">0</property>
+                            <attributes>
+                              <attribute name="weight" value="bold"/>
+                            </attributes>
                           </object>
                           <packing>
                             <property name="x-options">GTK_FILL</property>
@@ -289,7 +292,7 @@
                           </packing>
                         </child>
                         <child>
-                          <object class="GtkLabel" id="label_maintainer">
+                          <object class="GtkLabel" id="maintainer_label">
                             <property name="visible">True</property>
                             <property name="can-focus">False</property>
                             <property name="label" translatable="yes">  </property>
@@ -303,7 +306,7 @@
                           </packing>
                         </child>
                         <child>
-                          <object class="GtkLabel" id="label_size">
+                          <object class="GtkLabel" id="size_label">
                             <property name="visible">True</property>
                             <property name="can-focus">False</property>
                             <property name="label" translatable="yes">  </property>
@@ -321,9 +324,11 @@
                           <object class="GtkLabel">
                             <property name="visible">True</property>
                             <property name="can-focus">False</property>
-                            <property name="label" translatable="yes">&lt;b&gt;Size:&lt;/b&gt;</property>
-                            <property name="use-markup">True</property>
+                            <property name="label" translatable="yes">Size:</property>
                             <property name="xalign">0</property>
+                            <attributes>
+                              <attribute name="weight" value="bold"/>
+                            </attributes>
                           </object>
                           <packing>
                             <property name="top-attach">1</property>
@@ -507,8 +512,6 @@
             <property name="visible">True</property>
             <property name="can-focus">False</property>
             <property name="valign">center</property>
-            <property name="margin-left">12</property>
-            <property name="margin-right">12</property>
             <property name="margin-start">12</property>
             <property name="margin-end">12</property>
             <property name="orientation">vertical</property>

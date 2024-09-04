@@ -58,8 +58,6 @@ class App():
             else:
                 print("Warning: widget name not used '%s'" % widget)
 
-        self.window = self.builder.get_object("main_window")
-
         # setup the details treeview
         self.details_list = Gtk.ListStore(GObject.TYPE_STRING)
         column = Gtk.TreeViewColumn("")
@@ -79,7 +77,7 @@ class App():
         self.ui_headerbar.set_title(self.filename)
         self.ui_path_label.set_text(self.absolute_path)
 
-        self.window.show()
+        self.ui_window.show()
 
         self.load_deb_file()
 
@@ -110,11 +108,11 @@ class App():
     @_idle
     def on_file_loaded(self):
         self.ui_main_stack.set_visible_child_name("main_page")
-        self.window.set_title(self.deb.pkgname)
+        self.ui_window.set_title(self.deb.pkgname)
         self.ui_headerbar.set_title(self.deb.pkgname)
         self.ui_headerbar.set_subtitle(self.deb["Version"])
-        self.ui_label_maintainer.set_text(self.deb["Maintainer"])
-        self.ui_label_size.set_text(self.deb["Installed-Size"] + " KiB")
+        self.ui_maintainer_label.set_text(self.deb["Maintainer"])
+        self.ui_size_label.set_text(self.deb["Installed-Size"] + " KiB")
 
         # set description
         buf = self.ui_textview_description.get_buffer()
@@ -178,16 +176,16 @@ class App():
 
     @_idle
     def set_package_status(self, status_type, status, button_label):
-        self.ui_label_status.set_markup(status)
-        self.ui_infobar1.set_message_type(status_type)
-        self.ui_infobar1.show()
+        self.ui_infobar_label.set_markup(status)
+        self.ui_infobar.set_message_type(status_type)
+        self.ui_infobar.show()
         self.ui_install_button.set_label(button_label)
         if status_type == Gtk.MessageType.ERROR:
-            self.ui_button_details.hide()
+            self.ui_details_button.hide()
         elif status_type == Gtk.MessageType.INFO:
-            self.ui_button_details.hide()
+            self.ui_details_button.hide()
         elif status_type == Gtk.MessageType.WARNING:
-            self.ui_button_details.show()
+            self.ui_details_button.show()
 
     @_async
     def run_checks(self):
@@ -229,6 +227,7 @@ class App():
     #########################################
     # APT functions
     #########################################
+
     def get_broken_provides(self):
         provides = set()
         broken_provides = set()
@@ -273,8 +272,8 @@ class App():
 
 
     def dpkg_action(self, widget, install):
-        self.window.set_sensitive(False)
-        apt = mintcommon.aptdaemon.APT(self.window)
+        self.ui_window.set_sensitive(False)
+        apt = mintcommon.aptdaemon.APT(self.ui_window)
         apt.set_finished_callback(self.on_install_finished)
         apt.set_cancelled_callback(self.on_install_cancelled)
         apt.install_file(self.deb.filename)
@@ -285,7 +284,7 @@ class App():
 
     @_idle
     def show_dialog(self, dialog_type, title, msg):
-        dialog = Gtk.MessageDialog(parent=self.window,
+        dialog = Gtk.MessageDialog(parent=self.ui_window,
                                     modal=True,
                                     message_type=dialog_type,
                                     buttons=Gtk.ButtonsType.CLOSE)
@@ -294,7 +293,7 @@ class App():
         dialog.destroy()
 
     def show_busy_cursor(self, show_busy_cursor):
-        win = self.window.get_window()
+        win = self.ui_window.get_window()
         if win:
             if show_busy_cursor:
                 win.set_cursor(Gdk.Cursor.new_for_display(Gdk.Display.get_default(), Gdk.CursorType.WATCH))
@@ -320,11 +319,11 @@ class App():
                     self.ui_main_stack.set_visible_child_name("page_success")
                     pkg_str = "%s %s" % (self.deb.pkgname, self.deb["Version"])
                     self.ui_success_label.set_text(_("%s is now installed.") % pkg_str)
-                    self.window.set_sensitive(True)
+                    self.ui_window.set_sensitive(True)
 
     @_idle
     def on_install_cancelled(self, transaction=None, exit_state=None):
-        self.window.set_sensitive(True)
+        self.ui_window.set_sensitive(True)
 
     #########################################
     # Callback functions used by the .ui file
@@ -357,7 +356,7 @@ class App():
             buf = self.ui_textview_file_content.get_buffer().set_text(data)
             self.show_busy_cursor(False)
 
-    def on_button_details_clicked(self, widget):
+    def on_details_button_clicked(self, widget):
         if not self.deb:
           return
         self.details_list.clear()
@@ -365,7 +364,7 @@ class App():
             self.details_list.append(["<b>%s</b>" % _("To be removed: %s") % rm])
         for inst in self.install:
             self.details_list.append([_("To be installed: %s") % inst])
-        self.ui_dialog_details.set_transient_for(self.window)
+        self.ui_dialog_details.set_transient_for(self.ui_window)
         self.ui_dialog_details.run()
         self.ui_dialog_details.hide()
 
