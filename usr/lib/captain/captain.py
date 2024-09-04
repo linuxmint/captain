@@ -101,7 +101,7 @@ class App():
                 body = _("The MIME type of this file is '%s'.") % mimetype[0]
             else:
                 header = _("Could not open %s") % self.filename
-                body = _("The file might be corrupted or missing persissions.")
+                body = _("The file might be corrupted or missing permissions.")
             self.show_dialog(Gtk.MessageType.ERROR, header, body)
             Gtk.main_quit()
 
@@ -193,13 +193,13 @@ class App():
 
         # check the deps
         if not self.deb.check():
-            self.set_package_status(Gtk.MessageType.ERROR, _("Error: ") + self.deb._failure_string, _("_Install Package"))
+            self.set_package_status(Gtk.MessageType.ERROR, _("Error: %s") % self.deb._failure_string, _("_Install Package"))
             return False
 
         # check broken provides
         provides = self.get_broken_provides()
         if provides:
-            status = _("Error: no longer provides %f") % ", ".join(provides)
+            status = _("Error: No longer provides %s") % ", ".join(provides)
             self.set_package_status(Gtk.MessageType.ERROR,  status, _("_Install Package"))
             return False
 
@@ -210,7 +210,8 @@ class App():
             all_ok = False
             deps = ""
             if len(self.remove) > 0:
-                deps += _("Requires the removal of %s packages\n") % len(self.remove)
+                deps += _("Requires the removal of %s packages") % len(self.remove)
+                deps += "\n"
             if len(self.install) > 0:
                 deps += _("Requires the installation of %s packages") % len(self.install)
             self.set_package_status(Gtk.MessageType.WARNING, deps, _("_Install Package"))

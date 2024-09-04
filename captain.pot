@@ -1,0 +1,173 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2024-09-04 18:46+0100\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=CHARSET\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: usr/lib/captain/captain.py:88
+msgid "Broken dependencies"
+msgstr ""
+
+#: usr/lib/captain/captain.py:89 usr/lib/captain/captain.py:321
+msgid "To fix this run 'sudo apt-get install -f' in a terminal window."
+msgstr ""
+
+#: usr/lib/captain/captain.py:100
+#, python-format
+msgid "%s is not a valid package"
+msgstr ""
+
+#: usr/lib/captain/captain.py:101
+#, python-format
+msgid "The MIME type of this file is '%s'."
+msgstr ""
+
+#: usr/lib/captain/captain.py:103
+#, python-format
+msgid "Could not open %s"
+msgstr ""
+
+#: usr/lib/captain/captain.py:104
+msgid "The file might be corrupted or missing permissions."
+msgstr ""
+
+#: usr/lib/captain/captain.py:158
+msgid "Control files"
+msgstr ""
+
+#: usr/lib/captain/captain.py:162
+msgid "Data files"
+msgstr ""
+
+#: usr/lib/captain/captain.py:169
+msgid "Error while reading the content"
+msgstr ""
+
+#: usr/lib/captain/captain.py:196
+#, python-format
+msgid "Error: %s"
+msgstr ""
+
+#: usr/lib/captain/captain.py:196 usr/lib/captain/captain.py:203
+#: usr/lib/captain/captain.py:217 usr/share/captain/captain.ui.h:8
+msgid "_Install Package"
+msgstr ""
+
+#: usr/lib/captain/captain.py:202
+#, python-format
+msgid "Error: No longer provides %s"
+msgstr ""
+
+#: usr/lib/captain/captain.py:213
+#, python-format
+msgid "Requires the removal of %s packages"
+msgstr ""
+
+#: usr/lib/captain/captain.py:216
+#, python-format
+msgid "Requires the installation of %s packages"
+msgstr ""
+
+#: usr/lib/captain/captain.py:234
+msgid "KB"
+msgstr ""
+
+#: usr/lib/captain/captain.py:234
+msgid "MB"
+msgstr ""
+
+#: usr/lib/captain/captain.py:234 usr/lib/captain/captain.py:235
+msgid "GB"
+msgstr ""
+
+#: usr/lib/captain/captain.py:270
+msgid "It is safer and recommended to install from the repositories instead."
+msgstr ""
+
+#: usr/lib/captain/captain.py:273
+msgid "The same version is already installed"
+msgstr ""
+
+#: usr/lib/captain/captain.py:273
+msgid "_Reinstall Package"
+msgstr ""
+
+#: usr/lib/captain/captain.py:275
+msgid "This package is available in the repositories"
+msgstr ""
+
+#: usr/lib/captain/captain.py:277
+msgid "An older version is available in the repositories"
+msgstr ""
+
+#: usr/lib/captain/captain.py:279
+msgid "A newer version is available in the repositories"
+msgstr ""
+
+#: usr/lib/captain/captain.py:320
+msgid "Failed to install all dependencies"
+msgstr ""
+
+#: usr/lib/captain/captain.py:330 usr/share/captain/captain.ui.h:11
+#, python-format
+msgid "%s is now installed."
+msgstr ""
+
+#: usr/lib/captain/captain.py:356
+msgid "The content could not be extracted"
+msgstr ""
+
+#: usr/lib/captain/captain.py:373
+#, python-format
+msgid "To be removed: %s"
+msgstr ""
+
+#: usr/lib/captain/captain.py:375
+#, python-format
+msgid "To be installed: %s"
+msgstr ""
+
+#: usr/share/captain/captain.ui.h:1
+msgid "Details"
+msgstr ""
+
+#: usr/share/captain/captain.ui.h:2
+msgid "To install the package, the following changes are required:"
+msgstr ""
+
+#: usr/share/captain/captain.ui.h:3
+msgid "Opening the package"
+msgstr ""
+
+#: usr/share/captain/captain.ui.h:4
+msgid "_Details"
+msgstr ""
+
+#: usr/share/captain/captain.ui.h:5
+msgid "Maintainer:"
+msgstr ""
+
+#: usr/share/captain/captain.ui.h:6
+msgid "Size:"
+msgstr ""
+
+#: usr/share/captain/captain.ui.h:7
+msgid "Included files"
+msgstr ""
+
+#: usr/share/captain/captain.ui.h:9
+msgid "The installation was successful"
+msgstr ""
