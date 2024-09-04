@@ -284,22 +284,6 @@ class App():
     #########################################
 
     @_idle
-    def show_alert(self, header, body, details):
-        # UNUSED FOR NOW
-        self.dialog = self.builder.get_object("dialog_hig")
-        self.dialog.set_transient_for(self.window)
-        self.builder.get_object("header_hig").set_markup(header)
-        self.builder.get_object("body_hig").set_markup(body)
-        if details != None:
-             buffer = self.textview_hig.get_buffer()
-             buffer.set_text(str(details))
-             self.builder.get_object("expander_hig").set_expanded(False)
-             self.builder.get_object("expander_hig").show()
-        res = self.dialog.run()
-        self.dialog.hide()
-        return False
-
-    @_idle
     def show_dialog(self, dialog_type, title, msg):
         dialog = Gtk.MessageDialog(parent=self.window,
                                     modal=True,
