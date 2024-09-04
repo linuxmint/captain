@@ -55,8 +55,6 @@ class App():
             if issubclass(type(widget), Gtk.Buildable):
                 name = "ui_%s" % Gtk.Buildable.get_name(widget)
                 setattr(self, name, widget)
-            else:
-                print("Warning: widget name not used '%s'" % widget)
 
         # setup the details treeview
         self.details_list = Gtk.ListStore(GObject.TYPE_STRING)
