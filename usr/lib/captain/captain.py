@@ -112,7 +112,7 @@ class App():
         self.ui_headerbar.set_title(self.deb.pkgname)
         self.ui_headerbar.set_subtitle(self.deb["Version"])
         self.ui_maintainer_label.set_text(self.deb["Maintainer"])
-        self.ui_size_label.set_text(self.deb["Installed-Size"] + " KiB")
+        self.ui_size_label.set_text(self.round_size(self.deb["Installed-Size"]))
 
         # set description
         buf = self.ui_textview_description.get_buffer()
@@ -227,6 +227,14 @@ class App():
     #########################################
     # APT functions
     #########################################
+
+    def round_size(self, size):
+        size = float(size)
+        for unit in [_('KB'), _('MB'), _('GB')]:
+            if size < 1024.0 or unit == _('GB'):
+                break
+            size /= 1024.0
+        return f"{size:.0f} {unit}"
 
     def get_broken_provides(self):
         provides = set()
