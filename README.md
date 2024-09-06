@@ -9,8 +9,8 @@ It contains the following tools:
 
 Captain replaces gdebi (which wasn't actively maintained upstream) and apturl (which wasn't actively maintained and was specific to Ubuntu).
 
-
 # TODO
 
-improve the UI which lists removals and additions
-
+- improve the UI which lists removals and additions
+- add a URL handler
+- make captain compatible with Debian by switching away from Mint/Ubuntu specific components
