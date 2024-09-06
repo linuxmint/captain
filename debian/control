@@ -15,7 +15,7 @@ Build-Depends:
     intltool,
     xvfb,
     xauth,
-Standards-Version: 3.9.5
+Standards-Version: 4.6.2
 
 Package: captain
 Architecture: all
