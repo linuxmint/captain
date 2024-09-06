@@ -4,7 +4,7 @@ Priority: optional
 Maintainer: Linux Mint <root@linuxmint.com>
 Build-Depends:
     debhelper (>= 9),
-    dh-python,
+    dh-sequence-python3,
     gir1.2-gtk-3.0,
     mint-common,
     python3-all,
