@@ -441,6 +441,9 @@
                                     <property name="headers-visible">False</property>
                                     <property name="rules-hint">True</property>
                                     <signal name="cursor-changed" handler="on_treeview_files_cursor_changed" swapped="no"/>
+                                    <child internal-child="selection">
+                                      <object class="GtkTreeSelection"/>
+                                    </child>
                                   </object>
                                 </child>
                               </object>

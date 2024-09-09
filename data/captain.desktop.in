@@ -1,12 +1,11 @@
 [Desktop Entry]
 Name=Package Installer
-Comment=Install and view software packages
-Keywords=package;apt;dpkg;install
-Exec=captain %f
+Comment=Install a software package
+Exec=captain %u
 Icon=package
 Terminal=false
 Type=Application
 Categories=System;
-MimeType=application/vnd.debian.binary-package;
+MimeType=application/vnd.debian.binary-package;x-scheme-handler/apt;
 NoDisplay=true
 StartupNotify=false

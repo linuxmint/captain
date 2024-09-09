@@ -49,7 +49,7 @@ class App():
 
         self.builder = Gtk.Builder()
         self.builder.set_translation_domain(APP)
-        self.builder.add_from_file("/usr/share/captain/captain.ui")
+        self.builder.add_from_file("/usr/share/captain/deb_package.ui")
         self.builder.connect_signals(self)
         for widget in self.builder.get_objects():
             if issubclass(type(widget), Gtk.Buildable):
@@ -378,14 +378,53 @@ class App():
     def on_install_button_clicked(self, widget):
         self.dpkg_action(widget, True)
 
+
+class URLApp():
+
+    def __init__(self, url):
+        self.settings = Gio.Settings(schema="org.x.captain")
+
+        self.builder = Gtk.Builder()
+        self.builder.set_translation_domain(APP)
+        self.builder.add_from_file("/usr/share/captain/apt_url.ui")
+        self.builder.connect_signals(self)
+        for widget in self.builder.get_objects():
+            if issubclass(type(widget), Gtk.Buildable):
+                name = "ui_%s" % Gtk.Buildable.get_name(widget)
+                setattr(self, name, widget)
+
+        self.ui_window.show()
+
+    @_async
+    def load_deb_file(self):
+        pass
+
+
+    #########################################
+    # Callback functions used by the .ui file
+    #########################################
+
+    def on_window_deleted(self, widget, event):
+        Gtk.main_quit()
+
+    def on_cancel_button_clicked(self, widget):
+        Gtk.main_quit()
+
+    def on_install_button_clicked(self, widget):
+        self.dpkg_action(widget, True)
+
 if len(sys.argv) != 2:
     print("Usage: captain filename.deb")
     sys.exit(1)
 
-path = os.path.expanduser(sys.argv[1])
-if not os.path.exists(path):
-    print(f"File not found: {path}")
-    sys.exit(1)
+argument = os.path.expanduser(sys.argv[1])
 
-app = App(path)
+if "apt://" in argument:
+    app = URLApp(argument)
+else:
+    if not os.path.exists(argument):
+        print(f"File not found: {argument}")
+        sys.exit(1)
+    app = App(argument)
+
 Gtk.main()
