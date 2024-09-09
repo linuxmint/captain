@@ -420,10 +420,10 @@ class URLApp():
         # check that package is in the repos, that it's installable and not already installed
         if self.pkgname not in self.cache:
             self.uih.show_critical("packge not in cache", "...")
-        pkg = self.cache[self.pkgname]
-        if pkg.is_installed:
+        self.pkg = self.cache[self.pkgname]
+        if self.pkg.is_installed:
             self.uih.show_critical("packge already installed", "...")
-        if not (pkg.candidate and pkg.candidate.downloadable):
+        if not (self.pkg.candidate and self.pkg.candidate.downloadable):
             self.uih.show_critical("packge not installable", "...")
 
         # show the confirmation dialog
@@ -440,11 +440,9 @@ class URLApp():
 
         self.ui_window.show()
 
-        # install the package
-
-    @_async
-    def load_deb_file(self):
-        pass
+    @_idle
+    def on_install_finished(self, transaction=None, exit_state=None):
+        Gtk.main_quit()
 
 
     #########################################
@@ -458,7 +456,19 @@ class URLApp():
         Gtk.main_quit()
 
     def on_install_button_clicked(self, widget):
-        self.dpkg_action(widget, True)
+        # install the package
+        try:
+            self.pkg.mark_install()
+            changes = self.cache.get_changes()
+            pkgs = []
+            for pkg in changes:
+                if pkg.marked_install:
+                    pkgs.append(pkg.name)
+            self.apt = mintcommon.aptdaemon.APT(None)
+            self.apt.set_finished_callback(self.on_install_finished)
+            self.apt.install_packages(pkgs)
+        except Exception as e:
+            self.uih.show_critical("can't install", str(e))
 
 if len(sys.argv) != 2:
     print("Usage: captain filename.deb")
