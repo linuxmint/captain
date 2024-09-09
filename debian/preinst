@@ -1,0 +1,4 @@
+#!/bin/sh
+
+dpkg-divert --add --rename /usr/bin/apturl
+dpkg-divert --add --rename /usr/bin/apturl-gtk
