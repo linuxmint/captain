@@ -17,7 +17,7 @@ To install a .deb file:
 
 To install a package from the repositories:
 
-`captain apt://pkgname` or `xdg-open apt://pkgname`.
+`xdg-open apt://pkgname`
 
 # TODO
 
