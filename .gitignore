@@ -2,4 +2,4 @@ debian/captain/
 debian/*debhelper*
 debian/files
 debian/*substvars*
-usr/share/captain/captain.ui~
+usr/share/captain/*.ui~
