@@ -9,9 +9,18 @@ It contains the following tools:
 
 Captain replaces gdebi (which wasn't actively maintained upstream) and apturl (which wasn't actively maintained and was specific to Ubuntu).
 
+# Usage
+
+To install a .deb file:
+
+`captain file.deb` or double-click the .deb file.
+
+To install a package from the repositories:
+
+`captain apt://pkgname` or `xdg-open apt://pkgname`.
+
 # TODO
 
 - make captain compatible with Debian by switching away from mint-common.aptdaemon*
-
 
 * This requires aptdaemon to be forked and ported to Debian.
