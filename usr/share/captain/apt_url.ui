@@ -5,6 +5,7 @@
   <object class="GtkWindow" id="window">
     <property name="can-focus">False</property>
     <property name="border-width">6</property>
+    <property name="title" translatable="yes">Install additional software?</property>
     <property name="resizable">False</property>
     <property name="window-position">center</property>
     <property name="default-width">500</property>
@@ -16,7 +17,7 @@
         <property name="visible">True</property>
         <property name="can-focus">False</property>
         <property name="orientation">vertical</property>
-        <property name="spacing">6</property>
+        <property name="spacing">12</property>
         <child>
           <object class="GtkBox">
             <property name="visible">True</property>
@@ -43,27 +44,15 @@
                 <property name="orientation">vertical</property>
                 <property name="spacing">6</property>
                 <child>
-                  <object class="GtkLabel" id="header_label">
-                    <property name="visible">True</property>
-                    <property name="can-focus">False</property>
-                    <property name="label" translatable="yes">Install additional software?</property>
-                    <property name="xalign">0</property>
-                    <attributes>
-                      <attribute name="weight" value="bold"/>
-                    </attributes>
-                  </object>
-                  <packing>
-                    <property name="expand">True</property>
-                    <property name="fill">True</property>
-                    <property name="position">0</property>
-                  </packing>
-                </child>
-                <child>
                   <object class="GtkLabel" id="body_label">
                     <property name="visible">True</property>
                     <property name="can-focus">False</property>
                     <property name="label" translatable="yes">Do you want to install '%s'?</property>
                     <property name="xalign">0</property>
+                    <attributes>
+                      <attribute name="weight" value="bold"/>
+                      <attribute name="scale" value="1.1"/>
+                    </attributes>
                   </object>
                   <packing>
                     <property name="expand">True</property>
@@ -86,14 +75,17 @@
                         <property name="hscrollbar-policy">never</property>
                         <property name="shadow-type">out</property>
                         <child>
-                          <object class="GtkTextView" id="description_text_view">
+                          <object class="GtkTextView" id="textview">
                             <property name="visible">True</property>
                             <property name="can-focus">True</property>
                             <property name="events">GDK_POINTER_MOTION_MASK | GDK_POINTER_MOTION_HINT_MASK | GDK_BUTTON_PRESS_MASK | GDK_BUTTON_RELEASE_MASK</property>
+                            <property name="pixels-above-lines">4</property>
+                            <property name="pixels-below-lines">4</property>
                             <property name="editable">False</property>
                             <property name="wrap-mode">word</property>
-                            <property name="left-margin">5</property>
-                            <property name="right-margin">5</property>
+                            <property name="left-margin">6</property>
+                            <property name="right-margin">6</property>
+                            <property name="cursor-visible">False</property>
                           </object>
                         </child>
                       </object>
@@ -176,9 +168,6 @@
             <property name="pack-type">end</property>
             <property name="position">1</property>
           </packing>
-        </child>
-        <child>
-          <placeholder/>
         </child>
       </object>
     </child>

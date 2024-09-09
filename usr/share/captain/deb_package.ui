@@ -440,8 +440,8 @@
                             <property name="pixels-below-lines">4</property>
                             <property name="editable">False</property>
                             <property name="wrap-mode">word</property>
-                            <property name="left-margin">4</property>
-                            <property name="right-margin">4</property>
+                            <property name="left-margin">6</property>
+                            <property name="right-margin">6</property>
                             <property name="cursor-visible">False</property>
                             <property name="buffer">textbuffer_description</property>
                           </object>

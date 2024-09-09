@@ -146,44 +146,7 @@ class App():
         self.ui_headerbar.set_subtitle(self.deb["Version"])
         self.ui_maintainer_label.set_text(self.deb["Maintainer"])
         self.ui_size_label.set_text(self.round_size(self.deb["Installed-Size"]))
-
-        # set description
-        buf = self.ui_textview_description.get_buffer()
-        try:
-            long_desc = ""
-            raw_desc = self.deb["Description"].split("\n")
-            # append a newline to the summary in the first line
-            summary = raw_desc[0]
-            raw_desc[0] = ""
-            long_desc = "%s\n" % summary
-            for line in raw_desc:
-                tmp = line.strip()
-                if tmp == ".":
-                    long_desc += "\n"
-                else:
-                    long_desc += tmp + "\n"
-            #print long_desc
-            # do some regular expression magic on the description
-            # Add a newline before each bullet
-            p = re.compile(r'^(\s|\t)*(\*|0|-)',re.MULTILINE)
-            long_desc = p.sub('\n*', long_desc)
-            # replace all newlines by spaces
-            p = re.compile(r'\n', re.MULTILINE)
-            long_desc = p.sub(" ", long_desc)
-            # replace all multiple spaces by
-            # newlines
-            p = re.compile(r'\s\s+', re.MULTILINE)
-            long_desc = p.sub("\n", long_desc)
-            # write the descr string to the buffer
-            buf.set_text(long_desc)
-            # tag the first line with a bold font
-            tag = buf.create_tag(None, weight=Pango.Weight.BOLD)
-            iter = buf.get_iter_at_offset(0)
-            (start, end) = iter.forward_search("\n", Gtk.TextSearchFlags.TEXT_ONLY, None)
-            buf.apply_tag(tag , iter, end)
-        except Exception as e:
-            print("No description available", e)
-            buf.set_text("")
+        set_description(self.ui_textview_description, None, self.deb["Description"])
 
         # set content
         store = Gtk.TreeStore(str)
@@ -404,6 +367,41 @@ class App():
         self.dpkg_action(widget, True)
 
 
+def set_description(textview, summary, description):
+    buffer = textview.get_buffer()
+    try:
+        description = description.split("\n")
+        if summary is None:
+            summary = description[0]
+            description[0] = ""
+        else:
+            summary = summary + "\n"
+
+        text = "%s\n" % summary.title()
+
+        # Parse new lines (this is necessary because APT introduces random new lines, multiple space
+        # chars and . lines)
+        for line in description:
+            line = line.strip()
+            if line == ".":
+                text += "\n"
+            else:
+                text += line + "\n"
+        text = re.compile(r'^(\s|\t)*(\*|0|-)',re.MULTILINE).sub('\n*', text)
+        text = re.compile(r'\n', re.MULTILINE).sub(" ", text)
+        text = re.compile(r'\s\s+', re.MULTILINE).sub("\n", text)
+
+        buffer.set_text(text)
+
+        # Make the summary bold
+        tag = buffer.create_tag(None, weight=Pango.Weight.BOLD)
+        iter = buffer.get_iter_at_offset(0)
+        (start, end) = iter.forward_search("\n", Gtk.TextSearchFlags.TEXT_ONLY, None)
+        buffer.apply_tag(tag , iter, end)
+    except Exception as e:
+        print(e)
+        buffer.set_text("")
+
 class URLApp():
 
     def __init__(self, url):
@@ -448,6 +446,11 @@ class URLApp():
             if issubclass(type(widget), Gtk.Buildable):
                 name = "ui_%s" % Gtk.Buildable.get_name(widget)
                 setattr(self, name, widget)
+
+
+        self.ui_body_label.set_text(_("Do you want to install '%s'?") % self.pkgname)
+
+        set_description(self.ui_textview, self.pkg.candidate.summary, self.pkg.candidate.description)
 
         self.ui_window.show()
 
