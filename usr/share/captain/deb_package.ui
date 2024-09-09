@@ -48,16 +48,13 @@
             <property name="visible">True</property>
             <property name="can-focus">False</property>
             <property name="border-width">6</property>
-            <property name="spacing">6</property>
+            <property name="spacing">12</property>
             <child>
-              <object class="GtkLabel">
+              <object class="GtkLabel" id="added_label">
                 <property name="visible">True</property>
                 <property name="can-focus">False</property>
-                <property name="label" translatable="yes">To install the package, the following changes are required:</property>
+                <property name="label" translatable="yes">The following packages need to be installed:</property>
                 <property name="xalign">0</property>
-                <attributes>
-                  <attribute name="weight" value="bold"/>
-                </attributes>
               </object>
               <packing>
                 <property name="expand">False</property>
@@ -66,18 +63,18 @@
               </packing>
             </child>
             <child>
-              <object class="GtkScrolledWindow">
+              <object class="GtkScrolledWindow" id="add_scrolledwindow">
                 <property name="visible">True</property>
                 <property name="can-focus">True</property>
                 <property name="shadow-type">in</property>
-                <property name="min-content-height">300</property>
+                <property name="min-content-height">150</property>
                 <child>
-                  <object class="GtkTreeView" id="treeview_details">
+                  <object class="GtkTreeView" id="treeview_added">
                     <property name="visible">True</property>
                     <property name="can-focus">True</property>
                     <property name="headers-visible">False</property>
                     <child internal-child="selection">
-                      <object class="GtkTreeSelection" id="treeview-selection2"/>
+                      <object class="GtkTreeSelection"/>
                     </child>
                   </object>
                 </child>
@@ -86,6 +83,42 @@
                 <property name="expand">True</property>
                 <property name="fill">True</property>
                 <property name="position">1</property>
+              </packing>
+            </child>
+            <child>
+              <object class="GtkLabel" id="removed_label">
+                <property name="visible">True</property>
+                <property name="can-focus">False</property>
+                <property name="label" translatable="yes">The following packages need to be removed:</property>
+                <property name="xalign">0</property>
+              </object>
+              <packing>
+                <property name="expand">False</property>
+                <property name="fill">False</property>
+                <property name="position">2</property>
+              </packing>
+            </child>
+            <child>
+              <object class="GtkScrolledWindow" id="removed_scrolledwindow">
+                <property name="visible">True</property>
+                <property name="can-focus">True</property>
+                <property name="shadow-type">in</property>
+                <property name="min-content-height">150</property>
+                <child>
+                  <object class="GtkTreeView" id="treeview_removed">
+                    <property name="visible">True</property>
+                    <property name="can-focus">True</property>
+                    <property name="headers-visible">False</property>
+                    <child internal-child="selection">
+                      <object class="GtkTreeSelection"/>
+                    </child>
+                  </object>
+                </child>
+              </object>
+              <packing>
+                <property name="expand">True</property>
+                <property name="fill">True</property>
+                <property name="position">3</property>
               </packing>
             </child>
           </object>

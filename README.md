@@ -11,7 +11,6 @@ Captain replaces gdebi (which wasn't actively maintained upstream) and apturl (w
 
 # TODO
 
-- improve the UI which lists removals and additions
 - make captain compatible with Debian by switching away from mint-common.aptdaemon*
 
 

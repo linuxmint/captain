@@ -86,13 +86,21 @@ class App():
                 setattr(self, name, widget)
 
         # setup the details treeview
-        self.details_list = Gtk.ListStore(GObject.TYPE_STRING)
+        self.added_list = Gtk.ListStore(GObject.TYPE_STRING)
         column = Gtk.TreeViewColumn("")
         render = Gtk.CellRendererText()
         column.pack_start(render, True)
         column.add_attribute(render, "markup", 0)
-        self.ui_treeview_details.append_column(column)
-        self.ui_treeview_details.set_model(self.details_list)
+        self.ui_treeview_added.append_column(column)
+        self.ui_treeview_added.set_model(self.added_list)
+
+        self.removed_list = Gtk.ListStore(GObject.TYPE_STRING)
+        column = Gtk.TreeViewColumn("")
+        render = Gtk.CellRendererText()
+        column.pack_start(render, True)
+        column.add_attribute(render, "markup", 0)
+        self.ui_treeview_removed.append_column(column)
+        self.ui_treeview_removed.set_model(self.removed_list)
 
         # setup the files treeview
         column = Gtk.TreeViewColumn("")
@@ -231,15 +239,11 @@ class App():
         all_ok = self.compare_deb_with_cache()
 
         (self.install, self.remove, self.unauthenticated) = self.deb.required_changes
-        if len(self.remove) >0 or len(self.install) > 0:
+        num_changes = len(self.remove) + len(self.install)
+        if num_changes > 0:
             all_ok = False
-            deps = ""
-            if len(self.remove) > 0:
-                deps += _("Requires the removal of %s packages") % len(self.remove)
-                deps += "\n"
-            if len(self.install) > 0:
-                deps += _("Requires the installation of %s packages") % len(self.install)
-            self.set_package_status(Gtk.MessageType.WARNING, deps, _("_Install Package"))
+            changes = gettext.ngettext('Requires changes in %d other package', 'Requires changes in %d other packages', num_changes) % num_changes
+            self.set_package_status(Gtk.MessageType.WARNING, changes, _("_Install Package"))
 
         self.set_suggested_action(all_ok)
 
@@ -380,11 +384,18 @@ class App():
     def on_details_button_clicked(self, widget):
         if not self.deb:
           return
-        self.details_list.clear()
-        for rm in self.remove:
-            self.details_list.append(["<b>%s</b>" % _("To be removed: %s") % rm])
+        self.added_list.clear()
+        self.removed_list.clear()
         for inst in self.install:
-            self.details_list.append([_("To be installed: %s") % inst])
+            self.added_list.append([inst])
+        for rm in self.remove:
+            self.removed_list.append([rm])
+        if len(self.install) <= 0:
+            self.ui_added_label.hide()
+            self.ui_added_scrolledwindow.hide()
+        if len(self.remove) <= 0:
+            self.ui_removed_label.hide()
+            self.ui_removed_scrolledwindow.hide()
         self.ui_dialog_details.set_transient_for(self.ui_window)
         self.ui_dialog_details.run()
         self.ui_dialog_details.hide()
