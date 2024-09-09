@@ -24,6 +24,7 @@ Depends:
  gir1.2-gtk-3.0 (>= 3.22.0),
  mint-common (>= 2),
  python3-apt,
+ python3-aptdaemon,
  python3-debian,
  python3-gi,
  python3-setproctitle,
