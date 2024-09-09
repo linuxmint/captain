@@ -464,9 +464,9 @@ class URLApp():
             for pkg in changes:
                 if pkg.marked_install:
                     pkgs.append(pkg.name)
-            self.apt = mintcommon.aptdaemon.APT(None)
-            self.apt.set_finished_callback(self.on_install_finished)
-            self.apt.install_packages(pkgs)
+            apt = mintcommon.aptdaemon.APT(None)
+            apt.set_finished_callback(self.on_install_finished)
+            apt.install_packages(pkgs)
         except Exception as e:
             self.uih.show_critical("can't install", str(e))
 
