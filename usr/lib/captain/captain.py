@@ -14,6 +14,7 @@ import apt.debfile
 import re
 from mimetypes import guess_type
 import mintcommon.aptdaemon
+import aptdaemon.enums
 
 # i18n
 APP = "captain"
@@ -39,6 +40,34 @@ def _idle(func):
     def wrapper(*args):
         GLib.idle_add(func, *args)
     return wrapper
+
+
+# A helper class to show dialog windows
+class UIHelper():
+
+    def __init__(self, window):
+        self.window = window
+
+    @_idle
+    def show_dialog(self, dialog_type, title, msg):
+        dialog = Gtk.MessageDialog(parent=self.window,
+                                    modal=True,
+                                    message_type=dialog_type,
+                                    buttons=Gtk.ButtonsType.CLOSE)
+        dialog.set_markup("<big><b>%s</b></big>\n\n%s" % (title, msg))
+        dialog.run()
+        dialog.destroy()
+
+    def show_critical(self, title, msg):
+        dialog = Gtk.MessageDialog(parent=self.window,
+                                    modal=True,
+                                    message_type=Gtk.MessageType.ERROR,
+                                    buttons=Gtk.ButtonsType.CLOSE)
+        dialog.set_markup("<big><b>%s</b></big>\n\n%s" % (title, msg))
+        dialog.run()
+        dialog.destroy()
+        Gtk.main_quit()
+        sys.exit()
 
 class App():
 
@@ -77,16 +106,15 @@ class App():
 
         self.ui_window.show()
 
+        self.uih = UIHelper(self.ui_window)
+
         self.load_deb_file()
 
     @_async
     def load_deb_file(self):
         self.cache = apt.Cache()
         if self.cache._depcache.broken_count > 0:
-            header = _("Broken dependencies")
-            body = _("To fix this run 'sudo apt-get install -f' in a terminal window.")
-            self.show_dialog(Gtk.MessageType.ERROR, header, body)
-            Gtk.main_quit()
+            self.uih.show_critical(_("Broken dependencies"), _("To fix this run 'sudo apt-get install -f' in a terminal window."))
         try:
             self.deb = apt.debfile.DebPackage(self.absolute_path, self.cache)
             self.on_file_loaded()
@@ -100,8 +128,7 @@ class App():
             else:
                 header = _("Could not open %s") % self.filename
                 body = _("The file might be corrupted or missing permissions.")
-            self.show_dialog(Gtk.MessageType.ERROR, header, body)
-            Gtk.main_quit()
+            self.uih.show_critical(header, body)
 
     @_idle
     def on_file_loaded(self):
@@ -270,11 +297,11 @@ class App():
                     if pkg.installed:
                         self.set_package_status(Gtk.MessageType.INFO, _("The same version is already installed"), _("_Reinstall Package"))
                     else:
-                        self.show_dialog(Gtk.MessageType.INFO, _("This package is available in the repositories"), msg)
+                        self.uih.show_dialog(Gtk.MessageType.INFO, _("This package is available in the repositories"), msg)
                 elif res == apt.debfile.DebPackage.VERSION_NEWER:
-                    self.show_dialog(Gtk.MessageType.INFO, _("An older version is available in the repositories"), msg)
+                    self.uih.show_dialog(Gtk.MessageType.INFO, _("An older version is available in the repositories"), msg)
                 elif res == apt.debfile.DebPackage.VERSION_OUTDATED:
-                    self.show_dialog(Gtk.MessageType.INFO, _("A newer version is available in the repositories"), msg)
+                    self.uih.show_dialog(Gtk.MessageType.INFO, _("A newer version is available in the repositories"), msg)
         return all_ok
 
 
@@ -288,16 +315,6 @@ class App():
     #########################################
     # UI functions
     #########################################
-
-    @_idle
-    def show_dialog(self, dialog_type, title, msg):
-        dialog = Gtk.MessageDialog(parent=self.ui_window,
-                                    modal=True,
-                                    message_type=dialog_type,
-                                    buttons=Gtk.ButtonsType.CLOSE)
-        dialog.set_markup("<big><b>%s</b></big>\n\n%s" % (title, msg))
-        dialog.run()
-        dialog.destroy()
 
     def show_busy_cursor(self, show_busy_cursor):
         win = self.ui_window.get_window()
@@ -315,10 +332,7 @@ class App():
         cache = apt.Cache()
         self.show_busy_cursor(False)
         if cache._depcache.broken_count > 0:
-            header = _("Failed to install all dependencies")
-            body = _("To fix this run 'sudo apt-get install -f' in a terminal window.")
-            self.show_dialog(Gtk.MessageType.ERROR, header, body)
-            Gtk.main_quit()
+            self.uih.show_critical(_("Failed to install all dependencies"), _("To fix this run 'sudo apt-get install -f' in a terminal window."))
         if self.deb.pkgname in cache:
             pkg = cache[self.deb.pkgname]
             if pkg.is_installed:
@@ -382,6 +396,37 @@ class App():
 class URLApp():
 
     def __init__(self, url):
+        self.uih = UIHelper(None)
+
+        # parse URL
+        url = url.replace("apt://", "")
+        self.pkgname = url.split("?")[0]
+
+        # update the cache
+        apt = mintcommon.aptdaemon.APT(None)
+        apt.set_finished_callback(self.on_update_finished)
+        apt.update_cache()
+
+    @_idle
+    def on_update_finished(self, transaction=None, exit_state=None):
+        if exit_state != aptdaemon.enums.EXIT_SUCCESS:
+            Gtk.main_quit()
+
+        # check the cache
+        self.cache = apt.Cache()
+        if self.cache._depcache.broken_count > 0:
+            self.uih.show_critical(_("Broken dependencies"), _("To fix this run 'sudo apt-get install -f' in a terminal window."))
+
+        # check that package is in the repos, that it's installable and not already installed
+        if self.pkgname not in self.cache:
+            self.uih.show_critical("packge not in cache", "...")
+        pkg = self.cache[self.pkgname]
+        if pkg.is_installed:
+            self.uih.show_critical("packge already installed", "...")
+        if not (pkg.candidate and pkg.candidate.downloadable):
+            self.uih.show_critical("packge not installable", "...")
+
+        # show the confirmation dialog
         self.settings = Gio.Settings(schema="org.x.captain")
 
         self.builder = Gtk.Builder()
@@ -394,6 +439,8 @@ class URLApp():
                 setattr(self, name, widget)
 
         self.ui_window.show()
+
+        # install the package
 
     @_async
     def load_deb_file(self):
