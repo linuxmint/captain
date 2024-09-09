@@ -419,12 +419,12 @@ class URLApp():
 
         # check that package is in the repos, that it's installable and not already installed
         if self.pkgname not in self.cache:
-            self.uih.show_critical("packge not in cache", "...")
+            self.uih.show_critical(_("The package '%s' could not be installed") % self.pkgname, _("It was not found in the repositories."))
         self.pkg = self.cache[self.pkgname]
         if self.pkg.is_installed:
-            self.uih.show_critical("packge already installed", "...")
+            self.uih.show_critical(_("The package '%s' could not be installed") % self.pkgname, _("It is already installed."))
         if not (self.pkg.candidate and self.pkg.candidate.downloadable):
-            self.uih.show_critical("packge not installable", "...")
+            self.uih.show_critical(_("The package '%s' could not be installed") % self.pkgname, _("It is not installable."))
 
         # show the confirmation dialog
         self.settings = Gio.Settings(schema="org.x.captain")
@@ -468,7 +468,7 @@ class URLApp():
             apt.set_finished_callback(self.on_install_finished)
             apt.install_packages(pkgs)
         except Exception as e:
-            self.uih.show_critical("can't install", str(e))
+            self.uih.show_critical(_("The package '%s' could not be installed") % self.pkgname, str(e))
 
 if len(sys.argv) != 2:
     print("Usage: captain filename.deb")
