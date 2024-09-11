@@ -13,8 +13,8 @@ import apt
 import apt.debfile
 import re
 from mimetypes import guess_type
-import mintcommon.aptdaemon
-import aptdaemon.enums
+import aptkit.simpleclient
+import aptkit.enums
 
 # i18n
 APP = "captain"
@@ -274,7 +274,7 @@ class App():
 
     def dpkg_action(self, widget, install):
         self.ui_window.set_sensitive(False)
-        apt = mintcommon.aptdaemon.APT(self.ui_window)
+        apt = aptkit.simpleclient.SimpleAPTClient(self.ui_window)
         apt.set_finished_callback(self.on_install_finished)
         apt.set_cancelled_callback(self.on_install_cancelled)
         apt.install_file(self.deb.filename)
@@ -412,13 +412,13 @@ class URLApp():
         self.pkgname = url.split("?")[0]
 
         # update the cache
-        apt = mintcommon.aptdaemon.APT(None)
+        apt = aptkit.simpleclient.SimpleAPTClient(None)
         apt.set_finished_callback(self.on_update_finished)
         apt.update_cache()
 
     @_idle
     def on_update_finished(self, transaction=None, exit_state=None):
-        if exit_state != aptdaemon.enums.EXIT_SUCCESS:
+        if exit_state != aptkit.enums.EXIT_SUCCESS:
             Gtk.main_quit()
 
         # check the cache
@@ -478,7 +478,7 @@ class URLApp():
             for pkg in changes:
                 if pkg.marked_install:
                     pkgs.append(pkg.name)
-            apt = mintcommon.aptdaemon.APT(None)
+            apt = aptkit.simpleclient.SimpleAPTClient(None)
             apt.set_finished_callback(self.on_install_finished)
             apt.install_packages(pkgs)
         except Exception as e:

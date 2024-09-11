@@ -18,9 +18,3 @@ To install a .deb file:
 To install a package from the repositories:
 
 `xdg-open apt://pkgname`
-
-# TODO
-
-- make captain compatible with Debian by switching away from mint-common.aptdaemon*
-
-* This requires aptdaemon to be forked and ported to Debian.
