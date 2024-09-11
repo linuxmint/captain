@@ -422,14 +422,14 @@ class URLApp():
             Gtk.main_quit()
 
         # check the cache
-        self.cache = apt.Cache()
-        if self.cache._depcache.broken_count > 0:
+        cache = apt.Cache()
+        if cache._depcache.broken_count > 0:
             self.uih.show_critical(_("Broken dependencies"), _("To fix this run 'sudo apt-get install -f' in a terminal window."))
 
         # check that package is in the repos, that it's installable and not already installed
-        if self.pkgname not in self.cache:
+        if self.pkgname not in cache:
             self.uih.show_critical(_("The package '%s' could not be installed") % self.pkgname, _("It was not found in the repositories."))
-        self.pkg = self.cache[self.pkgname]
+        self.pkg = cache[self.pkgname]
         if self.pkg.is_installed:
             self.uih.show_critical(_("The package '%s' could not be installed") % self.pkgname, _("It is already installed."))
         if not (self.pkg.candidate and self.pkg.candidate.downloadable):
@@ -472,15 +472,9 @@ class URLApp():
     def on_install_button_clicked(self, widget):
         # install the package
         try:
-            self.pkg.mark_install()
-            changes = self.cache.get_changes()
-            pkgs = []
-            for pkg in changes:
-                if pkg.marked_install:
-                    pkgs.append(pkg.name)
             apt = aptkit.simpleclient.SimpleAPTClient(None)
             apt.set_finished_callback(self.on_install_finished)
-            apt.install_packages(pkgs)
+            apt.install_packages([self.pkgname])
         except Exception as e:
             self.uih.show_critical(_("The package '%s' could not be installed") % self.pkgname, str(e))
 
