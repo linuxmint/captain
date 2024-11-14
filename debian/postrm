@@ -1,11 +1,9 @@
 #!/bin/sh
 
 case "$1" in
-    purge|remove|upgrade|deconfigure)
+    purge|remove)
 		dpkg-divert --remove --rename /usr/bin/apturl
 		dpkg-divert --remove --rename /usr/bin/apturl-gtk
-        ;;
-    failed-upgrade)
         ;;
     *)
     ;;
