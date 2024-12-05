@@ -1,0 +1,215 @@
+# Welsh translation for linuxmint
+# Copyright (c) 2024 Rosetta Contributors and Canonical Ltd 2024
+# This file is distributed under the same license as the linuxmint package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2024.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: linuxmint\n"
+"Report-Msgid-Bugs-To: FULL NAME <EMAIL@ADDRESS>\n"
+"POT-Creation-Date: 2024-09-09 13:11+0100\n"
+"PO-Revision-Date: 2024-09-25 13:47+0000\n"
+"Last-Translator: Rhoslyn Prys <rprys@posteo.net>\n"
+"Language-Team: Welsh <cy@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=4; plural=n==1 ? 0 : n==2 ? 1 : (n != 8 && n != 11) ? "
+"2 : 3;\n"
+"X-Launchpad-Export-Date: 2024-12-05 10:20+0000\n"
+"X-Generator: Launchpad (build 1519c6efe8e9bd78e6c5ebf2eb5bcb040b95ad32)\n"
+"Language: cy\n"
+
+#: data/captain.desktop.in:3
+msgid "Package Installer"
+msgstr "Gosodwr Pecynnau"
+
+#: data/captain.desktop.in:4
+msgid "Install a software package"
+msgstr "Gosod pecyn meddalwedd"
+
+#: usr/lib/captain/captain.py:125 usr/lib/captain/captain.py:429
+msgid "Broken dependencies"
+msgstr "Dibyniaethau wedi torri"
+
+#: usr/lib/captain/captain.py:125 usr/lib/captain/captain.py:339
+#: usr/lib/captain/captain.py:429
+msgid "To fix this run 'sudo apt-get install -f' in a terminal window."
+msgstr ""
+"I drwsio hwn rhedwch 'sudo apt-get install -f' mewn ffenestr derfynell."
+
+#: usr/lib/captain/captain.py:134
+#, python-format
+msgid "%s is not a valid package"
+msgstr "Nid yw %s yn becyn dilys"
+
+#: usr/lib/captain/captain.py:135
+#, python-format
+msgid "The MIME type of this file is '%s'."
+msgstr "Math MIME y ffeil hon yw '%s'."
+
+#: usr/lib/captain/captain.py:137
+#, python-format
+msgid "Could not open %s"
+msgstr "Methu agor %s"
+
+#: usr/lib/captain/captain.py:138
+msgid "The file might be corrupted or missing permissions."
+msgstr "Mae'n bosibl bod y ffeil wedi'i llygru neu fod caniatâd ar goll."
+
+#: usr/lib/captain/captain.py:191
+msgid "Control files"
+msgstr "Ffeiliau rheoli"
+
+#: usr/lib/captain/captain.py:195
+msgid "Data files"
+msgstr "Ffeiliau data"
+
+#: usr/lib/captain/captain.py:202
+msgid "Error while reading the content"
+msgstr "Gwall wrth ddarllen y cynnwys"
+
+#: usr/lib/captain/captain.py:229
+#, python-format
+msgid "Error: %s"
+msgstr "Gwall: %s"
+
+#: usr/lib/captain/captain.py:229 usr/lib/captain/captain.py:236
+#: usr/lib/captain/captain.py:246 usr/share/captain/deb_package.ui.h:9
+msgid "_Install Package"
+msgstr "_Gosod Pecyn"
+
+#: usr/lib/captain/captain.py:235
+#, python-format
+msgid "Error: No longer provides %s"
+msgstr "Gwall: Nid yw bellach yn darparu %s"
+
+#: usr/lib/captain/captain.py:245
+#, python-format
+msgid "Requires changes in %d other package"
+msgid_plural "Requires changes in %d other packages"
+msgstr[0] "Mae angen newid mewn %d pecyn arall"
+msgstr[1] "Mae angen newid mewn %d pecyn arall"
+msgstr[2] "Mae angen newid mewn %d pecyn arall"
+msgstr[3] "Mae angen newid mewn %d pecyn arall"
+
+#: usr/lib/captain/captain.py:263
+msgid "KB"
+msgstr "KB"
+
+#: usr/lib/captain/captain.py:263
+msgid "MB"
+msgstr "MB"
+
+#: usr/lib/captain/captain.py:263 usr/lib/captain/captain.py:264
+msgid "GB"
+msgstr "GB"
+
+#: usr/lib/captain/captain.py:299
+msgid "It is safer and recommended to install from the repositories instead."
+msgstr ""
+"Mae'n fwy diogel ac rydym yn argymell gosod o'r storfeydd yn lle hynny."
+
+#: usr/lib/captain/captain.py:302
+msgid "The same version is already installed"
+msgstr "Mae'r un fersiwn eisoes wedi'i osod"
+
+#: usr/lib/captain/captain.py:302
+msgid "_Reinstall Package"
+msgstr "_Ailosod y Pecyn"
+
+#: usr/lib/captain/captain.py:304
+msgid "This package is available in the repositories"
+msgstr "Mae'r pecyn hwn ar gael yn y storfeydd"
+
+#: usr/lib/captain/captain.py:306
+msgid "An older version is available in the repositories"
+msgstr "Mae fersiwn hŷn ar gael yn y storfeydd"
+
+#: usr/lib/captain/captain.py:308
+msgid "A newer version is available in the repositories"
+msgstr "Mae fersiwn mwy diweddar ar gael yn y storfeydd"
+
+#: usr/lib/captain/captain.py:339
+msgid "Failed to install all dependencies"
+msgstr "Wedi methu gosod pob dibyniaeth"
+
+#: usr/lib/captain/captain.py:346 usr/share/captain/deb_package.ui.h:12
+#, python-format
+msgid "%s is now installed."
+msgstr "Mae %s bellach wedi'i osod."
+
+#: usr/lib/captain/captain.py:372
+msgid "The content could not be extracted"
+msgstr "Nid oedd modd echdynnu'r cynnwys"
+
+#: usr/lib/captain/captain.py:433 usr/lib/captain/captain.py:436
+#: usr/lib/captain/captain.py:438 usr/lib/captain/captain.py:482
+#, python-format
+msgid "The package '%s' could not be installed"
+msgstr "Nid oedd modd gosod pecyn '%s'"
+
+#: usr/lib/captain/captain.py:433
+msgid "It was not found in the repositories."
+msgstr "Heb ei ganfod yn y storfeydd."
+
+#: usr/lib/captain/captain.py:436
+msgid "It is already installed."
+msgstr "Mae eisoes wedi'i osod."
+
+#: usr/lib/captain/captain.py:438
+msgid "It is not installable."
+msgstr "Nid oes modd ei osod."
+
+#: usr/share/captain/apt_url.ui.h:1
+msgid "Install additional software?"
+msgstr "Gosod meddalwedd ychwanegol?"
+
+#: usr/share/captain/apt_url.ui.h:3
+#, python-format
+msgid "Do you want to install '%s'?"
+msgstr "Hoffech chi osod '%s'?"
+
+#: usr/share/captain/apt_url.ui.h:4
+msgid "Description"
+msgstr "Disgrifiad"
+
+#: usr/share/captain/apt_url.ui.h:5
+msgid "_Install"
+msgstr "_Gosod"
+
+#: usr/share/captain/deb_package.ui.h:1
+msgid "Details"
+msgstr "Manylion"
+
+#: usr/share/captain/deb_package.ui.h:2
+msgid "The following packages need to be installed:"
+msgstr "Mae angen gosod y pecynnau canlynol:"
+
+#: usr/share/captain/deb_package.ui.h:3
+msgid "The following packages need to be removed:"
+msgstr "Rhaid tynnu'r pecynnau canlynol:"
+
+#: usr/share/captain/deb_package.ui.h:4
+msgid "Opening the package"
+msgstr "Wrthi'n agor y pecyn"
+
+#: usr/share/captain/deb_package.ui.h:5
+msgid "_Details"
+msgstr "_Manylion"
+
+#: usr/share/captain/deb_package.ui.h:6
+msgid "Maintainer:"
+msgstr "Cynhaliwr:"
+
+#: usr/share/captain/deb_package.ui.h:7
+msgid "Size:"
+msgstr "Maint:"
+
+#: usr/share/captain/deb_package.ui.h:8
+msgid "Included files"
+msgstr "Ffeiliau wedi'u cynnwys"
+
+#: usr/share/captain/deb_package.ui.h:10
+msgid "The installation was successful"
+msgstr "Roedd y gosodiad yn llwyddiannus"

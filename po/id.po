@@ -1,0 +1,211 @@
+# Indonesian translation for linuxmint
+# Copyright (c) 2024 Rosetta Contributors and Canonical Ltd 2024
+# This file is distributed under the same license as the linuxmint package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2024.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: linuxmint\n"
+"Report-Msgid-Bugs-To: FULL NAME <EMAIL@ADDRESS>\n"
+"POT-Creation-Date: 2024-09-09 13:11+0100\n"
+"PO-Revision-Date: 2024-09-28 02:41+0000\n"
+"Last-Translator: Andika Triwidada <andika@gmail.com>\n"
+"Language-Team: Indonesian <id@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"X-Launchpad-Export-Date: 2024-12-05 10:20+0000\n"
+"X-Generator: Launchpad (build 1519c6efe8e9bd78e6c5ebf2eb5bcb040b95ad32)\n"
+
+#: data/captain.desktop.in:3
+msgid "Package Installer"
+msgstr "Pemasang Paket"
+
+#: data/captain.desktop.in:4
+msgid "Install a software package"
+msgstr "Pasang suatu paket perangkat lunak"
+
+#: usr/lib/captain/captain.py:125 usr/lib/captain/captain.py:429
+msgid "Broken dependencies"
+msgstr "Dependensi rusak"
+
+#: usr/lib/captain/captain.py:125 usr/lib/captain/captain.py:339
+#: usr/lib/captain/captain.py:429
+msgid "To fix this run 'sudo apt-get install -f' in a terminal window."
+msgstr ""
+"Untuk memperbaiki ini jalankan  'sudo apt-get install -f' di dalam jendela "
+"terminal."
+
+#: usr/lib/captain/captain.py:134
+#, python-format
+msgid "%s is not a valid package"
+msgstr "%s bukan suatu paket yang valid"
+
+#: usr/lib/captain/captain.py:135
+#, python-format
+msgid "The MIME type of this file is '%s'."
+msgstr "Tipe MIME berkas ini adalah '%s'."
+
+#: usr/lib/captain/captain.py:137
+#, python-format
+msgid "Could not open %s"
+msgstr "Tidak bisa membuka %s"
+
+#: usr/lib/captain/captain.py:138
+msgid "The file might be corrupted or missing permissions."
+msgstr "Berkas mungkin rusak atau kurang izin."
+
+#: usr/lib/captain/captain.py:191
+msgid "Control files"
+msgstr "Berkas kendali"
+
+#: usr/lib/captain/captain.py:195
+msgid "Data files"
+msgstr "Berkas data"
+
+#: usr/lib/captain/captain.py:202
+msgid "Error while reading the content"
+msgstr "Kesalahan saat membaca isi"
+
+#: usr/lib/captain/captain.py:229
+#, python-format
+msgid "Error: %s"
+msgstr "Kesalahan: %s"
+
+#: usr/lib/captain/captain.py:229 usr/lib/captain/captain.py:236
+#: usr/lib/captain/captain.py:246 usr/share/captain/deb_package.ui.h:9
+msgid "_Install Package"
+msgstr "_Pasang Paket"
+
+#: usr/lib/captain/captain.py:235
+#, python-format
+msgid "Error: No longer provides %s"
+msgstr "Kesalahan: Tak lagi menyediakan %s"
+
+#: usr/lib/captain/captain.py:245
+#, python-format
+msgid "Requires changes in %d other package"
+msgid_plural "Requires changes in %d other packages"
+msgstr[0] "Memerlukan perubahan dalam %d paket lain"
+
+#: usr/lib/captain/captain.py:263
+msgid "KB"
+msgstr "KB"
+
+#: usr/lib/captain/captain.py:263
+msgid "MB"
+msgstr "MB"
+
+#: usr/lib/captain/captain.py:263 usr/lib/captain/captain.py:264
+msgid "GB"
+msgstr "GB"
+
+#: usr/lib/captain/captain.py:299
+msgid "It is safer and recommended to install from the repositories instead."
+msgstr ""
+"Lebih aman dan disarankan untuk memasang dari repositori sebagai pengganti."
+
+#: usr/lib/captain/captain.py:302
+msgid "The same version is already installed"
+msgstr "Versi yang sama telah terpasang"
+
+#: usr/lib/captain/captain.py:302
+msgid "_Reinstall Package"
+msgstr "_Pasang Ulang Paket"
+
+#: usr/lib/captain/captain.py:304
+msgid "This package is available in the repositories"
+msgstr "Paket ini tersedia dalam repositori"
+
+#: usr/lib/captain/captain.py:306
+msgid "An older version is available in the repositories"
+msgstr "Versi yang lebih lama tersedia dalam repositori"
+
+#: usr/lib/captain/captain.py:308
+msgid "A newer version is available in the repositories"
+msgstr "Versi yang lebih baru tersedia dalam repositori"
+
+#: usr/lib/captain/captain.py:339
+msgid "Failed to install all dependencies"
+msgstr "Gagal memasang semua kebergantungan"
+
+#: usr/lib/captain/captain.py:346 usr/share/captain/deb_package.ui.h:12
+#, python-format
+msgid "%s is now installed."
+msgstr "%s kini terpasang."
+
+#: usr/lib/captain/captain.py:372
+msgid "The content could not be extracted"
+msgstr "Isi tidak dapat diekstrak"
+
+#: usr/lib/captain/captain.py:433 usr/lib/captain/captain.py:436
+#: usr/lib/captain/captain.py:438 usr/lib/captain/captain.py:482
+#, python-format
+msgid "The package '%s' could not be installed"
+msgstr "Paket '%s' tidak bisa dipasang"
+
+#: usr/lib/captain/captain.py:433
+msgid "It was not found in the repositories."
+msgstr "Itu tidak ditemukan dalam repositori."
+
+#: usr/lib/captain/captain.py:436
+msgid "It is already installed."
+msgstr "Itu telah terpasang."
+
+#: usr/lib/captain/captain.py:438
+msgid "It is not installable."
+msgstr "Itu tidak bisa dipasang."
+
+#: usr/share/captain/apt_url.ui.h:1
+msgid "Install additional software?"
+msgstr "Pasang perangkat lunak tambahan?"
+
+#: usr/share/captain/apt_url.ui.h:3
+#, python-format
+msgid "Do you want to install '%s'?"
+msgstr "Apakah Anda hendak memasang '%s'?"
+
+#: usr/share/captain/apt_url.ui.h:4
+msgid "Description"
+msgstr "Deskripsi"
+
+#: usr/share/captain/apt_url.ui.h:5
+msgid "_Install"
+msgstr "_Pasang"
+
+#: usr/share/captain/deb_package.ui.h:1
+msgid "Details"
+msgstr "Rincian"
+
+#: usr/share/captain/deb_package.ui.h:2
+msgid "The following packages need to be installed:"
+msgstr "Paket berikut perlu dipasang:"
+
+#: usr/share/captain/deb_package.ui.h:3
+msgid "The following packages need to be removed:"
+msgstr "Paket berikut perlu dibuang:"
+
+#: usr/share/captain/deb_package.ui.h:4
+msgid "Opening the package"
+msgstr "Membuka paket"
+
+#: usr/share/captain/deb_package.ui.h:5
+msgid "_Details"
+msgstr "_Rincian"
+
+#: usr/share/captain/deb_package.ui.h:6
+msgid "Maintainer:"
+msgstr "Pengelola:"
+
+#: usr/share/captain/deb_package.ui.h:7
+msgid "Size:"
+msgstr "Ukuran:"
+
+#: usr/share/captain/deb_package.ui.h:8
+msgid "Included files"
+msgstr "Berkas yang disertakan"
+
+#: usr/share/captain/deb_package.ui.h:10
+msgid "The installation was successful"
+msgstr "Instalasi sukses"

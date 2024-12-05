@@ -1,0 +1,213 @@
+# Dutch translation for linuxmint
+# Copyright (c) 2024 Rosetta Contributors and Canonical Ltd 2024
+# This file is distributed under the same license as the linuxmint package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2024.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: linuxmint\n"
+"Report-Msgid-Bugs-To: FULL NAME <EMAIL@ADDRESS>\n"
+"POT-Creation-Date: 2024-09-09 13:11+0100\n"
+"PO-Revision-Date: 2024-09-09 13:20+0000\n"
+"Last-Translator: Pjotr12345 <Unknown>\n"
+"Language-Team: Dutch <nl@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Launchpad-Export-Date: 2024-12-05 10:20+0000\n"
+"X-Generator: Launchpad (build 1519c6efe8e9bd78e6c5ebf2eb5bcb040b95ad32)\n"
+
+#: data/captain.desktop.in:3
+msgid "Package Installer"
+msgstr "Pakketinstalleerder"
+
+#: data/captain.desktop.in:4
+msgid "Install a software package"
+msgstr "Een programmatuurpakket installeren"
+
+#: usr/lib/captain/captain.py:125 usr/lib/captain/captain.py:429
+msgid "Broken dependencies"
+msgstr "Kapotte afhankelijkheden"
+
+#: usr/lib/captain/captain.py:125 usr/lib/captain/captain.py:339
+#: usr/lib/captain/captain.py:429
+msgid "To fix this run 'sudo apt-get install -f' in a terminal window."
+msgstr ""
+"Om dit te herstellen moet u 'sudo apt-get install -f' uitvoeren in een "
+"terminalvenster."
+
+#: usr/lib/captain/captain.py:134
+#, python-format
+msgid "%s is not a valid package"
+msgstr "%s is geen geldig pakket"
+
+#: usr/lib/captain/captain.py:135
+#, python-format
+msgid "The MIME type of this file is '%s'."
+msgstr "De bestandssoort (MIME-type) van dit bestand is '%s'."
+
+#: usr/lib/captain/captain.py:137
+#, python-format
+msgid "Could not open %s"
+msgstr "Kon %s niet openen"
+
+#: usr/lib/captain/captain.py:138
+msgid "The file might be corrupted or missing permissions."
+msgstr "Het bestand zou corrupt kunnen zijn of rechten ontberen."
+
+#: usr/lib/captain/captain.py:191
+msgid "Control files"
+msgstr "Controlebestanden"
+
+#: usr/lib/captain/captain.py:195
+msgid "Data files"
+msgstr "Gegevensbestanden"
+
+#: usr/lib/captain/captain.py:202
+msgid "Error while reading the content"
+msgstr "Fout bij het lezen van de inhoud"
+
+#: usr/lib/captain/captain.py:229
+#, python-format
+msgid "Error: %s"
+msgstr "Fout: %s"
+
+#: usr/lib/captain/captain.py:229 usr/lib/captain/captain.py:236
+#: usr/lib/captain/captain.py:246 usr/share/captain/deb_package.ui.h:9
+msgid "_Install Package"
+msgstr "Pakket _installeren"
+
+#: usr/lib/captain/captain.py:235
+#, python-format
+msgid "Error: No longer provides %s"
+msgstr "Fout: levert %s niet langer"
+
+#: usr/lib/captain/captain.py:245
+#, python-format
+msgid "Requires changes in %d other package"
+msgid_plural "Requires changes in %d other packages"
+msgstr[0] "Vereist wijzigingen in %d ander pakket"
+msgstr[1] "Vereist wijzigingen in %d andere pakketten"
+
+#: usr/lib/captain/captain.py:263
+msgid "KB"
+msgstr "KB"
+
+#: usr/lib/captain/captain.py:263
+msgid "MB"
+msgstr "MB"
+
+#: usr/lib/captain/captain.py:263 usr/lib/captain/captain.py:264
+msgid "GB"
+msgstr "GB"
+
+#: usr/lib/captain/captain.py:299
+msgid "It is safer and recommended to install from the repositories instead."
+msgstr ""
+"Het is veiliger en aanbevolen om in plaats daarvan te installeren vanuit de "
+"officiële pakketbronnen."
+
+#: usr/lib/captain/captain.py:302
+msgid "The same version is already installed"
+msgstr "Dezelfde versie is reeds geïnstalleerd"
+
+#: usr/lib/captain/captain.py:302
+msgid "_Reinstall Package"
+msgstr "Pakket he_rinstalleren"
+
+#: usr/lib/captain/captain.py:304
+msgid "This package is available in the repositories"
+msgstr "Dit pakket is beschikbaar in de pakketbronnen"
+
+#: usr/lib/captain/captain.py:306
+msgid "An older version is available in the repositories"
+msgstr "Een oudere versie is beschikbaar in de pakketbronnen"
+
+#: usr/lib/captain/captain.py:308
+msgid "A newer version is available in the repositories"
+msgstr "Een nieuwere versie is beschikbaar in de pakketbronnen"
+
+#: usr/lib/captain/captain.py:339
+msgid "Failed to install all dependencies"
+msgstr "Kon niet alle afhankelijkheden installeren"
+
+#: usr/lib/captain/captain.py:346 usr/share/captain/deb_package.ui.h:12
+#, python-format
+msgid "%s is now installed."
+msgstr "%s is nu geïnstalleerd."
+
+#: usr/lib/captain/captain.py:372
+msgid "The content could not be extracted"
+msgstr "De inhoud kon niet worden uitgepakt"
+
+#: usr/lib/captain/captain.py:433 usr/lib/captain/captain.py:436
+#: usr/lib/captain/captain.py:438 usr/lib/captain/captain.py:482
+#, python-format
+msgid "The package '%s' could not be installed"
+msgstr "Het pakket '%s' kon niet worden geïnstalleerd"
+
+#: usr/lib/captain/captain.py:433
+msgid "It was not found in the repositories."
+msgstr "Het werd niet aangetroffen in de pakketbronnen."
+
+#: usr/lib/captain/captain.py:436
+msgid "It is already installed."
+msgstr "Het is reeds geïnstalleerd."
+
+#: usr/lib/captain/captain.py:438
+msgid "It is not installable."
+msgstr "Het is niet installeerbaar."
+
+#: usr/share/captain/apt_url.ui.h:1
+msgid "Install additional software?"
+msgstr "Extra programmatuur installeren?"
+
+#: usr/share/captain/apt_url.ui.h:3
+#, python-format
+msgid "Do you want to install '%s'?"
+msgstr "Wilt u '%s' installeren?"
+
+#: usr/share/captain/apt_url.ui.h:4
+msgid "Description"
+msgstr "Omschrijving"
+
+#: usr/share/captain/apt_url.ui.h:5
+msgid "_Install"
+msgstr "_Installeren"
+
+#: usr/share/captain/deb_package.ui.h:1
+msgid "Details"
+msgstr "Bijzonderheden"
+
+#: usr/share/captain/deb_package.ui.h:2
+msgid "The following packages need to be installed:"
+msgstr "De volgende pakketten moeten worden geïnstalleerd:"
+
+#: usr/share/captain/deb_package.ui.h:3
+msgid "The following packages need to be removed:"
+msgstr "De volgende pakketten moeten worden verwijderd:"
+
+#: usr/share/captain/deb_package.ui.h:4
+msgid "Opening the package"
+msgstr "Het pakket openen"
+
+#: usr/share/captain/deb_package.ui.h:5
+msgid "_Details"
+msgstr "_Bijzonderheden"
+
+#: usr/share/captain/deb_package.ui.h:6
+msgid "Maintainer:"
+msgstr "Onderhouder:"
+
+#: usr/share/captain/deb_package.ui.h:7
+msgid "Size:"
+msgstr "Grootte:"
+
+#: usr/share/captain/deb_package.ui.h:8
+msgid "Included files"
+msgstr "Ingesloten bestanden"
+
+#: usr/share/captain/deb_package.ui.h:10
+msgid "The installation was successful"
+msgstr "De installatie is geslaagd"

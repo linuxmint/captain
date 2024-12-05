@@ -1,0 +1,212 @@
+# Norwegian Bokmal translation for linuxmint
+# Copyright (c) 2024 Rosetta Contributors and Canonical Ltd 2024
+# This file is distributed under the same license as the linuxmint package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2024.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: linuxmint\n"
+"Report-Msgid-Bugs-To: FULL NAME <EMAIL@ADDRESS>\n"
+"POT-Creation-Date: 2024-09-09 13:11+0100\n"
+"PO-Revision-Date: 2024-09-10 07:38+0000\n"
+"Last-Translator: Roger Knutsen <Unknown>\n"
+"Language-Team: Norwegian Bokmal <nb@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Launchpad-Export-Date: 2024-12-05 10:20+0000\n"
+"X-Generator: Launchpad (build 1519c6efe8e9bd78e6c5ebf2eb5bcb040b95ad32)\n"
+
+#: data/captain.desktop.in:3
+msgid "Package Installer"
+msgstr "Installasjonsprogram for pakker"
+
+#: data/captain.desktop.in:4
+msgid "Install a software package"
+msgstr "Installer en programvarepakke"
+
+#: usr/lib/captain/captain.py:125 usr/lib/captain/captain.py:429
+msgid "Broken dependencies"
+msgstr "Uinnfridde avhengigheter"
+
+#: usr/lib/captain/captain.py:125 usr/lib/captain/captain.py:339
+#: usr/lib/captain/captain.py:429
+msgid "To fix this run 'sudo apt-get install -f' in a terminal window."
+msgstr ""
+"Kjør kommandoen \"sudo apt-get install -f\" i et terminalvindu for å rette "
+"feilen."
+
+#: usr/lib/captain/captain.py:134
+#, python-format
+msgid "%s is not a valid package"
+msgstr "%s er ikke en gyldig pakke"
+
+#: usr/lib/captain/captain.py:135
+#, python-format
+msgid "The MIME type of this file is '%s'."
+msgstr "MIME-typen for denne filen er '%s'."
+
+#: usr/lib/captain/captain.py:137
+#, python-format
+msgid "Could not open %s"
+msgstr "Kunne ikke åpne %s"
+
+#: usr/lib/captain/captain.py:138
+msgid "The file might be corrupted or missing permissions."
+msgstr "Filen kan være skadet eller mangle tillatelser."
+
+#: usr/lib/captain/captain.py:191
+msgid "Control files"
+msgstr "Kontroller filer"
+
+#: usr/lib/captain/captain.py:195
+msgid "Data files"
+msgstr "Datafiler"
+
+#: usr/lib/captain/captain.py:202
+msgid "Error while reading the content"
+msgstr "Feil under lesing av innholdet"
+
+#: usr/lib/captain/captain.py:229
+#, python-format
+msgid "Error: %s"
+msgstr "Feil: %s"
+
+#: usr/lib/captain/captain.py:229 usr/lib/captain/captain.py:236
+#: usr/lib/captain/captain.py:246 usr/share/captain/deb_package.ui.h:9
+msgid "_Install Package"
+msgstr "_Installer pakke"
+
+#: usr/lib/captain/captain.py:235
+#, python-format
+msgid "Error: No longer provides %s"
+msgstr "Feil: tilbyr ikke lenger %s"
+
+#: usr/lib/captain/captain.py:245
+#, python-format
+msgid "Requires changes in %d other package"
+msgid_plural "Requires changes in %d other packages"
+msgstr[0] "Krever endringer i %d annen pakke"
+msgstr[1] "Krever endringer i %d andre pakker"
+
+#: usr/lib/captain/captain.py:263
+msgid "KB"
+msgstr "KB"
+
+#: usr/lib/captain/captain.py:263
+msgid "MB"
+msgstr "MB"
+
+#: usr/lib/captain/captain.py:263 usr/lib/captain/captain.py:264
+msgid "GB"
+msgstr "GB"
+
+#: usr/lib/captain/captain.py:299
+msgid "It is safer and recommended to install from the repositories instead."
+msgstr ""
+"Det er tryggere og anbefales å installere fra programvarelagerne i stedet."
+
+#: usr/lib/captain/captain.py:302
+msgid "The same version is already installed"
+msgstr "Samme versjon er allerede installert"
+
+#: usr/lib/captain/captain.py:302
+msgid "_Reinstall Package"
+msgstr "_Reinstaller pakke"
+
+#: usr/lib/captain/captain.py:304
+msgid "This package is available in the repositories"
+msgstr "Denne pakken er tilgjengelig i programvarelagerne"
+
+#: usr/lib/captain/captain.py:306
+msgid "An older version is available in the repositories"
+msgstr "En eldre versjon er tilgjengelig i programvarelagerne"
+
+#: usr/lib/captain/captain.py:308
+msgid "A newer version is available in the repositories"
+msgstr "En nyere versjon er tilgjengelig i programvarelagerne"
+
+#: usr/lib/captain/captain.py:339
+msgid "Failed to install all dependencies"
+msgstr "Kan ikke installere alle avhengigheter"
+
+#: usr/lib/captain/captain.py:346 usr/share/captain/deb_package.ui.h:12
+#, python-format
+msgid "%s is now installed."
+msgstr "%s er nå installert."
+
+#: usr/lib/captain/captain.py:372
+msgid "The content could not be extracted"
+msgstr "Innholdet kunne ikke pakkes ut."
+
+#: usr/lib/captain/captain.py:433 usr/lib/captain/captain.py:436
+#: usr/lib/captain/captain.py:438 usr/lib/captain/captain.py:482
+#, python-format
+msgid "The package '%s' could not be installed"
+msgstr "Pakken '%s' kunne ikke installeres"
+
+#: usr/lib/captain/captain.py:433
+msgid "It was not found in the repositories."
+msgstr "Den ble ikke funnet i programvarelagerne."
+
+#: usr/lib/captain/captain.py:436
+msgid "It is already installed."
+msgstr "Den er allerede installert."
+
+#: usr/lib/captain/captain.py:438
+msgid "It is not installable."
+msgstr "Det er ikke mulig å installere den."
+
+#: usr/share/captain/apt_url.ui.h:1
+msgid "Install additional software?"
+msgstr "Installere tilleggsprogramvare?"
+
+#: usr/share/captain/apt_url.ui.h:3
+#, python-format
+msgid "Do you want to install '%s'?"
+msgstr "Ønsker du å installere '%s'?"
+
+#: usr/share/captain/apt_url.ui.h:4
+msgid "Description"
+msgstr "Beskrivelse"
+
+#: usr/share/captain/apt_url.ui.h:5
+msgid "_Install"
+msgstr "_Installer"
+
+#: usr/share/captain/deb_package.ui.h:1
+msgid "Details"
+msgstr "Detaljer"
+
+#: usr/share/captain/deb_package.ui.h:2
+msgid "The following packages need to be installed:"
+msgstr "Følgende pakker må installeres:"
+
+#: usr/share/captain/deb_package.ui.h:3
+msgid "The following packages need to be removed:"
+msgstr "Følgende pakker må fjernes:"
+
+#: usr/share/captain/deb_package.ui.h:4
+msgid "Opening the package"
+msgstr "Åpner pakken"
+
+#: usr/share/captain/deb_package.ui.h:5
+msgid "_Details"
+msgstr "_Detaljer"
+
+#: usr/share/captain/deb_package.ui.h:6
+msgid "Maintainer:"
+msgstr "Vedlikeholder:"
+
+#: usr/share/captain/deb_package.ui.h:7
+msgid "Size:"
+msgstr "Størrelse:"
+
+#: usr/share/captain/deb_package.ui.h:8
+msgid "Included files"
+msgstr "Inkluderte filer"
+
+#: usr/share/captain/deb_package.ui.h:10
+msgid "The installation was successful"
+msgstr "Installasjonen var vellykket"

@@ -1,0 +1,208 @@
+# Chinese (Traditional) translation for linuxmint
+# Copyright (c) 2024 Rosetta Contributors and Canonical Ltd 2024
+# This file is distributed under the same license as the linuxmint package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2024.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: linuxmint\n"
+"Report-Msgid-Bugs-To: FULL NAME <EMAIL@ADDRESS>\n"
+"POT-Creation-Date: 2024-09-09 13:11+0100\n"
+"PO-Revision-Date: 2024-09-28 17:51+0000\n"
+"Last-Translator: 爽自由 <coby2023t@gmail.com>\n"
+"Language-Team: Chinese (Traditional) <zh_TW@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"X-Launchpad-Export-Date: 2024-12-05 10:20+0000\n"
+"X-Generator: Launchpad (build 1519c6efe8e9bd78e6c5ebf2eb5bcb040b95ad32)\n"
+
+#: data/captain.desktop.in:3
+msgid "Package Installer"
+msgstr "套件安裝程式"
+
+#: data/captain.desktop.in:4
+msgid "Install a software package"
+msgstr "安裝軟體套件"
+
+#: usr/lib/captain/captain.py:125 usr/lib/captain/captain.py:429
+msgid "Broken dependencies"
+msgstr "套件相依性損壞"
+
+#: usr/lib/captain/captain.py:125 usr/lib/captain/captain.py:339
+#: usr/lib/captain/captain.py:429
+msgid "To fix this run 'sudo apt-get install -f' in a terminal window."
+msgstr "在終端機下執行 'sudo apt-get install -f' 來修復這問題。"
+
+#: usr/lib/captain/captain.py:134
+#, python-format
+msgid "%s is not a valid package"
+msgstr "%s 不是合法套件"
+
+#: usr/lib/captain/captain.py:135
+#, python-format
+msgid "The MIME type of this file is '%s'."
+msgstr "本檔的 MIME 類別是 '%s'。"
+
+#: usr/lib/captain/captain.py:137
+#, python-format
+msgid "Could not open %s"
+msgstr "無法開啟 %s"
+
+#: usr/lib/captain/captain.py:138
+msgid "The file might be corrupted or missing permissions."
+msgstr "檔案可能破損或權限不足"
+
+#: usr/lib/captain/captain.py:191
+msgid "Control files"
+msgstr "控制檔"
+
+#: usr/lib/captain/captain.py:195
+msgid "Data files"
+msgstr "資料檔"
+
+#: usr/lib/captain/captain.py:202
+msgid "Error while reading the content"
+msgstr "讀取內容時出錯"
+
+#: usr/lib/captain/captain.py:229
+#, python-format
+msgid "Error: %s"
+msgstr "錯誤: %s"
+
+#: usr/lib/captain/captain.py:229 usr/lib/captain/captain.py:236
+#: usr/lib/captain/captain.py:246 usr/share/captain/deb_package.ui.h:9
+msgid "_Install Package"
+msgstr "安裝套件(_I)"
+
+#: usr/lib/captain/captain.py:235
+#, python-format
+msgid "Error: No longer provides %s"
+msgstr "錯誤: 不再提供 %s"
+
+#: usr/lib/captain/captain.py:245
+#, python-format
+msgid "Requires changes in %d other package"
+msgid_plural "Requires changes in %d other packages"
+msgstr[0] "需更動 %d 個套件"
+
+#: usr/lib/captain/captain.py:263
+msgid "KB"
+msgstr "KB"
+
+#: usr/lib/captain/captain.py:263
+msgid "MB"
+msgstr "MB"
+
+#: usr/lib/captain/captain.py:263 usr/lib/captain/captain.py:264
+msgid "GB"
+msgstr "GB"
+
+#: usr/lib/captain/captain.py:299
+msgid "It is safer and recommended to install from the repositories instead."
+msgstr "建議從軟體倉庫安裝會安全些"
+
+#: usr/lib/captain/captain.py:302
+msgid "The same version is already installed"
+msgstr "已安裝相同版本了"
+
+#: usr/lib/captain/captain.py:302
+msgid "_Reinstall Package"
+msgstr "重新安裝套件(_R)"
+
+#: usr/lib/captain/captain.py:304
+msgid "This package is available in the repositories"
+msgstr "在軟體倉庫裏有此套件"
+
+#: usr/lib/captain/captain.py:306
+msgid "An older version is available in the repositories"
+msgstr "在軟體倉庫裏有舊版本"
+
+#: usr/lib/captain/captain.py:308
+msgid "A newer version is available in the repositories"
+msgstr "在軟體倉庫裏有新版本"
+
+#: usr/lib/captain/captain.py:339
+msgid "Failed to install all dependencies"
+msgstr "安裝相依性失敗"
+
+#: usr/lib/captain/captain.py:346 usr/share/captain/deb_package.ui.h:12
+#, python-format
+msgid "%s is now installed."
+msgstr "%s 已安裝。"
+
+#: usr/lib/captain/captain.py:372
+msgid "The content could not be extracted"
+msgstr "內容無法取出"
+
+#: usr/lib/captain/captain.py:433 usr/lib/captain/captain.py:436
+#: usr/lib/captain/captain.py:438 usr/lib/captain/captain.py:482
+#, python-format
+msgid "The package '%s' could not be installed"
+msgstr "無法安裝 '%s' 套件"
+
+#: usr/lib/captain/captain.py:433
+msgid "It was not found in the repositories."
+msgstr "軟體倉庫裏找不到這個"
+
+#: usr/lib/captain/captain.py:436
+msgid "It is already installed."
+msgstr "已安裝了。"
+
+#: usr/lib/captain/captain.py:438
+msgid "It is not installable."
+msgstr "無法安裝這個。"
+
+#: usr/share/captain/apt_url.ui.h:1
+msgid "Install additional software?"
+msgstr "安裝更多軟體嗎？"
+
+#: usr/share/captain/apt_url.ui.h:3
+#, python-format
+msgid "Do you want to install '%s'?"
+msgstr "要安裝 '%s' 嗎 ?"
+
+#: usr/share/captain/apt_url.ui.h:4
+msgid "Description"
+msgstr "描述"
+
+#: usr/share/captain/apt_url.ui.h:5
+msgid "_Install"
+msgstr "安裝 (_I)"
+
+#: usr/share/captain/deb_package.ui.h:1
+msgid "Details"
+msgstr "詳細資訊"
+
+#: usr/share/captain/deb_package.ui.h:2
+msgid "The following packages need to be installed:"
+msgstr "下列套件必須安裝:"
+
+#: usr/share/captain/deb_package.ui.h:3
+msgid "The following packages need to be removed:"
+msgstr "下列套件必須移除:"
+
+#: usr/share/captain/deb_package.ui.h:4
+msgid "Opening the package"
+msgstr "開啟套件"
+
+#: usr/share/captain/deb_package.ui.h:5
+msgid "_Details"
+msgstr "細節 (_D)"
+
+#: usr/share/captain/deb_package.ui.h:6
+msgid "Maintainer:"
+msgstr "維護者:"
+
+#: usr/share/captain/deb_package.ui.h:7
+msgid "Size:"
+msgstr "大小："
+
+#: usr/share/captain/deb_package.ui.h:8
+msgid "Included files"
+msgstr "包含檔案"
+
+#: usr/share/captain/deb_package.ui.h:10
+msgid "The installation was successful"
+msgstr "安裝成功"

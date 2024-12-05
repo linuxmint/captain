@@ -1,0 +1,212 @@
+# Telugu translation for linuxmint
+# Copyright (c) 2024 Rosetta Contributors and Canonical Ltd 2024
+# This file is distributed under the same license as the linuxmint package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2024.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: linuxmint\n"
+"Report-Msgid-Bugs-To: FULL NAME <EMAIL@ADDRESS>\n"
+"POT-Creation-Date: 2024-09-09 13:11+0100\n"
+"PO-Revision-Date: 2024-09-21 07:28+0000\n"
+"Last-Translator: Aryan Karamtoth <Unknown>\n"
+"Language-Team: Telugu <te@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Launchpad-Export-Date: 2024-12-05 10:20+0000\n"
+"X-Generator: Launchpad (build 1519c6efe8e9bd78e6c5ebf2eb5bcb040b95ad32)\n"
+
+#: data/captain.desktop.in:3
+msgid "Package Installer"
+msgstr "ప్యాకేజీ స్థాపకం"
+
+#: data/captain.desktop.in:4
+msgid "Install a software package"
+msgstr "సాఫ్ట్‌వేర్ ప్యాకేజీని ఇన్‌స్టాల్ చేయండి"
+
+#: usr/lib/captain/captain.py:125 usr/lib/captain/captain.py:429
+msgid "Broken dependencies"
+msgstr "విరిగిన ఆధారాలు"
+
+#: usr/lib/captain/captain.py:125 usr/lib/captain/captain.py:339
+#: usr/lib/captain/captain.py:429
+msgid "To fix this run 'sudo apt-get install -f' in a terminal window."
+msgstr ""
+"దీనిని పరిష్కరించుటకు టెర్మినల్ విండోలో 'sudo apt-get install -f' నడుపండి"
+
+#: usr/lib/captain/captain.py:134
+#, python-format
+msgid "%s is not a valid package"
+msgstr "%s చెల్లుబాటు అయ్యే ప్యాకేజీ కాదు"
+
+#: usr/lib/captain/captain.py:135
+#, python-format
+msgid "The MIME type of this file is '%s'."
+msgstr "ఈ ఫైల్ యొక్క MIME రకం '%s'."
+
+#: usr/lib/captain/captain.py:137
+#, python-format
+msgid "Could not open %s"
+msgstr "%s తెరవడం సాధ్యం కాలేదు"
+
+#: usr/lib/captain/captain.py:138
+msgid "The file might be corrupted or missing permissions."
+msgstr "ఫైల్ పాడైపోయి ఉండవచ్చు లేదా అనుమతులు లేకుండా ఉండవచ్చు."
+
+#: usr/lib/captain/captain.py:191
+msgid "Control files"
+msgstr "నియంత్రిన ఫైళ్లు"
+
+#: usr/lib/captain/captain.py:195
+msgid "Data files"
+msgstr "డేటా ఫైళ్లు"
+
+#: usr/lib/captain/captain.py:202
+msgid "Error while reading the content"
+msgstr "కంటెంట్‌ని చదివేటప్పుడు లోపం"
+
+#: usr/lib/captain/captain.py:229
+#, python-format
+msgid "Error: %s"
+msgstr "దోషము: %s"
+
+#: usr/lib/captain/captain.py:229 usr/lib/captain/captain.py:236
+#: usr/lib/captain/captain.py:246 usr/share/captain/deb_package.ui.h:9
+msgid "_Install Package"
+msgstr "ప్యాకేజీ స్థాపించు (_I)"
+
+#: usr/lib/captain/captain.py:235
+#, python-format
+msgid "Error: No longer provides %s"
+msgstr "లోపం: ఇకపై %sని అందించదు"
+
+#: usr/lib/captain/captain.py:245
+#, python-format
+msgid "Requires changes in %d other package"
+msgid_plural "Requires changes in %d other packages"
+msgstr[0] "%d ఇతర ప్యాకేజీలో మార్పులు అవసరం"
+msgstr[1] "%d ఇతర ప్యాకేజీలలో మార్పులు అవసరం"
+
+#: usr/lib/captain/captain.py:263
+msgid "KB"
+msgstr "KB"
+
+#: usr/lib/captain/captain.py:263
+msgid "MB"
+msgstr "MB"
+
+#: usr/lib/captain/captain.py:263 usr/lib/captain/captain.py:264
+msgid "GB"
+msgstr "GB"
+
+#: usr/lib/captain/captain.py:299
+msgid "It is safer and recommended to install from the repositories instead."
+msgstr ""
+"సురక్షితమైనది మరియు బదులుగా రిపోజిటరీల నుండి ఇన్‌స్టాల్ చేయడానికి సిఫార్సు "
+"చేయబడింది."
+
+#: usr/lib/captain/captain.py:302
+msgid "The same version is already installed"
+msgstr "అదే వెర్షన్ ఇప్పటికే ఇన్‌స్టాల్ చేయబడింది"
+
+#: usr/lib/captain/captain.py:302
+msgid "_Reinstall Package"
+msgstr "ప్యాకేజీని మళ్ళీస్థాపించు (_R)"
+
+#: usr/lib/captain/captain.py:304
+msgid "This package is available in the repositories"
+msgstr "ఈ ప్యాకేజీ రిపోజిటరీలలో అందుబాటులో ఉంది"
+
+#: usr/lib/captain/captain.py:306
+msgid "An older version is available in the repositories"
+msgstr "రిపోజిటరీలలో పాత వెర్షన్ అందుబాటులో ఉంది"
+
+#: usr/lib/captain/captain.py:308
+msgid "A newer version is available in the repositories"
+msgstr "రిపోజిటరీలలో కొత్త వెర్షన్ అందుబాటులో ఉంది"
+
+#: usr/lib/captain/captain.py:339
+msgid "Failed to install all dependencies"
+msgstr "అన్ని డిపెండెన్సీలను ఇన్‌స్టాల్ చేయడంలో విఫలమైంది"
+
+#: usr/lib/captain/captain.py:346 usr/share/captain/deb_package.ui.h:12
+#, python-format
+msgid "%s is now installed."
+msgstr "%s ఇప్పుడు ఇన్‌స్టాల్ చేయబడింది."
+
+#: usr/lib/captain/captain.py:372
+msgid "The content could not be extracted"
+msgstr "కంటెంట్‌ని సంగ్రహించడం సాధ్యపడలేదు"
+
+#: usr/lib/captain/captain.py:433 usr/lib/captain/captain.py:436
+#: usr/lib/captain/captain.py:438 usr/lib/captain/captain.py:482
+#, python-format
+msgid "The package '%s' could not be installed"
+msgstr "'%s' ప్యాకేజీని ఇన్‌స్టాల్ చేయడం సాధ్యపడలేదు"
+
+#: usr/lib/captain/captain.py:433
+msgid "It was not found in the repositories."
+msgstr "ఇది రిపోజిటరీలలో కనుగొనబడలేదు."
+
+#: usr/lib/captain/captain.py:436
+msgid "It is already installed."
+msgstr "ఇది ఇప్పటికే ఇన్‌స్టాల్ చేయబడింది."
+
+#: usr/lib/captain/captain.py:438
+msgid "It is not installable."
+msgstr "ఇది ఇన్‌స్టాల్ చేయదగినది కాదు."
+
+#: usr/share/captain/apt_url.ui.h:1
+msgid "Install additional software?"
+msgstr "అదనపు సాఫ్ట్‌వేర్‌ను ఇన్‌స్టాల్ చేయాలా?"
+
+#: usr/share/captain/apt_url.ui.h:3
+#, python-format
+msgid "Do you want to install '%s'?"
+msgstr "మీరు '%s'ని ఇన్‌స్టాల్ చేయాలనుకుంటున్నారా?"
+
+#: usr/share/captain/apt_url.ui.h:4
+msgid "Description"
+msgstr "వివరణ"
+
+#: usr/share/captain/apt_url.ui.h:5
+msgid "_Install"
+msgstr "స్థాపించు (_I)"
+
+#: usr/share/captain/deb_package.ui.h:1
+msgid "Details"
+msgstr "వివరాలు"
+
+#: usr/share/captain/deb_package.ui.h:2
+msgid "The following packages need to be installed:"
+msgstr "కింది ప్యాకేజీలను ఇన్‌స్టాల్ చేయాలి:"
+
+#: usr/share/captain/deb_package.ui.h:3
+msgid "The following packages need to be removed:"
+msgstr "కింది ప్యాకేజీలను తీసివేయాలి:"
+
+#: usr/share/captain/deb_package.ui.h:4
+msgid "Opening the package"
+msgstr "ప్యాకేజీని తెరుస్తున్నాము"
+
+#: usr/share/captain/deb_package.ui.h:5
+msgid "_Details"
+msgstr "వివరాలు (_D)"
+
+#: usr/share/captain/deb_package.ui.h:6
+msgid "Maintainer:"
+msgstr "నిర్వహణ:"
+
+#: usr/share/captain/deb_package.ui.h:7
+msgid "Size:"
+msgstr "పరిమాణం:"
+
+#: usr/share/captain/deb_package.ui.h:8
+msgid "Included files"
+msgstr "చేర్చబడిన ఫైళ్ళు"
+
+#: usr/share/captain/deb_package.ui.h:10
+msgid "The installation was successful"
+msgstr "సంస్థాపన విజయవంతమైంది"

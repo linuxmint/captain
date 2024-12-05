@@ -1,0 +1,209 @@
+# Japanese translation for linuxmint
+# Copyright (c) 2024 Rosetta Contributors and Canonical Ltd 2024
+# This file is distributed under the same license as the linuxmint package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2024.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: linuxmint\n"
+"Report-Msgid-Bugs-To: FULL NAME <EMAIL@ADDRESS>\n"
+"POT-Creation-Date: 2024-09-09 13:11+0100\n"
+"PO-Revision-Date: 2024-10-31 16:48+0000\n"
+"Last-Translator: kmyyfz8q <Unknown>\n"
+"Language-Team: Japanese <ja@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"X-Launchpad-Export-Date: 2024-12-05 10:20+0000\n"
+"X-Generator: Launchpad (build 1519c6efe8e9bd78e6c5ebf2eb5bcb040b95ad32)\n"
+"Language: ja\n"
+
+#: data/captain.desktop.in:3
+msgid "Package Installer"
+msgstr "パッケージインストーラー"
+
+#: data/captain.desktop.in:4
+msgid "Install a software package"
+msgstr "ソフトウェアパッケージをインストール"
+
+#: usr/lib/captain/captain.py:125 usr/lib/captain/captain.py:429
+msgid "Broken dependencies"
+msgstr "壊れた依存関係"
+
+#: usr/lib/captain/captain.py:125 usr/lib/captain/captain.py:339
+#: usr/lib/captain/captain.py:429
+msgid "To fix this run 'sudo apt-get install -f' in a terminal window."
+msgstr "これを修正するには、端末ウィンドウで 'sudo apt-get install -f' を実行してください。"
+
+#: usr/lib/captain/captain.py:134
+#, python-format
+msgid "%s is not a valid package"
+msgstr "%s は有効なパッケージではありません"
+
+#: usr/lib/captain/captain.py:135
+#, python-format
+msgid "The MIME type of this file is '%s'."
+msgstr "このファイルの MIME 型は '%s' です。"
+
+#: usr/lib/captain/captain.py:137
+#, python-format
+msgid "Could not open %s"
+msgstr "%s を開けませんでした"
+
+#: usr/lib/captain/captain.py:138
+msgid "The file might be corrupted or missing permissions."
+msgstr "おそらくファイルが破損しているか、必要な権限がありません。"
+
+#: usr/lib/captain/captain.py:191
+msgid "Control files"
+msgstr "制御ファイル"
+
+#: usr/lib/captain/captain.py:195
+msgid "Data files"
+msgstr "データファイル"
+
+#: usr/lib/captain/captain.py:202
+msgid "Error while reading the content"
+msgstr "内容の読み取り中にエラーがありました"
+
+#: usr/lib/captain/captain.py:229
+#, python-format
+msgid "Error: %s"
+msgstr "エラー: %s"
+
+#: usr/lib/captain/captain.py:229 usr/lib/captain/captain.py:236
+#: usr/lib/captain/captain.py:246 usr/share/captain/deb_package.ui.h:9
+msgid "_Install Package"
+msgstr "パッケージをインストール (_I)"
+
+#: usr/lib/captain/captain.py:235
+#, python-format
+msgid "Error: No longer provides %s"
+msgstr "エラー: %s はもう提供されていません"
+
+#: usr/lib/captain/captain.py:245
+#, python-format
+msgid "Requires changes in %d other package"
+msgid_plural "Requires changes in %d other packages"
+msgstr[0] "他にも %d 個のパッケージの変更が必要です"
+
+#: usr/lib/captain/captain.py:263
+msgid "KB"
+msgstr "KB"
+
+#: usr/lib/captain/captain.py:263
+msgid "MB"
+msgstr "MB"
+
+#: usr/lib/captain/captain.py:263 usr/lib/captain/captain.py:264
+msgid "GB"
+msgstr "GB"
+
+#: usr/lib/captain/captain.py:299
+msgid "It is safer and recommended to install from the repositories instead."
+msgstr "リポジトリからインストールするほうが安全でおすすめです。"
+
+#: usr/lib/captain/captain.py:302
+msgid "The same version is already installed"
+msgstr "すでに同じバージョンがインストールされています"
+
+#: usr/lib/captain/captain.py:302
+msgid "_Reinstall Package"
+msgstr "パッケージを再インストール (_R)"
+
+#: usr/lib/captain/captain.py:304
+msgid "This package is available in the repositories"
+msgstr "このパッケージはリポジトリから利用できます"
+
+#: usr/lib/captain/captain.py:306
+msgid "An older version is available in the repositories"
+msgstr "古いバージョンがリポジトリから利用できます"
+
+#: usr/lib/captain/captain.py:308
+msgid "A newer version is available in the repositories"
+msgstr "新しいバージョンがリポジトリから利用できます"
+
+#: usr/lib/captain/captain.py:339
+msgid "Failed to install all dependencies"
+msgstr "すべての依存関係をインストールできませんでした"
+
+#: usr/lib/captain/captain.py:346 usr/share/captain/deb_package.ui.h:12
+#, python-format
+msgid "%s is now installed."
+msgstr "%s がインストールされました。"
+
+#: usr/lib/captain/captain.py:372
+msgid "The content could not be extracted"
+msgstr "内容を抽出できませんでした"
+
+#: usr/lib/captain/captain.py:433 usr/lib/captain/captain.py:436
+#: usr/lib/captain/captain.py:438 usr/lib/captain/captain.py:482
+#, python-format
+msgid "The package '%s' could not be installed"
+msgstr "パッケージ '%s' をインストールできませんでした"
+
+#: usr/lib/captain/captain.py:433
+msgid "It was not found in the repositories."
+msgstr "パッケージがリポジトリから見つかりませんでした。"
+
+#: usr/lib/captain/captain.py:436
+msgid "It is already installed."
+msgstr "すでにパッケージがインストールされています。"
+
+#: usr/lib/captain/captain.py:438
+msgid "It is not installable."
+msgstr "パッケージがインストール可能ではありません。"
+
+#: usr/share/captain/apt_url.ui.h:1
+msgid "Install additional software?"
+msgstr "追加のソフトウェアをインストールしますか？"
+
+#: usr/share/captain/apt_url.ui.h:3
+#, python-format
+msgid "Do you want to install '%s'?"
+msgstr "'%s' をインストールしますか？"
+
+#: usr/share/captain/apt_url.ui.h:4
+msgid "Description"
+msgstr "説明"
+
+#: usr/share/captain/apt_url.ui.h:5
+msgid "_Install"
+msgstr "インストール (_I)"
+
+#: usr/share/captain/deb_package.ui.h:1
+msgid "Details"
+msgstr "詳細"
+
+#: usr/share/captain/deb_package.ui.h:2
+msgid "The following packages need to be installed:"
+msgstr "次のパッケージをインストールする必要があります:"
+
+#: usr/share/captain/deb_package.ui.h:3
+msgid "The following packages need to be removed:"
+msgstr "次のパッケージを削除する必要があります:"
+
+#: usr/share/captain/deb_package.ui.h:4
+msgid "Opening the package"
+msgstr "パッケージを開いています"
+
+#: usr/share/captain/deb_package.ui.h:5
+msgid "_Details"
+msgstr "詳細 (_D)"
+
+#: usr/share/captain/deb_package.ui.h:6
+msgid "Maintainer:"
+msgstr "メンテナー:"
+
+#: usr/share/captain/deb_package.ui.h:7
+msgid "Size:"
+msgstr "サイズ:"
+
+#: usr/share/captain/deb_package.ui.h:8
+msgid "Included files"
+msgstr "含まれているファイル"
+
+#: usr/share/captain/deb_package.ui.h:10
+msgid "The installation was successful"
+msgstr "インストールに成功しました"

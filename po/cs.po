@@ -1,0 +1,211 @@
+# Czech translation for linuxmint
+# Copyright (c) 2024 Rosetta Contributors and Canonical Ltd 2024
+# This file is distributed under the same license as the linuxmint package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2024.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: linuxmint\n"
+"Report-Msgid-Bugs-To: FULL NAME <EMAIL@ADDRESS>\n"
+"POT-Creation-Date: 2024-09-09 13:11+0100\n"
+"PO-Revision-Date: 2024-09-30 10:42+0000\n"
+"Last-Translator: Marek Hladík <mhladik@seznam.cz>\n"
+"Language-Team: Czech <cs@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=3; plural=(n==1) ? 0 : (n>=2 && n<=4) ? 1 : 2;\n"
+"X-Launchpad-Export-Date: 2024-12-05 10:20+0000\n"
+"X-Generator: Launchpad (build 1519c6efe8e9bd78e6c5ebf2eb5bcb040b95ad32)\n"
+
+#: data/captain.desktop.in:3
+msgid "Package Installer"
+msgstr "Instalátor balíčků"
+
+#: data/captain.desktop.in:4
+msgid "Install a software package"
+msgstr "Nainstalovat softwarový balíček"
+
+#: usr/lib/captain/captain.py:125 usr/lib/captain/captain.py:429
+msgid "Broken dependencies"
+msgstr "Poškozené závislosti"
+
+#: usr/lib/captain/captain.py:125 usr/lib/captain/captain.py:339
+#: usr/lib/captain/captain.py:429
+msgid "To fix this run 'sudo apt-get install -f' in a terminal window."
+msgstr ""
+"Lze vyřešit spuštěním \"sudo apt-get install -f\" v terminálovém okně."
+
+#: usr/lib/captain/captain.py:134
+#, python-format
+msgid "%s is not a valid package"
+msgstr "%s není platný balíček"
+
+#: usr/lib/captain/captain.py:135
+#, python-format
+msgid "The MIME type of this file is '%s'."
+msgstr "Typ MIME tohoto souboru je '%s'."
+
+#: usr/lib/captain/captain.py:137
+#, python-format
+msgid "Could not open %s"
+msgstr "%s nelze otevřít"
+
+#: usr/lib/captain/captain.py:138
+msgid "The file might be corrupted or missing permissions."
+msgstr "Soubor může být poškozen nebo chybí oprávnění."
+
+#: usr/lib/captain/captain.py:191
+msgid "Control files"
+msgstr "Řídicí soubory"
+
+#: usr/lib/captain/captain.py:195
+msgid "Data files"
+msgstr "Datové soubory"
+
+#: usr/lib/captain/captain.py:202
+msgid "Error while reading the content"
+msgstr "Chyba při čtení obsahu"
+
+#: usr/lib/captain/captain.py:229
+#, python-format
+msgid "Error: %s"
+msgstr "Chyba: %s"
+
+#: usr/lib/captain/captain.py:229 usr/lib/captain/captain.py:236
+#: usr/lib/captain/captain.py:246 usr/share/captain/deb_package.ui.h:9
+msgid "_Install Package"
+msgstr "Na_instalovat balíček"
+
+#: usr/lib/captain/captain.py:235
+#, python-format
+msgid "Error: No longer provides %s"
+msgstr "Chyba: Již není poskytováno %s"
+
+#: usr/lib/captain/captain.py:245
+#, python-format
+msgid "Requires changes in %d other package"
+msgid_plural "Requires changes in %d other packages"
+msgstr[0] "Vyžaduje změny v %d dalším balíčku"
+msgstr[1] "Vyžaduje změny ve %d dalších balíčkách"
+msgstr[2] "Vyžaduje změny v %d dalších balíčkách"
+
+#: usr/lib/captain/captain.py:263
+msgid "KB"
+msgstr "kB"
+
+#: usr/lib/captain/captain.py:263
+msgid "MB"
+msgstr "MB"
+
+#: usr/lib/captain/captain.py:263 usr/lib/captain/captain.py:264
+msgid "GB"
+msgstr "GB"
+
+#: usr/lib/captain/captain.py:299
+msgid "It is safer and recommended to install from the repositories instead."
+msgstr "Je bezpečnější a doporučuje se instalovat z repozitářů místo tohoto."
+
+#: usr/lib/captain/captain.py:302
+msgid "The same version is already installed"
+msgstr "Stejná verze je již nainstalována"
+
+#: usr/lib/captain/captain.py:302
+msgid "_Reinstall Package"
+msgstr "_Přeinstalovat balíček"
+
+#: usr/lib/captain/captain.py:304
+msgid "This package is available in the repositories"
+msgstr "Tento balíček je k dispozici v repozitářích"
+
+#: usr/lib/captain/captain.py:306
+msgid "An older version is available in the repositories"
+msgstr "V repozitářích je k dispozici starší verze"
+
+#: usr/lib/captain/captain.py:308
+msgid "A newer version is available in the repositories"
+msgstr "V repozitářích je k dispozici novější verze"
+
+#: usr/lib/captain/captain.py:339
+msgid "Failed to install all dependencies"
+msgstr "Nepodařilo se nainstalovat všechny závislosti"
+
+#: usr/lib/captain/captain.py:346 usr/share/captain/deb_package.ui.h:12
+#, python-format
+msgid "%s is now installed."
+msgstr "%s je nyní nainstalováno."
+
+#: usr/lib/captain/captain.py:372
+msgid "The content could not be extracted"
+msgstr "Obsah se nepodařilo rozbalit"
+
+#: usr/lib/captain/captain.py:433 usr/lib/captain/captain.py:436
+#: usr/lib/captain/captain.py:438 usr/lib/captain/captain.py:482
+#, python-format
+msgid "The package '%s' could not be installed"
+msgstr "Balíček '%s' nelze nainstalovat"
+
+#: usr/lib/captain/captain.py:433
+msgid "It was not found in the repositories."
+msgstr "Nebylo nalezeno v repozitářích."
+
+#: usr/lib/captain/captain.py:436
+msgid "It is already installed."
+msgstr "Je již nainstalováno."
+
+#: usr/lib/captain/captain.py:438
+msgid "It is not installable."
+msgstr "Není instalovatelný."
+
+#: usr/share/captain/apt_url.ui.h:1
+msgid "Install additional software?"
+msgstr "Nainstalovat dodatečný software?"
+
+#: usr/share/captain/apt_url.ui.h:3
+#, python-format
+msgid "Do you want to install '%s'?"
+msgstr "Chcete nainstalovat '%s'?"
+
+#: usr/share/captain/apt_url.ui.h:4
+msgid "Description"
+msgstr "Popis"
+
+#: usr/share/captain/apt_url.ui.h:5
+msgid "_Install"
+msgstr "Na_instalovat"
+
+#: usr/share/captain/deb_package.ui.h:1
+msgid "Details"
+msgstr "Podrobnosti"
+
+#: usr/share/captain/deb_package.ui.h:2
+msgid "The following packages need to be installed:"
+msgstr "Následující balíčky je třeba nainstalovat:"
+
+#: usr/share/captain/deb_package.ui.h:3
+msgid "The following packages need to be removed:"
+msgstr "Následující balíčky je třeba odstranit:"
+
+#: usr/share/captain/deb_package.ui.h:4
+msgid "Opening the package"
+msgstr "Otevření balíčku"
+
+#: usr/share/captain/deb_package.ui.h:5
+msgid "_Details"
+msgstr "_Podrobnosti"
+
+#: usr/share/captain/deb_package.ui.h:6
+msgid "Maintainer:"
+msgstr "Správce:"
+
+#: usr/share/captain/deb_package.ui.h:7
+msgid "Size:"
+msgstr "Velikost:"
+
+#: usr/share/captain/deb_package.ui.h:8
+msgid "Included files"
+msgstr "Obsažené soubory"
+
+#: usr/share/captain/deb_package.ui.h:10
+msgid "The installation was successful"
+msgstr "Instalace proběhla úspěšně"
