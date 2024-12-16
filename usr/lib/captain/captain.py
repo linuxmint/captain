@@ -269,20 +269,14 @@ class App():
         # check if the package is available in the repository
         all_ok = True
         if self.deb.pkgname in self.cache:
+            all_ok = False
             pkg = self.cache[self.deb.pkgname]
-            if pkg.candidate and pkg.candidate.downloadable:
-                all_ok = False
-                res = self.deb.compare_to_version_in_cache(use_installed=True)
+            res = self.deb.compare_to_version_in_cache(use_installed=True)
+            if res == apt.debfile.DebPackage.VERSION_SAME and pkg.installed:
+                self.set_package_status(Gtk.MessageType.INFO, _("The same version is already installed"), _("_Reinstall Package"))
+            elif pkg.candidate and pkg.candidate.downloadable:
                 msg = _("It is safer and recommended to install from the repositories instead.")
-                if res == apt.debfile.DebPackage.VERSION_SAME:
-                    if pkg.installed:
-                        self.set_package_status(Gtk.MessageType.INFO, _("The same version is already installed"), _("_Reinstall Package"))
-                    else:
-                        self.uih.show_dialog(Gtk.MessageType.INFO, _("This package is available in the repositories"), msg)
-                elif res == apt.debfile.DebPackage.VERSION_NEWER:
-                    self.uih.show_dialog(Gtk.MessageType.INFO, _("An older version is available in the repositories"), msg)
-                elif res == apt.debfile.DebPackage.VERSION_OUTDATED:
-                    self.uih.show_dialog(Gtk.MessageType.INFO, _("A newer version is available in the repositories"), msg)
+                self.uih.show_dialog(Gtk.MessageType.INFO, _("This package is available in the repositories"), msg)
         return all_ok
 
 
