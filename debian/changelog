@@ -1,3 +1,10 @@
+captain (1.0.3) xia; urgency=medium
+
+  * Fix exception for .deb files missing an "Installed-Size"
+  * Fix and simplify version/candidate check
+
+ -- Clement Lefebvre <root@linuxmint.com>  Mon, 16 Dec 2024 13:33:05 +0000
+
 captain (1.0.2) xia; urgency=medium
 
   * l10n: Update translations

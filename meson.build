@@ -1,4 +1,4 @@
-project('captain', version : '1.0.2')
+project('captain', version : '1.0.3')
 
 i18n = import('i18n')
 
