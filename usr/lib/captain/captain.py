@@ -125,6 +125,20 @@ class App():
             self.uih.show_critical(_("Broken dependencies"), _("To fix this run 'sudo apt-get install -f' in a terminal window."))
         try:
             self.deb = apt.debfile.DebPackage(self.absolute_path, self.cache)
+            # Initiate control values to empty strings
+            # some .deb don't contain this information
+            self.version = ""
+            self.maintainer = ""
+            self.description = ""
+            self.installed_size = ""
+            if "Version" in self.deb:
+                self.version = self.deb["Version"]
+            if "Maintainer" in self.deb:
+                self.maintainer = self.deb["Maintainer"]
+            if "Description" in self.deb:
+                self.description = self.deb["Description"]
+            if "Installed-Size" in self.deb:
+                self.installed_size = self.round_size(self.deb["Installed-Size"])
             self.on_file_loaded()
         except (IOError, SystemError, ValueError) as e:
             print("Open failed with %s" % e)
@@ -143,10 +157,10 @@ class App():
         self.ui_main_stack.set_visible_child_name("main_page")
         self.ui_window.set_title(self.deb.pkgname)
         self.ui_headerbar.set_title(self.deb.pkgname)
-        self.ui_headerbar.set_subtitle(self.deb["Version"])
-        self.ui_maintainer_label.set_text(self.deb["Maintainer"])
-        self.ui_size_label.set_text(self.round_size(self.deb["Installed-Size"]))
-        set_description(self.ui_textview_description, None, self.deb["Description"])
+        self.ui_headerbar.set_subtitle(self.version)
+        self.ui_maintainer_label.set_text(self.maintainer)
+        self.ui_size_label.set_text(self.installed_size)
+        set_description(self.ui_textview_description, None, self.description)
 
         # set content
         store = Gtk.TreeStore(str)
@@ -303,9 +317,9 @@ class App():
         if self.deb.pkgname in cache:
             pkg = cache[self.deb.pkgname]
             if pkg.is_installed:
-                if str(pkg.installed.version) == str(self.deb["Version"]):
+                if str(pkg.installed.version) == str(self.version):
                     self.ui_main_stack.set_visible_child_name("page_success")
-                    pkg_str = "%s %s" % (self.deb.pkgname, self.deb["Version"])
+                    pkg_str = "%s %s" % (self.deb.pkgname, self.version)
                     self.ui_success_label.set_text(_("%s is now installed.") % pkg_str)
                     self.ui_window.set_sensitive(True)
 
