@@ -486,11 +486,11 @@ class URLApp():
         except Exception as e:
             self.uih.show_critical(_("The package '%s' could not be installed") % self.pkgname, str(e))
 
-if len(sys.argv) != 2:
+if len(sys.argv) < 2:
     print("Usage: captain filename.deb")
     sys.exit(1)
 
-argument = os.path.expanduser(sys.argv[1])
+argument = os.path.expanduser(' '.join(sys.argv[1:]))
 
 if "apt://" in argument:
     app = URLApp(argument)
