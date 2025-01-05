@@ -1,3 +1,9 @@
+captain (1.0.4) xia; urgency=medium
+
+  * Fix opening .deb files with spaces in their path
+
+ -- Clement Lefebvre <root@linuxmint.com>  Sun, 05 Jan 2025 09:58:42 +0000
+
 captain (1.0.3) xia; urgency=medium
 
   * Fix exception for .deb files missing an "Installed-Size"
