@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: linuxmint\n"
 "Report-Msgid-Bugs-To: FULL NAME <EMAIL@ADDRESS>\n"
 "POT-Creation-Date: 2024-09-09 13:11+0100\n"
-"PO-Revision-Date: 2024-12-02 23:32+0000\n"
+"PO-Revision-Date: 2024-12-08 00:29+0000\n"
 "Last-Translator: Moo <hazap@hotmail.com>\n"
 "Language-Team: Lithuanian <lt@li.org>\n"
 "MIME-Version: 1.0\n"
@@ -16,8 +16,8 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=n%10==1 && n%100!=11 ? 0 : n%10>=2 && "
 "(n%100<10 || n%100>=20) ? 1 : 2;\n"
-"X-Launchpad-Export-Date: 2024-12-05 10:20+0000\n"
-"X-Generator: Launchpad (build 1519c6efe8e9bd78e6c5ebf2eb5bcb040b95ad32)\n"
+"X-Launchpad-Export-Date: 2025-01-06 12:02+0000\n"
+"X-Generator: Launchpad (build 6394e03793719e8d73f5a60b5439440e693c92f1)\n"
 
 #: data/captain.desktop.in:3
 msgid "Package Installer"
@@ -44,7 +44,7 @@ msgstr ""
 #: usr/lib/captain/captain.py:135
 #, python-format
 msgid "The MIME type of this file is '%s'."
-msgstr ""
+msgstr "Šio failo MIME tipas yra „%s“"
 
 #: usr/lib/captain/captain.py:137
 #, python-format
@@ -53,7 +53,7 @@ msgstr "Nepavyko atverti %s"
 
 #: usr/lib/captain/captain.py:138
 msgid "The file might be corrupted or missing permissions."
-msgstr ""
+msgstr "Gali būti, kad failas yra pažeistas arba trūksta leidimų."
 
 #: usr/lib/captain/captain.py:191
 msgid "Control files"
@@ -65,7 +65,7 @@ msgstr "Duomenų failai"
 
 #: usr/lib/captain/captain.py:202
 msgid "Error while reading the content"
-msgstr ""
+msgstr "Klaida skaitant turinį"
 
 #: usr/lib/captain/captain.py:229
 #, python-format
@@ -132,7 +132,7 @@ msgstr "Nepavyko įdiegti visų priklausomybių"
 #: usr/lib/captain/captain.py:346 usr/share/captain/deb_package.ui.h:12
 #, python-format
 msgid "%s is now installed."
-msgstr ""
+msgstr "Dabar %s yra įdiegtas."
 
 #: usr/lib/captain/captain.py:372
 msgid "The content could not be extracted"
@@ -142,15 +142,15 @@ msgstr ""
 #: usr/lib/captain/captain.py:438 usr/lib/captain/captain.py:482
 #, python-format
 msgid "The package '%s' could not be installed"
-msgstr ""
+msgstr "Nepavyko įdiegti paketo „%s“"
 
 #: usr/lib/captain/captain.py:433
 msgid "It was not found in the repositories."
-msgstr ""
+msgstr "Jis nebuvo rastas saugyklose."
 
 #: usr/lib/captain/captain.py:436
 msgid "It is already installed."
-msgstr ""
+msgstr "Jis jau yra įdiegtas."
 
 #: usr/lib/captain/captain.py:438
 msgid "It is not installable."
@@ -195,16 +195,16 @@ msgstr "_Išsamiau"
 
 #: usr/share/captain/deb_package.ui.h:6
 msgid "Maintainer:"
-msgstr ""
+msgstr "Prižiūrėtojas:"
 
 #: usr/share/captain/deb_package.ui.h:7
 msgid "Size:"
-msgstr ""
+msgstr "Dydis:"
 
 #: usr/share/captain/deb_package.ui.h:8
 msgid "Included files"
-msgstr ""
+msgstr "Įtraukti failai"
 
 #: usr/share/captain/deb_package.ui.h:10
 msgid "The installation was successful"
-msgstr ""
+msgstr "Įdiegimas buvo sėkmingas"

@@ -8,19 +8,19 @@ msgstr ""
 "Project-Id-Version: linuxmint\n"
 "Report-Msgid-Bugs-To: FULL NAME <EMAIL@ADDRESS>\n"
 "POT-Creation-Date: 2024-09-09 13:11+0100\n"
-"PO-Revision-Date: 2024-09-12 16:12+0000\n"
+"PO-Revision-Date: 2025-01-06 11:31+0000\n"
 "Last-Translator: Clement Lefebvre <root@linuxmint.com>\n"
 "Language-Team: French <fr@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n > 1;\n"
-"X-Launchpad-Export-Date: 2024-12-05 10:20+0000\n"
-"X-Generator: Launchpad (build 1519c6efe8e9bd78e6c5ebf2eb5bcb040b95ad32)\n"
+"X-Launchpad-Export-Date: 2025-01-06 12:02+0000\n"
+"X-Generator: Launchpad (build 6394e03793719e8d73f5a60b5439440e693c92f1)\n"
 
 #: data/captain.desktop.in:3
 msgid "Package Installer"
-msgstr "Installateur de paquets"
+msgstr "Programme d’installation de paquets"
 
 #: data/captain.desktop.in:4
 msgid "Install a software package"
@@ -28,7 +28,7 @@ msgstr "Installer un paquet logiciel"
 
 #: usr/lib/captain/captain.py:125 usr/lib/captain/captain.py:429
 msgid "Broken dependencies"
-msgstr "Dépendances cassées"
+msgstr "Dépendances non satisfaites"
 
 #: usr/lib/captain/captain.py:125 usr/lib/captain/captain.py:339
 #: usr/lib/captain/captain.py:429
@@ -40,7 +40,7 @@ msgstr ""
 #: usr/lib/captain/captain.py:134
 #, python-format
 msgid "%s is not a valid package"
-msgstr "%s n'est pas un paquet valide"
+msgstr "%s n’est pas un paquet valide"
 
 #: usr/lib/captain/captain.py:135
 #, python-format
@@ -54,8 +54,7 @@ msgstr "Impossible d’ouvrir %s"
 
 #: usr/lib/captain/captain.py:138
 msgid "The file might be corrupted or missing permissions."
-msgstr ""
-"Le fichier est peut-être corrompu ou des permissions sont manquantes."
+msgstr "Le fichier peut être corrompu ou des droits manquent."
 
 #: usr/lib/captain/captain.py:191
 msgid "Control files"
@@ -67,12 +66,12 @@ msgstr "Fichiers de données"
 
 #: usr/lib/captain/captain.py:202
 msgid "Error while reading the content"
-msgstr "Erreur lors de la lecture du contenu"
+msgstr "Erreur de lecture du contenu"
 
 #: usr/lib/captain/captain.py:229
 #, python-format
 msgid "Error: %s"
-msgstr "Erreur : %s"
+msgstr "Erreur : %s"
 
 #: usr/lib/captain/captain.py:229 usr/lib/captain/captain.py:236
 #: usr/lib/captain/captain.py:246 usr/share/captain/deb_package.ui.h:9
@@ -82,14 +81,14 @@ msgstr "_Installer le paquet"
 #: usr/lib/captain/captain.py:235
 #, python-format
 msgid "Error: No longer provides %s"
-msgstr "Erreur : %s n'est plus fourni"
+msgstr "Erreur : %s n’est plus fourni"
 
 #: usr/lib/captain/captain.py:245
 #, python-format
 msgid "Requires changes in %d other package"
 msgid_plural "Requires changes in %d other packages"
-msgstr[0] "Requiert des changements dans %d autre paquet"
-msgstr[1] "Requiert des changements dans %d autres paquets"
+msgstr[0] "Des changements sont nécessaires dans %d autre paquet"
+msgstr[1] "Des changements sont nécessaires dans %d autres paquets"
 
 #: usr/lib/captain/captain.py:263
 msgid "KB"
@@ -105,7 +104,7 @@ msgstr "Go"
 
 #: usr/lib/captain/captain.py:299
 msgid "It is safer and recommended to install from the repositories instead."
-msgstr "Il est plus sûr et recommandé d'installer à partir des dépôts."
+msgstr "Il est plus sûr et recommandé d’installer à partir des dépôts."
 
 #: usr/lib/captain/captain.py:302
 msgid "The same version is already installed"
@@ -117,19 +116,19 @@ msgstr "_Réinstaller le paquet"
 
 #: usr/lib/captain/captain.py:304
 msgid "This package is available in the repositories"
-msgstr "Ce paquet est disponible dans les dépôts"
+msgstr "Ce paquet est présent dans les dépôts"
 
 #: usr/lib/captain/captain.py:306
 msgid "An older version is available in the repositories"
-msgstr "Une version plus ancienne est disponible dans les dépôts"
+msgstr "Une version antérieure est présente dans les dépôts"
 
 #: usr/lib/captain/captain.py:308
 msgid "A newer version is available in the repositories"
-msgstr "Une version plus récente est disponible dans les dépôts"
+msgstr "Une version plus récente est présente dans les dépôts"
 
 #: usr/lib/captain/captain.py:339
 msgid "Failed to install all dependencies"
-msgstr "Impossible d'installer les dépendances"
+msgstr "Échec d’installation des dépendances"
 
 #: usr/lib/captain/captain.py:346 usr/share/captain/deb_package.ui.h:12
 #, python-format
@@ -138,34 +137,34 @@ msgstr "%s est désormais installé."
 
 #: usr/lib/captain/captain.py:372
 msgid "The content could not be extracted"
-msgstr "Impossible d'extraire le contenu"
+msgstr "Impossible d’extraire le contenu"
 
 #: usr/lib/captain/captain.py:433 usr/lib/captain/captain.py:436
 #: usr/lib/captain/captain.py:438 usr/lib/captain/captain.py:482
 #, python-format
 msgid "The package '%s' could not be installed"
-msgstr "Impossible d'installer le paquet '%s'"
+msgstr "Impossible d’installer le paquet '%s'"
 
 #: usr/lib/captain/captain.py:433
 msgid "It was not found in the repositories."
-msgstr "Il est introuvable dans les dépôts."
+msgstr "Le paquet ne se trouve dans aucun dépôt."
 
 #: usr/lib/captain/captain.py:436
 msgid "It is already installed."
-msgstr "Il est déjà installé."
+msgstr "Le paquet est déjà installé."
 
 #: usr/lib/captain/captain.py:438
 msgid "It is not installable."
-msgstr "Il n'est pas installable."
+msgstr "Le paquet n’est pas installable."
 
 #: usr/share/captain/apt_url.ui.h:1
 msgid "Install additional software?"
-msgstr "Installer des paquets supplémentaires ?"
+msgstr "Installer des logiciels supplémentaires ?"
 
 #: usr/share/captain/apt_url.ui.h:3
 #, python-format
 msgid "Do you want to install '%s'?"
-msgstr "Voulez-vous installer '%s' ?"
+msgstr "Voulez-vous installer '%s' ?"
 
 #: usr/share/captain/apt_url.ui.h:4
 msgid "Description"
@@ -185,7 +184,7 @@ msgstr "Les paquets suivants doivent être installés :"
 
 #: usr/share/captain/deb_package.ui.h:3
 msgid "The following packages need to be removed:"
-msgstr "Les paquets suivants doivent être supprimés :"
+msgstr "Les paquets suivants doivent être supprimés :"
 
 #: usr/share/captain/deb_package.ui.h:4
 msgid "Opening the package"
@@ -197,16 +196,16 @@ msgstr "_Détails"
 
 #: usr/share/captain/deb_package.ui.h:6
 msgid "Maintainer:"
-msgstr "Mainteneur :"
+msgstr "Mainteneur :"
 
 #: usr/share/captain/deb_package.ui.h:7
 msgid "Size:"
-msgstr "Taille :"
+msgstr "Taille :"
 
 #: usr/share/captain/deb_package.ui.h:8
 msgid "Included files"
-msgstr "Fichiers inclus"
+msgstr "Fichiers compris"
 
 #: usr/share/captain/deb_package.ui.h:10
 msgid "The installation was successful"
-msgstr "L'installation s'est terminée avec succès"
+msgstr "L’installation est réussie"

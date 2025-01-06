@@ -1,4 +1,4 @@
-# French (Canada) translation for linuxmint
+# Esperanto translation for linuxmint
 # Copyright (c) 2024 Rosetta Contributors and Canonical Ltd 2024
 # This file is distributed under the same license as the linuxmint package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, 2024.
@@ -8,205 +8,205 @@ msgstr ""
 "Project-Id-Version: linuxmint\n"
 "Report-Msgid-Bugs-To: FULL NAME <EMAIL@ADDRESS>\n"
 "POT-Creation-Date: 2024-09-09 13:11+0100\n"
-"PO-Revision-Date: 2024-12-31 00:52+0000\n"
-"Last-Translator: AO <Unknown>\n"
-"Language-Team: French (Canada) <fr_CA@li.org>\n"
+"PO-Revision-Date: 2024-12-31 19:41+0000\n"
+"Last-Translator: Piet Coppens <Unknown>\n"
+"Language-Team: Esperanto <eo@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=2; plural=n > 1;\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
 "X-Launchpad-Export-Date: 2025-01-06 12:02+0000\n"
 "X-Generator: Launchpad (build 6394e03793719e8d73f5a60b5439440e693c92f1)\n"
 
 #: data/captain.desktop.in:3
 msgid "Package Installer"
-msgstr "Programme d’installation de paquets"
+msgstr "Pako-instalilo"
 
 #: data/captain.desktop.in:4
 msgid "Install a software package"
-msgstr "Installer un paquet logiciel"
+msgstr "Instali programaran pakon"
 
 #: usr/lib/captain/captain.py:125 usr/lib/captain/captain.py:429
 msgid "Broken dependencies"
-msgstr "Dépendances non satisfaites"
+msgstr "Difektitaj devigaj programopartoj"
 
 #: usr/lib/captain/captain.py:125 usr/lib/captain/captain.py:339
 #: usr/lib/captain/captain.py:429
 msgid "To fix this run 'sudo apt-get install -f' in a terminal window."
 msgstr ""
-"Pour résoudre ce problème, exécutez 'sudo apt-get install -f' dans un "
-"terminal."
+"Por ripari ĉi tion rulu 'sudo apt-get install -f' en terminalfenestro."
 
 #: usr/lib/captain/captain.py:134
 #, python-format
 msgid "%s is not a valid package"
-msgstr "%s n’est pas un paquet valide"
+msgstr "%s ne estas valida pako"
 
 #: usr/lib/captain/captain.py:135
 #, python-format
 msgid "The MIME type of this file is '%s'."
-msgstr "Le type MIME de ce fichier est '%s'."
+msgstr "La MIME-tipo de ĉi tiu dosiero estas '%s'."
 
 #: usr/lib/captain/captain.py:137
 #, python-format
 msgid "Could not open %s"
-msgstr "Impossible d'ouvrir %s"
+msgstr "Ne eblas malfermi %s"
 
 #: usr/lib/captain/captain.py:138
 msgid "The file might be corrupted or missing permissions."
-msgstr "Le fichier peut être corrompu ou des droits manquent."
+msgstr ""
+"Eble la dosiero estas difektita aŭ al la dosiero mankas atingopermesoj."
 
 #: usr/lib/captain/captain.py:191
 msgid "Control files"
-msgstr "Fichiers de contrôle"
+msgstr "Kontroldosieroj"
 
 #: usr/lib/captain/captain.py:195
 msgid "Data files"
-msgstr "Fichiers de données"
+msgstr "Datumaj dosieroj"
 
 #: usr/lib/captain/captain.py:202
 msgid "Error while reading the content"
-msgstr "Erreur de lecture du contenu"
+msgstr "Eraro dum legado de enhavo"
 
 #: usr/lib/captain/captain.py:229
 #, python-format
 msgid "Error: %s"
-msgstr "Erreur : %s"
+msgstr "Eraro: %s"
 
 #: usr/lib/captain/captain.py:229 usr/lib/captain/captain.py:236
 #: usr/lib/captain/captain.py:246 usr/share/captain/deb_package.ui.h:9
 msgid "_Install Package"
-msgstr "_Installer le paquet"
+msgstr "_Instali pakon"
 
 #: usr/lib/captain/captain.py:235
 #, python-format
 msgid "Error: No longer provides %s"
-msgstr "Erreur : %s n’est plus fourni"
+msgstr "Eraro: ne plu provizas %s"
 
 #: usr/lib/captain/captain.py:245
 #, python-format
 msgid "Requires changes in %d other package"
 msgid_plural "Requires changes in %d other packages"
-msgstr[0] "Des changements sont nécessaires dans %d autre paquet"
-msgstr[1] "Des changements sont nécessaires dans %d autres paquets"
+msgstr[0] "Postulas ŝanĝojn en %d alia pako"
+msgstr[1] "Postulas ŝanĝojn en %d aliaj pakoj"
 
 #: usr/lib/captain/captain.py:263
 msgid "KB"
-msgstr "Ko"
+msgstr "KB"
 
 #: usr/lib/captain/captain.py:263
 msgid "MB"
-msgstr "Mo"
+msgstr "MB"
 
 #: usr/lib/captain/captain.py:263 usr/lib/captain/captain.py:264
 msgid "GB"
-msgstr "Go"
+msgstr "GB"
 
 #: usr/lib/captain/captain.py:299
 msgid "It is safer and recommended to install from the repositories instead."
 msgstr ""
-"Il est plus sécuritaire et recommandé d’installer à partir des dépôts."
+"Anstataŭe estas pli sekure kaj rekomendite instali ekde la deponejoj."
 
 #: usr/lib/captain/captain.py:302
 msgid "The same version is already installed"
-msgstr "La même version est déjà installée"
+msgstr "La sama versio estas jam instalita"
 
 #: usr/lib/captain/captain.py:302
 msgid "_Reinstall Package"
-msgstr "_Réinstaller le paquet"
+msgstr "_Reinstali pakon"
 
 #: usr/lib/captain/captain.py:304
 msgid "This package is available in the repositories"
-msgstr "Ce paquet est présent dans les dépôts"
+msgstr "Ĉi tiu pako disponeblas en la deponejoj"
 
 #: usr/lib/captain/captain.py:306
 msgid "An older version is available in the repositories"
-msgstr "Une version antérieure est présente dans les dépôts"
+msgstr "Pli malnova versio disponeblas en la deponejoj"
 
 #: usr/lib/captain/captain.py:308
 msgid "A newer version is available in the repositories"
-msgstr "Une version plus récente est présente dans les dépôts"
+msgstr "Pli nova versio disponeblas en la deponejoj"
 
 #: usr/lib/captain/captain.py:339
 msgid "Failed to install all dependencies"
-msgstr "Échec d’installation des dépendances"
+msgstr "Malsukcesis instali ĉiujn devigajn programopartojn"
 
 #: usr/lib/captain/captain.py:346 usr/share/captain/deb_package.ui.h:12
 #, python-format
 msgid "%s is now installed."
-msgstr "%s est désormais installé."
+msgstr "%s estas nun instalita."
 
 #: usr/lib/captain/captain.py:372
 msgid "The content could not be extracted"
-msgstr "Impossible d’extraire le contenu"
+msgstr "Ne eblas eltiri la enhavon"
 
 #: usr/lib/captain/captain.py:433 usr/lib/captain/captain.py:436
 #: usr/lib/captain/captain.py:438 usr/lib/captain/captain.py:482
 #, python-format
 msgid "The package '%s' could not be installed"
-msgstr "Impossible d’installer le paquet '%s'"
+msgstr "Ne eblas instali la pakon '%s'"
 
 #: usr/lib/captain/captain.py:433
 msgid "It was not found in the repositories."
-msgstr "Le paquet ne se trouve dans aucun dépôt."
+msgstr "Ĝi ne estis trovita en la deponejoj."
 
 #: usr/lib/captain/captain.py:436
 msgid "It is already installed."
-msgstr "Le paquet est déjà installé."
+msgstr "Ĝi estas jam instalita."
 
 #: usr/lib/captain/captain.py:438
 msgid "It is not installable."
-msgstr "Le paquet n’est pas installable."
+msgstr "Ĝi ne instaleblas."
 
 #: usr/share/captain/apt_url.ui.h:1
 msgid "Install additional software?"
-msgstr "Installer des logiciels supplémentaires ?"
+msgstr "Ĉu instali aldonajn programarojn?"
 
 #: usr/share/captain/apt_url.ui.h:3
 #, python-format
 msgid "Do you want to install '%s'?"
-msgstr "Voulez-vous installer '%s' ?"
+msgstr "Ĉu vi deziras instali '%s'?"
 
 #: usr/share/captain/apt_url.ui.h:4
 msgid "Description"
-msgstr "Description"
+msgstr "Priskribo"
 
 #: usr/share/captain/apt_url.ui.h:5
 msgid "_Install"
-msgstr "_Installer"
+msgstr "_Instali"
 
 #: usr/share/captain/deb_package.ui.h:1
 msgid "Details"
-msgstr "Détails"
+msgstr "Detaloj"
 
 #: usr/share/captain/deb_package.ui.h:2
 msgid "The following packages need to be installed:"
-msgstr "Les paquets suivants doivent être installés :"
+msgstr "La sekvaj pakoj devas esti instalitaj:"
 
 #: usr/share/captain/deb_package.ui.h:3
 msgid "The following packages need to be removed:"
-msgstr "Les paquets suivants doivent être supprimés :"
+msgstr "La sekvaj pakoj devas esti forigitaj:"
 
 #: usr/share/captain/deb_package.ui.h:4
 msgid "Opening the package"
-msgstr "Ouverture du paquet"
+msgstr "Malfermo de la pako"
 
 #: usr/share/captain/deb_package.ui.h:5
 msgid "_Details"
-msgstr "_Détails"
+msgstr "_Detaloj"
 
 #: usr/share/captain/deb_package.ui.h:6
 msgid "Maintainer:"
-msgstr "Mainteneur :"
+msgstr "Prizorganto:"
 
 #: usr/share/captain/deb_package.ui.h:7
 msgid "Size:"
-msgstr "Taille :"
+msgstr "Grando:"
 
 #: usr/share/captain/deb_package.ui.h:8
 msgid "Included files"
-msgstr "Fichiers compris"
+msgstr "Entenataj dosieroj"
 
 #: usr/share/captain/deb_package.ui.h:10
 msgid "The installation was successful"
-msgstr "L’installation est réussie"
+msgstr "La instalo sukcesis"
