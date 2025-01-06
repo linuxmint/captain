@@ -1,3 +1,9 @@
+captain (1.0.5) xia; urgency=medium
+
+  * l10n: Update translations
+
+ -- Clement Lefebvre <root@linuxmint.com>  Mon, 06 Jan 2025 13:58:10 +0000
+
 captain (1.0.4) xia; urgency=medium
 
   * Fix opening .deb files with spaces in their path
