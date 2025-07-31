@@ -1,16 +1,16 @@
-# English (United Kingdom) translation for linuxmint
-# Copyright (c) 2024 Rosetta Contributors and Canonical Ltd 2024
+# Urdu translation for linuxmint
+# Copyright (c) 2025 Rosetta Contributors and Canonical Ltd 2025
 # This file is distributed under the same license as the linuxmint package.
-# FIRST AUTHOR <EMAIL@ADDRESS>, 2024.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2025.
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: linuxmint\n"
 "Report-Msgid-Bugs-To: FULL NAME <EMAIL@ADDRESS>\n"
 "POT-Creation-Date: 2024-09-09 13:11+0100\n"
-"PO-Revision-Date: 2024-09-10 20:37+0000\n"
-"Last-Translator: Andi Chandler <Unknown>\n"
-"Language-Team: English (United Kingdom) <en_GB@li.org>\n"
+"PO-Revision-Date: 2025-02-03 12:40+0000\n"
+"Last-Translator: Muhammad Hassan Abbas <Unknown>\n"
+"Language-Team: Urdu <ur@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -20,191 +20,192 @@ msgstr ""
 
 #: data/captain.desktop.in:3
 msgid "Package Installer"
-msgstr "Package Installer"
+msgstr "پیکیج انسٹالر"
 
 #: data/captain.desktop.in:4
 msgid "Install a software package"
-msgstr "Install a software package"
+msgstr "سافٹ ویئر پیکج انسٹال کریں۔"
 
 #: usr/lib/captain/captain.py:125 usr/lib/captain/captain.py:429
 msgid "Broken dependencies"
-msgstr "Broken dependencies"
+msgstr "ٹوٹی انحصاریاں"
 
 #: usr/lib/captain/captain.py:125 usr/lib/captain/captain.py:339
 #: usr/lib/captain/captain.py:429
 msgid "To fix this run 'sudo apt-get install -f' in a terminal window."
-msgstr "To fix this run 'sudo apt-get install -f' in a terminal window."
+msgstr ""
+"اسے ٹھیک کرنے کے لیے ٹرمینل ونڈو میں 'sudo apt-get install -f' چلائیں۔"
 
 #: usr/lib/captain/captain.py:134
 #, python-format
 msgid "%s is not a valid package"
-msgstr "%s is not a valid package"
+msgstr "%s ایک درست پیکج نہیں ہے۔"
 
 #: usr/lib/captain/captain.py:135
 #, python-format
 msgid "The MIME type of this file is '%s'."
-msgstr "The MIME type of this file is '%s'."
+msgstr "اس فائل کی MIME قسم '%s' ہے۔"
 
 #: usr/lib/captain/captain.py:137
 #, python-format
 msgid "Could not open %s"
-msgstr "Could not open %s"
+msgstr "%s کو نہیں کھولا جا سکا"
 
 #: usr/lib/captain/captain.py:138
 msgid "The file might be corrupted or missing permissions."
-msgstr "The file might be corrupted or missing permissions."
+msgstr "فائل خراب ہو سکتی ہے یا اجازتیں لاپتہ ہو سکتی ہیں۔"
 
 #: usr/lib/captain/captain.py:191
 msgid "Control files"
-msgstr "Control files"
+msgstr "فائلوں کو کنٹرول کریں۔"
 
 #: usr/lib/captain/captain.py:195
 msgid "Data files"
-msgstr "Data files"
+msgstr "ڈیٹا فائلیں۔"
 
 #: usr/lib/captain/captain.py:202
 msgid "Error while reading the content"
-msgstr "Error while reading the content"
+msgstr "مواد پڑھتے وقت خرابی"
 
 #: usr/lib/captain/captain.py:229
 #, python-format
 msgid "Error: %s"
-msgstr "Error: %s"
+msgstr "غلطی: %s"
 
 #: usr/lib/captain/captain.py:229 usr/lib/captain/captain.py:236
 #: usr/lib/captain/captain.py:246 usr/share/captain/deb_package.ui.h:9
 msgid "_Install Package"
-msgstr "_Install Package"
+msgstr "_پیکج نصب کریں"
 
 #: usr/lib/captain/captain.py:235
 #, python-format
 msgid "Error: No longer provides %s"
-msgstr "Error: No longer provides %s"
+msgstr "خرابی: اب %s فراہم نہیں کرتا"
 
 #: usr/lib/captain/captain.py:245
 #, python-format
 msgid "Requires changes in %d other package"
 msgid_plural "Requires changes in %d other packages"
-msgstr[0] "Requires changes in %d other package"
-msgstr[1] "Requires changes in %d other packages"
+msgstr[0] "%d دوسرے پیکیج میں تبدیلیوں کی ضرورت ہے۔"
+msgstr[1] "%d دوسرے پیکجز میں تبدیلیوں کی ضرورت ہے۔"
 
 #: usr/lib/captain/captain.py:263
 msgid "KB"
-msgstr "KB"
+msgstr "کے بی"
 
 #: usr/lib/captain/captain.py:263
 msgid "MB"
-msgstr "MB"
+msgstr "ایم بی"
 
 #: usr/lib/captain/captain.py:263 usr/lib/captain/captain.py:264
 msgid "GB"
-msgstr "GB"
+msgstr "جی بی"
 
 #: usr/lib/captain/captain.py:299
 msgid "It is safer and recommended to install from the repositories instead."
 msgstr ""
-"It is safer and recommended to install from the repositories instead."
+"اس کے بجائے ذخیرہ خانوں سے انسٹال کرنا زیادہ محفوظ اور تجویز کیا جاتا ہے۔"
 
 #: usr/lib/captain/captain.py:302
 msgid "The same version is already installed"
-msgstr "The same version is already installed"
+msgstr "وہی ورژن پہلے سے انسٹال ہے۔"
 
 #: usr/lib/captain/captain.py:302
 msgid "_Reinstall Package"
-msgstr "_Reinstall Package"
+msgstr "_پیکج کو دوبارہ انسٹال کریں۔"
 
 #: usr/lib/captain/captain.py:304
 msgid "This package is available in the repositories"
-msgstr "This package is available in the repositories"
+msgstr "یہ پیکیج ریپوزٹریز میں دستیاب ہے۔"
 
 #: usr/lib/captain/captain.py:306
 msgid "An older version is available in the repositories"
-msgstr "An older version is available in the repositories"
+msgstr "ذخیروں میں ایک پرانا ورژن دستیاب ہے۔"
 
 #: usr/lib/captain/captain.py:308
 msgid "A newer version is available in the repositories"
-msgstr "A newer version is available in the repositories"
+msgstr "ذخیروں میں ایک نیا ورژن دستیاب ہے۔"
 
 #: usr/lib/captain/captain.py:339
 msgid "Failed to install all dependencies"
-msgstr "Failed to install all dependencies"
+msgstr "تمام انحصار کو انسٹال کرنے میں ناکام"
 
 #: usr/lib/captain/captain.py:346 usr/share/captain/deb_package.ui.h:12
 #, python-format
 msgid "%s is now installed."
-msgstr "%s is now installed."
+msgstr "%s اب انسٹال ہے۔"
 
 #: usr/lib/captain/captain.py:372
 msgid "The content could not be extracted"
-msgstr "The content could not be extracted"
+msgstr "مواد کو نکالا نہیں جا سکا"
 
 #: usr/lib/captain/captain.py:433 usr/lib/captain/captain.py:436
 #: usr/lib/captain/captain.py:438 usr/lib/captain/captain.py:482
 #, python-format
 msgid "The package '%s' could not be installed"
-msgstr "The package '%s' could not be installed"
+msgstr "پیکج '%s' انسٹال نہیں ہو سکا"
 
 #: usr/lib/captain/captain.py:433
 msgid "It was not found in the repositories."
-msgstr "It was not found in the repositories."
+msgstr "یہ ذخیرہ خانوں میں نہیں ملا۔"
 
 #: usr/lib/captain/captain.py:436
 msgid "It is already installed."
-msgstr "It is already installed."
+msgstr "یہ پہلے سے انسٹال ہے۔"
 
 #: usr/lib/captain/captain.py:438
 msgid "It is not installable."
-msgstr "It is not installable."
+msgstr "یہ انسٹال نہیں ہو سکتا"
 
 #: usr/share/captain/apt_url.ui.h:1
 msgid "Install additional software?"
-msgstr "Install additional software?"
+msgstr "اضافی سافٹ ویئر انسٹال کریں؟"
 
 #: usr/share/captain/apt_url.ui.h:3
 #, python-format
 msgid "Do you want to install '%s'?"
-msgstr "Do you want to install '%s'?"
+msgstr "کیا آپ '%s' انسٹال کرنا چاہتے ہیں؟"
 
 #: usr/share/captain/apt_url.ui.h:4
 msgid "Description"
-msgstr "Description"
+msgstr "تفصیل"
 
 #: usr/share/captain/apt_url.ui.h:5
 msgid "_Install"
-msgstr "_Install"
+msgstr "_انسٹال کریں۔"
 
 #: usr/share/captain/deb_package.ui.h:1
 msgid "Details"
-msgstr "Details"
+msgstr "تفصیلات"
 
 #: usr/share/captain/deb_package.ui.h:2
 msgid "The following packages need to be installed:"
-msgstr "The following packages need to be installed:"
+msgstr "مندرجہ ذیل پیکجوں کو انسٹال کرنے کی ضرورت ہے:"
 
 #: usr/share/captain/deb_package.ui.h:3
 msgid "The following packages need to be removed:"
-msgstr "The following packages need to be removed:"
+msgstr "مندرجہ ذیل پیکجوں کو ہٹانے کی ضرورت ہے:"
 
 #: usr/share/captain/deb_package.ui.h:4
 msgid "Opening the package"
-msgstr "Opening the package"
+msgstr "پیکیج کھل رہا ہے"
 
 #: usr/share/captain/deb_package.ui.h:5
 msgid "_Details"
-msgstr "_Details"
+msgstr "_تفصیلات"
 
 #: usr/share/captain/deb_package.ui.h:6
 msgid "Maintainer:"
-msgstr "Maintainer:"
+msgstr "دیکھ بھال کرنے والا:"
 
 #: usr/share/captain/deb_package.ui.h:7
 msgid "Size:"
-msgstr "Size:"
+msgstr "سائز:"
 
 #: usr/share/captain/deb_package.ui.h:8
 msgid "Included files"
-msgstr "Included files"
+msgstr "شامل فائلیں"
 
 #: usr/share/captain/deb_package.ui.h:10
 msgid "The installation was successful"
-msgstr "The installation was successful"
+msgstr "تنصیب کامیاب رہی"
