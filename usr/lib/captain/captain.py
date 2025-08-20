@@ -42,6 +42,14 @@ def _idle(func):
     return wrapper
 
 
+# Used for control flow/showing UIHelper.show_critical()
+class AppError(Exception):
+    def __init__(self, title, msg):
+        super().__init__()
+        self.title = title
+        self.msg = msg
+
+
 # A helper class to show dialog windows
 class UIHelper():
 
@@ -58,7 +66,7 @@ class UIHelper():
         dialog.run()
         dialog.destroy()
 
-    def show_critical(self, title, msg):
+    def show_critical(self, title, msg, exit=True):
         dialog = Gtk.MessageDialog(parent=self.window,
                                     modal=True,
                                     message_type=Gtk.MessageType.ERROR,
@@ -66,8 +74,9 @@ class UIHelper():
         dialog.set_markup("<big><b>%s</b></big>\n\n%s" % (title, msg))
         dialog.run()
         dialog.destroy()
-        Gtk.main_quit()
-        sys.exit()
+        if exit:
+            Gtk.main_quit()
+            sys.exit()
 
 class App():
 
@@ -417,7 +426,7 @@ class URLApp():
 
         # parse URL
         url = url.replace("apt://", "")
-        self.pkgname = url.split("?")[0]
+        self.pkgs_to_install = url.split("?")[0].split(",")
 
         # update the cache
         apt = aptkit.simpleclient.SimpleAPTClient(None)
@@ -430,22 +439,46 @@ class URLApp():
             Gtk.main_quit()
 
         # check the cache
-        cache = apt.Cache()
-        if cache._depcache.broken_count > 0:
+        self.cache = apt.Cache()
+        if self.cache._depcache.broken_count > 0:
             self.uih.show_critical(_("Broken dependencies"), _("To fix this run 'sudo apt-get install -f' in a terminal window."))
-
-        # check that package is in the repos, that it's installable and not already installed
-        if self.pkgname not in cache:
-            self.uih.show_critical(_("The package '%s' could not be installed") % self.pkgname, _("It was not found in the repositories."))
-        self.pkg = cache[self.pkgname]
-        if self.pkg.is_installed:
-            self.uih.show_critical(_("The package '%s' could not be installed") % self.pkgname, _("It is already installed."))
-        if not (self.pkg.candidate and self.pkg.candidate.downloadable):
-            self.uih.show_critical(_("The package '%s' could not be installed") % self.pkgname, _("It is not installable."))
 
         # show the confirmation dialog
         self.settings = Gio.Settings(schema="org.x.captain")
 
+        # Start installing the packages
+        self.do_install()
+
+
+    def do_install(self):
+        """Runs the install process for the first package in self.pkgs_to_install.
+        Function is recursively called by signal call-back functions."""
+
+        # If there are no packages to install, exit the Gtk.main thread
+        if not self.pkgs_to_install:
+            Gtk.main_quit()
+            return
+
+        # Get the current package we will try to install
+        self.pkgname = self.pkgs_to_install.pop(0)
+
+        try:
+            # check that package is in the repos, that it's installable and not already installed
+            if self.pkgname not in self.cache:
+                raise AppError(_("The package '%s' could not be installed") % self.pkgname, _("It was not found in the repositories."))
+            self.pkg = self.cache[self.pkgname]
+            if self.pkg.is_installed:
+                raise AppError(_("The package '%s' could not be installed") % self.pkgname, _("It is already installed."))
+            if not (self.pkg.candidate and self.pkg.candidate.downloadable):
+                raise AppError(_("The package '%s' could not be installed") % self.pkgname, _("It is not installable."))
+        except AppError as e:
+            # An error occured from an above source, display the critial dialog
+            self.uih.show_critical(e.title, e.msg, exit=False)
+            # We're finished installing this package
+            self.on_install_finished()
+            return
+
+        # Initialize the dialog
         self.builder = Gtk.Builder()
         self.builder.set_translation_domain(APP)
         self.builder.add_from_file("/usr/share/captain/apt_url.ui")
@@ -455,29 +488,40 @@ class URLApp():
                 name = "ui_%s" % Gtk.Buildable.get_name(widget)
                 setattr(self, name, widget)
 
-
+        # Update dialog messages
         self.ui_body_label.set_text(_("Do you want to install '%s'?") % self.pkgname)
-
         set_description(self.ui_textview, self.pkg.candidate.summary, self.pkg.candidate.description)
 
+        # Show the dialog
         self.ui_window.show()
 
     @_idle
     def on_install_finished(self, transaction=None, exit_state=None):
-        Gtk.main_quit()
-
+        # We're done with this UI instance, destroy it
+        # use getattr() to reference it since it may not even exist
+        window = getattr(self, "ui_window", None)
+        if window:
+            window.destroy()
+        # Install the next package
+        self.do_install()
 
     #########################################
     # Callback functions used by the .ui file
     #########################################
 
     def on_window_deleted(self, widget, event):
-        Gtk.main_quit()
+        # We're "finished" installing this package, move onto the next one
+        self.on_install_finished()
 
     def on_cancel_button_clicked(self, widget):
-        Gtk.main_quit()
+        self.ui_window.hide()
+
+        # We're "finished" installing this package, move onto the next one
+        self.on_install_finished()
 
     def on_install_button_clicked(self, widget):
+        self.ui_window.hide()
+
         # install the package
         try:
             apt = aptkit.simpleclient.SimpleAPTClient(None)
