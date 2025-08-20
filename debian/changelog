@@ -1,3 +1,9 @@
+captain (1.0.6) zara; urgency=medium
+
+  * l10n: Update translations
+
+ -- Clement Lefebvre <root@linuxmint.com>  Thu, 31 Jul 2025 11:35:19 +0200
+
 captain (1.0.5) xia; urgency=medium
 
   * l10n: Update translations
