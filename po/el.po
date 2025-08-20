@@ -1,16 +1,16 @@
-# English (United Kingdom) translation for linuxmint
-# Copyright (c) 2024 Rosetta Contributors and Canonical Ltd 2024
+# Greek translation for linuxmint
+# Copyright (c) 2025 Rosetta Contributors and Canonical Ltd 2025
 # This file is distributed under the same license as the linuxmint package.
-# FIRST AUTHOR <EMAIL@ADDRESS>, 2024.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2025.
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: linuxmint\n"
 "Report-Msgid-Bugs-To: FULL NAME <EMAIL@ADDRESS>\n"
 "POT-Creation-Date: 2024-09-09 13:11+0100\n"
-"PO-Revision-Date: 2024-09-10 20:37+0000\n"
-"Last-Translator: Andi Chandler <Unknown>\n"
-"Language-Team: English (United Kingdom) <en_GB@li.org>\n"
+"PO-Revision-Date: 2025-06-23 09:17+0000\n"
+"Last-Translator: Dimitris Spentzos <Unknown>\n"
+"Language-Team: Greek <el@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -20,81 +20,83 @@ msgstr ""
 
 #: data/captain.desktop.in:3
 msgid "Package Installer"
-msgstr "Package Installer"
+msgstr "εγκαταστάτης πακέτων"
 
 #: data/captain.desktop.in:4
 msgid "Install a software package"
-msgstr "Install a software package"
+msgstr "Εγκατάσταση πακέτου λογισμικού"
 
 #: usr/lib/captain/captain.py:125 usr/lib/captain/captain.py:429
 msgid "Broken dependencies"
-msgstr "Broken dependencies"
+msgstr "μη λειτουργικές εξαρτήσεις"
 
 #: usr/lib/captain/captain.py:125 usr/lib/captain/captain.py:339
 #: usr/lib/captain/captain.py:429
 msgid "To fix this run 'sudo apt-get install -f' in a terminal window."
-msgstr "To fix this run 'sudo apt-get install -f' in a terminal window."
+msgstr ""
+"Για να διορθώσετε το πρόβλημα, εκτελέστε 'sudo apt-get install -f' σε ένα "
+"παράθυρο τερματικού."
 
 #: usr/lib/captain/captain.py:134
 #, python-format
 msgid "%s is not a valid package"
-msgstr "%s is not a valid package"
+msgstr "Το πακέτο %s δεν είναι διαθέσιμο"
 
 #: usr/lib/captain/captain.py:135
 #, python-format
 msgid "The MIME type of this file is '%s'."
-msgstr "The MIME type of this file is '%s'."
+msgstr "ο τυπος MIME για αυτό το αρχείο είναι '%s'."
 
 #: usr/lib/captain/captain.py:137
 #, python-format
 msgid "Could not open %s"
-msgstr "Could not open %s"
+msgstr "Αδυναμία ανοίγματος του %s"
 
 #: usr/lib/captain/captain.py:138
 msgid "The file might be corrupted or missing permissions."
-msgstr "The file might be corrupted or missing permissions."
+msgstr "Το αρχείο μπορεί να είναι κατεστραμμένο ή να μην διαθέτει άδειες."
 
 #: usr/lib/captain/captain.py:191
 msgid "Control files"
-msgstr "Control files"
+msgstr "αρχεία ελένχου"
 
 #: usr/lib/captain/captain.py:195
 msgid "Data files"
-msgstr "Data files"
+msgstr "αρχεία δεδομένων"
 
 #: usr/lib/captain/captain.py:202
 msgid "Error while reading the content"
-msgstr "Error while reading the content"
+msgstr "σφάλμα κάτα την ανάγνωση περιεχομένου"
 
 #: usr/lib/captain/captain.py:229
 #, python-format
 msgid "Error: %s"
-msgstr "Error: %s"
+msgstr "Σφάλμα: %s"
 
 #: usr/lib/captain/captain.py:229 usr/lib/captain/captain.py:236
 #: usr/lib/captain/captain.py:246 usr/share/captain/deb_package.ui.h:9
 msgid "_Install Package"
-msgstr "_Install Package"
+msgstr "_Εγκατάσταση πακέτου"
 
 #: usr/lib/captain/captain.py:235
 #, python-format
 msgid "Error: No longer provides %s"
-msgstr "Error: No longer provides %s"
+msgstr "σφάλμα : δεν παρέχει πλέον %s"
 
 #: usr/lib/captain/captain.py:245
 #, python-format
 msgid "Requires changes in %d other package"
 msgid_plural "Requires changes in %d other packages"
-msgstr[0] "Requires changes in %d other package"
-msgstr[1] "Requires changes in %d other packages"
+msgstr[0] "απαιτούνται αλαγές στο %d άλλο πακέτο"
+msgstr[1] "απαιτούνται αλαγές στα %d άλλα πακέτα"
 
 #: usr/lib/captain/captain.py:263
 msgid "KB"
-msgstr "KB"
+msgstr "kB"
 
 #: usr/lib/captain/captain.py:263
 msgid "MB"
-msgstr "MB"
+msgstr "ΜΒ"
 
 #: usr/lib/captain/captain.py:263 usr/lib/captain/captain.py:264
 msgid "GB"
@@ -102,109 +104,108 @@ msgstr "GB"
 
 #: usr/lib/captain/captain.py:299
 msgid "It is safer and recommended to install from the repositories instead."
-msgstr ""
-"It is safer and recommended to install from the repositories instead."
+msgstr "είναι πιο ασφαλες και προτιβούμενο να εκγαταστήτε απο τις αποθήκες"
 
 #: usr/lib/captain/captain.py:302
 msgid "The same version is already installed"
-msgstr "The same version is already installed"
+msgstr "η ίδια έκδοση είναι ήδη εγκατεστημένη"
 
 #: usr/lib/captain/captain.py:302
 msgid "_Reinstall Package"
-msgstr "_Reinstall Package"
+msgstr "_Επανεγκατάσταση πακέτου"
 
 #: usr/lib/captain/captain.py:304
 msgid "This package is available in the repositories"
-msgstr "This package is available in the repositories"
+msgstr "Αυτό το πακέτο είναι διαθέσιμο στα αποθετήρια"
 
 #: usr/lib/captain/captain.py:306
 msgid "An older version is available in the repositories"
-msgstr "An older version is available in the repositories"
+msgstr "Μια παλαιότερη έκδοση είναι διαθέσιμη στα αποθετήρια"
 
 #: usr/lib/captain/captain.py:308
 msgid "A newer version is available in the repositories"
-msgstr "A newer version is available in the repositories"
+msgstr "Μια νεότερη έκδοση είναι διαθέσιμη στα αποθετήρια"
 
 #: usr/lib/captain/captain.py:339
 msgid "Failed to install all dependencies"
-msgstr "Failed to install all dependencies"
+msgstr "Αποτυχία εγκατάστασης όλων των εξαρτήσεων"
 
 #: usr/lib/captain/captain.py:346 usr/share/captain/deb_package.ui.h:12
 #, python-format
 msgid "%s is now installed."
-msgstr "%s is now installed."
+msgstr "Το «%s» έχει εγκατασταθεί."
 
 #: usr/lib/captain/captain.py:372
 msgid "The content could not be extracted"
-msgstr "The content could not be extracted"
+msgstr "Δεν ήταν δυνατή η εξαγωγή του περιεχομένου"
 
 #: usr/lib/captain/captain.py:433 usr/lib/captain/captain.py:436
 #: usr/lib/captain/captain.py:438 usr/lib/captain/captain.py:482
 #, python-format
 msgid "The package '%s' could not be installed"
-msgstr "The package '%s' could not be installed"
+msgstr "Δεν ήταν δυνατή η εγκατάσταση του πακέτου «%s»"
 
 #: usr/lib/captain/captain.py:433
 msgid "It was not found in the repositories."
-msgstr "It was not found in the repositories."
+msgstr "Δεν βρέθηκε στα αποθετήρια."
 
 #: usr/lib/captain/captain.py:436
 msgid "It is already installed."
-msgstr "It is already installed."
+msgstr "Έχει ήδη εγκατασταθεί."
 
 #: usr/lib/captain/captain.py:438
 msgid "It is not installable."
-msgstr "It is not installable."
+msgstr "Δεν είναι δυνατή η εγκατάστασή του."
 
 #: usr/share/captain/apt_url.ui.h:1
 msgid "Install additional software?"
-msgstr "Install additional software?"
+msgstr "Εγκατάσταση επιπρόσθετου λογισμικού;"
 
 #: usr/share/captain/apt_url.ui.h:3
 #, python-format
 msgid "Do you want to install '%s'?"
-msgstr "Do you want to install '%s'?"
+msgstr "Θέλετε να εγκαταστήσετε το «%s»;"
 
 #: usr/share/captain/apt_url.ui.h:4
 msgid "Description"
-msgstr "Description"
+msgstr "Περιγραφή"
 
 #: usr/share/captain/apt_url.ui.h:5
 msgid "_Install"
-msgstr "_Install"
+msgstr "_Εγκατάσταση"
 
 #: usr/share/captain/deb_package.ui.h:1
 msgid "Details"
-msgstr "Details"
+msgstr "Λεπτομέρειες"
 
 #: usr/share/captain/deb_package.ui.h:2
 msgid "The following packages need to be installed:"
-msgstr "The following packages need to be installed:"
+msgstr "Πρέπει να εγκατασταθούν τα ακόλουθα πακέτα:"
 
 #: usr/share/captain/deb_package.ui.h:3
 msgid "The following packages need to be removed:"
-msgstr "The following packages need to be removed:"
+msgstr "Πρέπει να καταργηθούν τα ακόλουθα πακέτα:"
 
 #: usr/share/captain/deb_package.ui.h:4
 msgid "Opening the package"
-msgstr "Opening the package"
+msgstr "Άνοιγμα του πακέτου"
 
 #: usr/share/captain/deb_package.ui.h:5
 msgid "_Details"
-msgstr "_Details"
+msgstr "_Λεπτομέρειες"
 
 #: usr/share/captain/deb_package.ui.h:6
 msgid "Maintainer:"
-msgstr "Maintainer:"
+msgstr "Συντηρητής:"
 
 #: usr/share/captain/deb_package.ui.h:7
 msgid "Size:"
-msgstr "Size:"
+msgstr "Μέγεθος:"
 
 #: usr/share/captain/deb_package.ui.h:8
 msgid "Included files"
-msgstr "Included files"
+msgstr "Συμπεριλαμβανόμενα αρχεία"
 
 #: usr/share/captain/deb_package.ui.h:10
 msgid "The installation was successful"
-msgstr "The installation was successful"
+msgstr "Η εγκατάσταση ήταν επιτυχής"

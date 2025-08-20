@@ -1,16 +1,16 @@
-# English (United Kingdom) translation for linuxmint
-# Copyright (c) 2024 Rosetta Contributors and Canonical Ltd 2024
+# Bulgarian translation for linuxmint
+# Copyright (c) 2025 Rosetta Contributors and Canonical Ltd 2025
 # This file is distributed under the same license as the linuxmint package.
-# FIRST AUTHOR <EMAIL@ADDRESS>, 2024.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2025.
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: linuxmint\n"
 "Report-Msgid-Bugs-To: FULL NAME <EMAIL@ADDRESS>\n"
 "POT-Creation-Date: 2024-09-09 13:11+0100\n"
-"PO-Revision-Date: 2024-09-10 20:37+0000\n"
-"Last-Translator: Andi Chandler <Unknown>\n"
-"Language-Team: English (United Kingdom) <en_GB@li.org>\n"
+"PO-Revision-Date: 2025-02-05 21:02+0000\n"
+"Last-Translator: Nikolay Trifonov <trifonov88@gmail.com>\n"
+"Language-Team: Bulgarian <bg@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -20,191 +20,193 @@ msgstr ""
 
 #: data/captain.desktop.in:3
 msgid "Package Installer"
-msgstr "Package Installer"
+msgstr "Инсталатор на пакети"
 
 #: data/captain.desktop.in:4
 msgid "Install a software package"
-msgstr "Install a software package"
+msgstr "Инсталиране на софтуерен пакет"
 
 #: usr/lib/captain/captain.py:125 usr/lib/captain/captain.py:429
 msgid "Broken dependencies"
-msgstr "Broken dependencies"
+msgstr "Повредени зависимости"
 
 #: usr/lib/captain/captain.py:125 usr/lib/captain/captain.py:339
 #: usr/lib/captain/captain.py:429
 msgid "To fix this run 'sudo apt-get install -f' in a terminal window."
-msgstr "To fix this run 'sudo apt-get install -f' in a terminal window."
+msgstr ""
+"За да поправите това, изпълнете «sudo apt-get install -f» в прозореца на "
+"терминал."
 
 #: usr/lib/captain/captain.py:134
 #, python-format
 msgid "%s is not a valid package"
-msgstr "%s is not a valid package"
+msgstr "%s не е валиден пакет"
 
 #: usr/lib/captain/captain.py:135
 #, python-format
 msgid "The MIME type of this file is '%s'."
-msgstr "The MIME type of this file is '%s'."
+msgstr "MIME видът на този файл е '%s'."
 
 #: usr/lib/captain/captain.py:137
 #, python-format
 msgid "Could not open %s"
-msgstr "Could not open %s"
+msgstr "Неуспешно отваряне на %s"
 
 #: usr/lib/captain/captain.py:138
 msgid "The file might be corrupted or missing permissions."
-msgstr "The file might be corrupted or missing permissions."
+msgstr "Възможно е файлът да е повреден или да нямате права за достъп."
 
 #: usr/lib/captain/captain.py:191
 msgid "Control files"
-msgstr "Control files"
+msgstr "Файлове за контрол"
 
 #: usr/lib/captain/captain.py:195
 msgid "Data files"
-msgstr "Data files"
+msgstr "Файлове с данни"
 
 #: usr/lib/captain/captain.py:202
 msgid "Error while reading the content"
-msgstr "Error while reading the content"
+msgstr "Грешка при прочитане на съдържанието."
 
 #: usr/lib/captain/captain.py:229
 #, python-format
 msgid "Error: %s"
-msgstr "Error: %s"
+msgstr "Грешка %s"
 
 #: usr/lib/captain/captain.py:229 usr/lib/captain/captain.py:236
 #: usr/lib/captain/captain.py:246 usr/share/captain/deb_package.ui.h:9
 msgid "_Install Package"
-msgstr "_Install Package"
+msgstr "_Инсталирай"
 
 #: usr/lib/captain/captain.py:235
 #, python-format
 msgid "Error: No longer provides %s"
-msgstr "Error: No longer provides %s"
+msgstr "Грешка: Вече не предоставя %s"
 
 #: usr/lib/captain/captain.py:245
 #, python-format
 msgid "Requires changes in %d other package"
 msgid_plural "Requires changes in %d other packages"
-msgstr[0] "Requires changes in %d other package"
-msgstr[1] "Requires changes in %d other packages"
+msgstr[0] ""
+msgstr[1] ""
 
 #: usr/lib/captain/captain.py:263
 msgid "KB"
-msgstr "KB"
+msgstr "КБ"
 
 #: usr/lib/captain/captain.py:263
 msgid "MB"
-msgstr "MB"
+msgstr "МБ"
 
 #: usr/lib/captain/captain.py:263 usr/lib/captain/captain.py:264
 msgid "GB"
-msgstr "GB"
+msgstr "ГБ"
 
 #: usr/lib/captain/captain.py:299
 msgid "It is safer and recommended to install from the repositories instead."
 msgstr ""
-"It is safer and recommended to install from the repositories instead."
+"Вместо това е по-безопасно и препоръчително да инсталирате от хранилищата."
 
 #: usr/lib/captain/captain.py:302
 msgid "The same version is already installed"
-msgstr "The same version is already installed"
+msgstr "Тази версия вече е инсталирана."
 
 #: usr/lib/captain/captain.py:302
 msgid "_Reinstall Package"
-msgstr "_Reinstall Package"
+msgstr "_Преинсталирай пакета"
 
 #: usr/lib/captain/captain.py:304
 msgid "This package is available in the repositories"
-msgstr "This package is available in the repositories"
+msgstr "Този пакет е наличен в софтуерните хранилища"
 
 #: usr/lib/captain/captain.py:306
 msgid "An older version is available in the repositories"
-msgstr "An older version is available in the repositories"
+msgstr "По-стара версия на този пакет е налична в софтуерните хранилища"
 
 #: usr/lib/captain/captain.py:308
 msgid "A newer version is available in the repositories"
-msgstr "A newer version is available in the repositories"
+msgstr "По-нова версия на този пакет е налична в софтуерните хранилища"
 
 #: usr/lib/captain/captain.py:339
 msgid "Failed to install all dependencies"
-msgstr "Failed to install all dependencies"
+msgstr "Неуспешно инсталиране на зависимостите"
 
 #: usr/lib/captain/captain.py:346 usr/share/captain/deb_package.ui.h:12
 #, python-format
 msgid "%s is now installed."
-msgstr "%s is now installed."
+msgstr "%s е инсталиран."
 
 #: usr/lib/captain/captain.py:372
 msgid "The content could not be extracted"
-msgstr "The content could not be extracted"
+msgstr "Съдържанието не може да бъде извлечено"
 
 #: usr/lib/captain/captain.py:433 usr/lib/captain/captain.py:436
 #: usr/lib/captain/captain.py:438 usr/lib/captain/captain.py:482
 #, python-format
 msgid "The package '%s' could not be installed"
-msgstr "The package '%s' could not be installed"
+msgstr "Пакетът '%s' не можа да бъде инсталиран"
 
 #: usr/lib/captain/captain.py:433
 msgid "It was not found in the repositories."
-msgstr "It was not found in the repositories."
+msgstr "Не е намерен в софтуерните хранилища."
 
 #: usr/lib/captain/captain.py:436
 msgid "It is already installed."
-msgstr "It is already installed."
+msgstr "Пакетът вече е инсталиран."
 
 #: usr/lib/captain/captain.py:438
 msgid "It is not installable."
-msgstr "It is not installable."
+msgstr "Не е наличен."
 
 #: usr/share/captain/apt_url.ui.h:1
 msgid "Install additional software?"
-msgstr "Install additional software?"
+msgstr "Да се инсталира ли допълнителния софтуер?"
 
 #: usr/share/captain/apt_url.ui.h:3
 #, python-format
 msgid "Do you want to install '%s'?"
-msgstr "Do you want to install '%s'?"
+msgstr "Искате ли да инсталирате '%s'?"
 
 #: usr/share/captain/apt_url.ui.h:4
 msgid "Description"
-msgstr "Description"
+msgstr "Описание"
 
 #: usr/share/captain/apt_url.ui.h:5
 msgid "_Install"
-msgstr "_Install"
+msgstr "_Инсталиране"
 
 #: usr/share/captain/deb_package.ui.h:1
 msgid "Details"
-msgstr "Details"
+msgstr "Детайли"
 
 #: usr/share/captain/deb_package.ui.h:2
 msgid "The following packages need to be installed:"
-msgstr "The following packages need to be installed:"
+msgstr "Следните пакети трябва да бъдат инсталирани:"
 
 #: usr/share/captain/deb_package.ui.h:3
 msgid "The following packages need to be removed:"
-msgstr "The following packages need to be removed:"
+msgstr "Следните пакети трябва да бъдат премахнати:"
 
 #: usr/share/captain/deb_package.ui.h:4
 msgid "Opening the package"
-msgstr "Opening the package"
+msgstr "Отваряне на пакетът"
 
 #: usr/share/captain/deb_package.ui.h:5
 msgid "_Details"
-msgstr "_Details"
+msgstr "_Подробности"
 
 #: usr/share/captain/deb_package.ui.h:6
 msgid "Maintainer:"
-msgstr "Maintainer:"
+msgstr "Поддръжка:"
 
 #: usr/share/captain/deb_package.ui.h:7
 msgid "Size:"
-msgstr "Size:"
+msgstr "Размер:"
 
 #: usr/share/captain/deb_package.ui.h:8
 msgid "Included files"
-msgstr "Included files"
+msgstr "Файлове в пакета"
 
 #: usr/share/captain/deb_package.ui.h:10
 msgid "The installation was successful"
-msgstr "The installation was successful"
+msgstr "Инсталацията завърши успешно"

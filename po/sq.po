@@ -1,16 +1,16 @@
-# English (United Kingdom) translation for linuxmint
-# Copyright (c) 2024 Rosetta Contributors and Canonical Ltd 2024
+# Albanian translation for linuxmint
+# Copyright (c) 2025 Rosetta Contributors and Canonical Ltd 2025
 # This file is distributed under the same license as the linuxmint package.
-# FIRST AUTHOR <EMAIL@ADDRESS>, 2024.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2025.
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: linuxmint\n"
 "Report-Msgid-Bugs-To: FULL NAME <EMAIL@ADDRESS>\n"
 "POT-Creation-Date: 2024-09-09 13:11+0100\n"
-"PO-Revision-Date: 2024-09-10 20:37+0000\n"
-"Last-Translator: Andi Chandler <Unknown>\n"
-"Language-Team: English (United Kingdom) <en_GB@li.org>\n"
+"PO-Revision-Date: 2025-07-21 21:12+0000\n"
+"Last-Translator: Vilson Gjeci <vilsongjeci@gmail.com>\n"
+"Language-Team: Albanian <sq@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -20,73 +20,75 @@ msgstr ""
 
 #: data/captain.desktop.in:3
 msgid "Package Installer"
-msgstr "Package Installer"
+msgstr "Instaluesi i Paketave"
 
 #: data/captain.desktop.in:4
 msgid "Install a software package"
-msgstr "Install a software package"
+msgstr "Instaloni një paketë softuerësh"
 
 #: usr/lib/captain/captain.py:125 usr/lib/captain/captain.py:429
 msgid "Broken dependencies"
-msgstr "Broken dependencies"
+msgstr "Varësi të thyera"
 
 #: usr/lib/captain/captain.py:125 usr/lib/captain/captain.py:339
 #: usr/lib/captain/captain.py:429
 msgid "To fix this run 'sudo apt-get install -f' in a terminal window."
-msgstr "To fix this run 'sudo apt-get install -f' in a terminal window."
+msgstr ""
+"Për ta rregulluar këtë, ekzekutoni 'sudo apt-get install -f' në një dritare "
+"terminali."
 
 #: usr/lib/captain/captain.py:134
 #, python-format
 msgid "%s is not a valid package"
-msgstr "%s is not a valid package"
+msgstr "%s nuk është një paketë e vlefshme"
 
 #: usr/lib/captain/captain.py:135
 #, python-format
 msgid "The MIME type of this file is '%s'."
-msgstr "The MIME type of this file is '%s'."
+msgstr "Lloji MIME i këtij skedari është '%s'."
 
 #: usr/lib/captain/captain.py:137
 #, python-format
 msgid "Could not open %s"
-msgstr "Could not open %s"
+msgstr "Nuk mund të hapej %s"
 
 #: usr/lib/captain/captain.py:138
 msgid "The file might be corrupted or missing permissions."
-msgstr "The file might be corrupted or missing permissions."
+msgstr "Skedari mund të jetë i dëmtuar ose i mungojnë lejet."
 
 #: usr/lib/captain/captain.py:191
 msgid "Control files"
-msgstr "Control files"
+msgstr "Kontrolloni skedarët"
 
 #: usr/lib/captain/captain.py:195
 msgid "Data files"
-msgstr "Data files"
+msgstr "Skedarët e të dhënave"
 
 #: usr/lib/captain/captain.py:202
 msgid "Error while reading the content"
-msgstr "Error while reading the content"
+msgstr "Gabim gjatë leximit të përmbajtjes"
 
 #: usr/lib/captain/captain.py:229
 #, python-format
 msgid "Error: %s"
-msgstr "Error: %s"
+msgstr "Gabim: %s"
 
 #: usr/lib/captain/captain.py:229 usr/lib/captain/captain.py:236
 #: usr/lib/captain/captain.py:246 usr/share/captain/deb_package.ui.h:9
 msgid "_Install Package"
-msgstr "_Install Package"
+msgstr "_Instalo paketën"
 
 #: usr/lib/captain/captain.py:235
 #, python-format
 msgid "Error: No longer provides %s"
-msgstr "Error: No longer provides %s"
+msgstr "Gabim: Nuk ofron më %s"
 
 #: usr/lib/captain/captain.py:245
 #, python-format
 msgid "Requires changes in %d other package"
 msgid_plural "Requires changes in %d other packages"
-msgstr[0] "Requires changes in %d other package"
-msgstr[1] "Requires changes in %d other packages"
+msgstr[0] "Kërkon ndryshime në %d paketë tjetër"
+msgstr[1] "Kërkon ndryshime në %d paketa të tjera"
 
 #: usr/lib/captain/captain.py:263
 msgid "KB"
@@ -102,109 +104,108 @@ msgstr "GB"
 
 #: usr/lib/captain/captain.py:299
 msgid "It is safer and recommended to install from the repositories instead."
-msgstr ""
-"It is safer and recommended to install from the repositories instead."
+msgstr "Është më e sigurt dhe rekomandohet ta instaloni nga depot."
 
 #: usr/lib/captain/captain.py:302
 msgid "The same version is already installed"
-msgstr "The same version is already installed"
+msgstr "I njëjti version është instaluar tashmë"
 
 #: usr/lib/captain/captain.py:302
 msgid "_Reinstall Package"
-msgstr "_Reinstall Package"
+msgstr "_Rinstalo paketën"
 
 #: usr/lib/captain/captain.py:304
 msgid "This package is available in the repositories"
-msgstr "This package is available in the repositories"
+msgstr "Kjo paketë është e disponueshme në depo"
 
 #: usr/lib/captain/captain.py:306
 msgid "An older version is available in the repositories"
-msgstr "An older version is available in the repositories"
+msgstr "Një version më i vjetër është i disponueshëm në depo"
 
 #: usr/lib/captain/captain.py:308
 msgid "A newer version is available in the repositories"
-msgstr "A newer version is available in the repositories"
+msgstr "Një version më i ri është i disponueshëm në depo"
 
 #: usr/lib/captain/captain.py:339
 msgid "Failed to install all dependencies"
-msgstr "Failed to install all dependencies"
+msgstr "Dështoi instalimi i të gjitha varësive"
 
 #: usr/lib/captain/captain.py:346 usr/share/captain/deb_package.ui.h:12
 #, python-format
 msgid "%s is now installed."
-msgstr "%s is now installed."
+msgstr "%s është instaluar tani."
 
 #: usr/lib/captain/captain.py:372
 msgid "The content could not be extracted"
-msgstr "The content could not be extracted"
+msgstr "Përmbajtja nuk mund të nxirrej"
 
 #: usr/lib/captain/captain.py:433 usr/lib/captain/captain.py:436
 #: usr/lib/captain/captain.py:438 usr/lib/captain/captain.py:482
 #, python-format
 msgid "The package '%s' could not be installed"
-msgstr "The package '%s' could not be installed"
+msgstr "Paketa '%s' nuk mund të instalohej"
 
 #: usr/lib/captain/captain.py:433
 msgid "It was not found in the repositories."
-msgstr "It was not found in the repositories."
+msgstr "Nuk u gjet në depo."
 
 #: usr/lib/captain/captain.py:436
 msgid "It is already installed."
-msgstr "It is already installed."
+msgstr "Është instaluar tashmë."
 
 #: usr/lib/captain/captain.py:438
 msgid "It is not installable."
-msgstr "It is not installable."
+msgstr "Nuk është i instaluar."
 
 #: usr/share/captain/apt_url.ui.h:1
 msgid "Install additional software?"
-msgstr "Install additional software?"
+msgstr "Të instalosh softuerin gjithnjë?"
 
 #: usr/share/captain/apt_url.ui.h:3
 #, python-format
 msgid "Do you want to install '%s'?"
-msgstr "Do you want to install '%s'?"
+msgstr "Dëshironi të instaloni '%s'?"
 
 #: usr/share/captain/apt_url.ui.h:4
 msgid "Description"
-msgstr "Description"
+msgstr "Përshkrimi"
 
 #: usr/share/captain/apt_url.ui.h:5
 msgid "_Install"
-msgstr "_Install"
+msgstr "_Instalo"
 
 #: usr/share/captain/deb_package.ui.h:1
 msgid "Details"
-msgstr "Details"
+msgstr "Detajet"
 
 #: usr/share/captain/deb_package.ui.h:2
 msgid "The following packages need to be installed:"
-msgstr "The following packages need to be installed:"
+msgstr "Paketat e mëposhtme duhet të instalohen:"
 
 #: usr/share/captain/deb_package.ui.h:3
 msgid "The following packages need to be removed:"
-msgstr "The following packages need to be removed:"
+msgstr "Paketat e mëposhtme duhet të hiqen:"
 
 #: usr/share/captain/deb_package.ui.h:4
 msgid "Opening the package"
-msgstr "Opening the package"
+msgstr "Hapja e paketës"
 
 #: usr/share/captain/deb_package.ui.h:5
 msgid "_Details"
-msgstr "_Details"
+msgstr "_Detajet"
 
 #: usr/share/captain/deb_package.ui.h:6
 msgid "Maintainer:"
-msgstr "Maintainer:"
+msgstr "Mirëmbajtësi:"
 
 #: usr/share/captain/deb_package.ui.h:7
 msgid "Size:"
-msgstr "Size:"
+msgstr "Madhësia:"
 
 #: usr/share/captain/deb_package.ui.h:8
 msgid "Included files"
-msgstr "Included files"
+msgstr "Skedarët e përfshirë"
 
 #: usr/share/captain/deb_package.ui.h:10
 msgid "The installation was successful"
-msgstr "The installation was successful"
+msgstr "Instalimi ishte i suksesshëm"
