@@ -13,6 +13,7 @@ import apt
 import apt.debfile
 import re
 from mimetypes import guess_type
+from urllib.parse import urlparse
 import aptkit.simpleclient
 import aptkit.enums
 
@@ -425,8 +426,11 @@ class URLApp():
         self.uih = UIHelper(None)
 
         # parse URL
-        url = url.replace("apt://", "")
-        self.pkgs_to_install = url.split("?")[0].split(",")
+        parsed_url = urlparse(url)
+        pkgs = parsed_url.path
+        if not pkgs:
+            pkgs = parsed_url.netloc
+        self.pkgs_to_install = pkgs.split(",")
 
         # update the cache
         apt = aptkit.simpleclient.SimpleAPTClient(None)
@@ -536,7 +540,7 @@ if len(sys.argv) != 2:
 
 argument = os.path.expanduser(sys.argv[1])
 
-if "apt://" in argument:
+if argument.lower().startswith("apt:"):
     app = URLApp(argument)
 else:
     if not os.path.exists(argument):
