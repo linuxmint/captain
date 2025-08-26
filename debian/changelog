@@ -1,3 +1,13 @@
+captain (1.0.7) zara; urgency=medium
+
+  [ Timothy Feierabend ]
+  * fixed url parsing to accept apt: and apt:// (#13)
+
+  [ Clement Lefebvre ]
+  * l10n: Update translations
+
+ -- Clement Lefebvre <root@linuxmint.com>  Tue, 26 Aug 2025 17:37:16 +0200
+
 captain (1.0.6) zara; urgency=medium
 
   * l10n: Update translations
