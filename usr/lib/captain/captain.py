@@ -196,7 +196,7 @@ class App():
 
     @_idle
     def set_package_status(self, status_type, status, button_label):
-        self.ui_infobar_label.set_markup(status)
+        self.ui_infobar_label.set_text(status)
         self.ui_infobar.set_message_type(status_type)
         self.ui_infobar.show()
         self.ui_install_button.set_label(button_label)
