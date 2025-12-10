@@ -1,3 +1,10 @@
+captain (1.1.0) zena; urgency=medium
+
+  [ Michael Webster ]
+  * Don't parse infobar status text as markup. No markup is used but text can include characters (<,>) that can be misinterpreted.
+
+ -- Clement Lefebvre <root@linuxmint.com>  Wed, 10 Dec 2025 16:23:12 +0000
+
 captain (1.0.9) zena; urgency=medium
 
   [ Serhan Tutar ]
