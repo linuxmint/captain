@@ -8,15 +8,15 @@ msgstr ""
 "Project-Id-Version: linuxmint\n"
 "Report-Msgid-Bugs-To: FULL NAME <EMAIL@ADDRESS>\n"
 "POT-Creation-Date: 2024-09-09 13:11+0100\n"
-"PO-Revision-Date: 2024-09-17 08:33+0000\n"
+"PO-Revision-Date: 2025-11-10 12:39+0000\n"
 "Last-Translator: Avi Markovitz <avi.markovitz@gmail.com>\n"
 "Language-Team: Hebrew <he@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Launchpad-Export-Date: 2025-08-26 15:26+0000\n"
-"X-Generator: Launchpad (build 919009172d854f2b8e4e8262db447f12f11d25eb)\n"
+"X-Launchpad-Export-Date: 2025-12-12 13:33+0000\n"
+"X-Generator: Launchpad (build 379e22b8475e3402088a4cdb4a6e7936a4d28414)\n"
 
 #: data/captain.desktop.in:3
 msgid "Package Installer"
@@ -86,7 +86,7 @@ msgstr "שגיאה: %s אינו מסופק עוד"
 #, python-format
 msgid "Requires changes in %d other package"
 msgid_plural "Requires changes in %d other packages"
-msgstr[0] "נדרש שינוי  בחבילה אחרות  %d"
+msgstr[0] "נדרש שינוי  בחבילה אחרת  %d"
 msgstr[1] "נדרש שינוי ב־%d  חבילות אחרות"
 
 #: usr/lib/captain/captain.py:263
@@ -103,7 +103,7 @@ msgstr "ג\"ב"
 
 #: usr/lib/captain/captain.py:299
 msgid "It is safer and recommended to install from the repositories instead."
-msgstr "בטוח יותר ומומלץ להתקין מהמאגרים במקום זאת."
+msgstr "מומלץ ובטוח יותר במקום זאת להתקין מהמאגרים."
 
 #: usr/lib/captain/captain.py:302
 msgid "The same version is already installed"
@@ -127,22 +127,22 @@ msgstr "חבילה חדשה יותר זמינה במאגרים"
 
 #: usr/lib/captain/captain.py:339
 msgid "Failed to install all dependencies"
-msgstr "התקנת כל התלויטת כשלה"
+msgstr "התקנת כל התלויות כשלה"
 
 #: usr/lib/captain/captain.py:346 usr/share/captain/deb_package.ui.h:12
 #, python-format
 msgid "%s is now installed."
-msgstr "%s  כעת מותקן."
+msgstr "%s מותקן כעת."
 
 #: usr/lib/captain/captain.py:372
 msgid "The content could not be extracted"
-msgstr "לא ניתן לחלף את התכולה"
+msgstr "לא ניתן לחלץ את התכולה"
 
 #: usr/lib/captain/captain.py:433 usr/lib/captain/captain.py:436
 #: usr/lib/captain/captain.py:438 usr/lib/captain/captain.py:482
 #, python-format
 msgid "The package '%s' could not be installed"
-msgstr "לא ניתן להתקים את החבילות  '%s'"
+msgstr "לא ניתן להתקין חבילה  '%s'"
 
 #: usr/lib/captain/captain.py:433
 msgid "It was not found in the repositories."
@@ -150,7 +150,7 @@ msgstr "היא לא נמצאה במאגרים."
 
 #: usr/lib/captain/captain.py:436
 msgid "It is already installed."
-msgstr "היא מותרנת כבר."
+msgstr "היא מותקנת כבר."
 
 #: usr/lib/captain/captain.py:438
 msgid "It is not installable."
@@ -203,8 +203,8 @@ msgstr "גודל:"
 
 #: usr/share/captain/deb_package.ui.h:8
 msgid "Included files"
-msgstr "כולל קבצים"
+msgstr "קבצים כלולים"
 
 #: usr/share/captain/deb_package.ui.h:10
 msgid "The installation was successful"
-msgstr "התקנה זו צלחה"
+msgstr "ההתקנה צלחה"

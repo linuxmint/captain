@@ -1,4 +1,4 @@
-# Arabic translation for linuxmint
+# Latvian translation for linuxmint
 # Copyright (c) 2025 Rosetta Contributors and Canonical Ltd 2025
 # This file is distributed under the same license as the linuxmint package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, 2025.
@@ -8,207 +8,204 @@ msgstr ""
 "Project-Id-Version: linuxmint\n"
 "Report-Msgid-Bugs-To: FULL NAME <EMAIL@ADDRESS>\n"
 "POT-Creation-Date: 2024-09-09 13:11+0100\n"
-"PO-Revision-Date: 2025-05-14 22:43+0000\n"
-"Last-Translator: Abdualrahman Hasan <Unknown>\n"
-"Language-Team: Arabic <ar@li.org>\n"
+"PO-Revision-Date: 2025-09-08 19:55+0000\n"
+"Last-Translator: Klavs Petersons <Unknown>\n"
+"Language-Team: Latvian <lv@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=6; plural=n==0 ? 0 : n==1 ? 1 : n==2 ? 2 : n % 100 >= "
-"3 && n % 100 <= 10 ? 3 : n % 100 >= 11 && n % 100 <= 99 ? 4 : 5;\n"
+"Plural-Forms: nplurals=3; plural=n%10==1 && n%100!=11 ? 0 : n != 0 ? 1 : 2;\n"
 "X-Launchpad-Export-Date: 2025-12-12 13:33+0000\n"
 "X-Generator: Launchpad (build 379e22b8475e3402088a4cdb4a6e7936a4d28414)\n"
 
 #: data/captain.desktop.in:3
 msgid "Package Installer"
-msgstr "مثبت الحزم"
+msgstr "Pakotnes instalētājs"
 
 #: data/captain.desktop.in:4
 msgid "Install a software package"
-msgstr "ثبت حزمة برنامج"
+msgstr "Programmatūras pakotnes instalēšana"
 
 #: usr/lib/captain/captain.py:125 usr/lib/captain/captain.py:429
 msgid "Broken dependencies"
-msgstr "إعتماديات مفقودة"
+msgstr "Bojātas nepieciešamās pakotnes"
 
 #: usr/lib/captain/captain.py:125 usr/lib/captain/captain.py:339
 #: usr/lib/captain/captain.py:429
 msgid "To fix this run 'sudo apt-get install -f' in a terminal window."
-msgstr "لإصلاح هذا شغل 'sudo apt-get install -f' في نافذة الوحدة الطرفية."
+msgstr ""
+"Lai to salabotu, palaidiet 'sudo apt-get install - f' termināļa logā."
 
 #: usr/lib/captain/captain.py:134
 #, python-format
 msgid "%s is not a valid package"
-msgstr "%s ليست حزمة صالحة"
+msgstr "%s nav derīga pakotne"
 
 #: usr/lib/captain/captain.py:135
 #, python-format
 msgid "The MIME type of this file is '%s'."
-msgstr "نوع ال MIME من هذا الملف يكون '%s'."
+msgstr "Šī faila MIME tips ir '%s'."
 
 #: usr/lib/captain/captain.py:137
 #, python-format
 msgid "Could not open %s"
-msgstr "تعذّر فتح %s"
+msgstr "Nevarēja atvērt %s"
 
 #: usr/lib/captain/captain.py:138
 msgid "The file might be corrupted or missing permissions."
-msgstr "الملف قد يكون معطوبا أو يتطلب صلاحيات مفقودة."
+msgstr "Fails, iespējams, ir bojāts vai tam trūkst atļauju."
 
 #: usr/lib/captain/captain.py:191
 msgid "Control files"
-msgstr "تحكم بالملفات"
+msgstr "Kontroles faili"
 
 #: usr/lib/captain/captain.py:195
 msgid "Data files"
-msgstr "ملفات البيانات"
+msgstr "Datu faili"
 
 #: usr/lib/captain/captain.py:202
 msgid "Error while reading the content"
-msgstr "خطأ عند قراءة المحتوى"
+msgstr "Lasot saturu, radās kļūda"
 
 #: usr/lib/captain/captain.py:229
 #, python-format
 msgid "Error: %s"
-msgstr "خطأ: %s"
+msgstr "Kļūda: %s"
 
 #: usr/lib/captain/captain.py:229 usr/lib/captain/captain.py:236
 #: usr/lib/captain/captain.py:246 usr/share/captain/deb_package.ui.h:9
 msgid "_Install Package"
-msgstr "_ثبّت الحزمة"
+msgstr "_Instalēt pakotni"
 
 #: usr/lib/captain/captain.py:235
 #, python-format
 msgid "Error: No longer provides %s"
-msgstr "خطأ: لم يعد يوفر %s"
+msgstr "Kļūda: vairs nenodrošina %s"
 
 #: usr/lib/captain/captain.py:245
 #, python-format
 msgid "Requires changes in %d other package"
 msgid_plural "Requires changes in %d other packages"
-msgstr[0] "يتطلب تغييرات في %d حزمة أخرى"
-msgstr[1] "يتطلب تغييرات في %d حزم أخرى"
-msgstr[2] "يتطلب تغييرات في %d حزم أخرى"
-msgstr[3] "يتطلب تغييرات في %d حزم أخرى"
-msgstr[4] "يتطلب تغييرات في %d حزم أخرى"
-msgstr[5] "يتطلب تغييرات في %d حزم أخرى"
+msgstr[0] "Nepieciešamas izmaiņas %d citā pakotnē"
+msgstr[1] "Nepieciešamas izmaiņas %d citās pakotnēs"
+msgstr[2] "Requires changes in %d other packages"
 
 #: usr/lib/captain/captain.py:263
 msgid "KB"
-msgstr "ك.ب"
+msgstr "KB"
 
 #: usr/lib/captain/captain.py:263
 msgid "MB"
-msgstr "م.ب"
+msgstr "MB"
 
 #: usr/lib/captain/captain.py:263 usr/lib/captain/captain.py:264
 msgid "GB"
-msgstr "ج.ب"
+msgstr "GB"
 
 #: usr/lib/captain/captain.py:299
 msgid "It is safer and recommended to install from the repositories instead."
-msgstr "من المستحسن والأكثر أمانآ التنزيل من المستودعات."
+msgstr "To ir drošāk un ieteicamāk instalēt no repozitorijiem."
 
 #: usr/lib/captain/captain.py:302
 msgid "The same version is already installed"
-msgstr "إصدار مماثل مثبت حاليا"
+msgstr "Tāda pati versija jau ir instalēta"
 
 #: usr/lib/captain/captain.py:302
 msgid "_Reinstall Package"
-msgstr "_أعد تثبيت الحزمة"
+msgstr "_Pārinstalēt pakotni"
 
 #: usr/lib/captain/captain.py:304
 msgid "This package is available in the repositories"
-msgstr "هذه الحزمة متوفرة في المستودعات"
+msgstr "Šī pakete ir pieejama repozitorijos"
 
 #: usr/lib/captain/captain.py:306
 msgid "An older version is available in the repositories"
-msgstr "هناك إصدار قديم متوفر في المستودعات"
+msgstr "Repozitorijos ir pieejama vecāka versija"
 
 #: usr/lib/captain/captain.py:308
 msgid "A newer version is available in the repositories"
-msgstr "هناك إصدار جديد متوفر في المستودعات"
+msgstr "Repozitorijos ir pieejama jaunāka versija"
 
 #: usr/lib/captain/captain.py:339
 msgid "Failed to install all dependencies"
-msgstr "فشل تثبيت كل الإعتماديات"
+msgstr "Neizdevās instalēt visas pakotnes"
 
 #: usr/lib/captain/captain.py:346 usr/share/captain/deb_package.ui.h:12
 #, python-format
 msgid "%s is now installed."
-msgstr "%s مثبت الآن."
+msgstr "%s tagad ir instalēta."
 
 #: usr/lib/captain/captain.py:372
 msgid "The content could not be extracted"
-msgstr "لم يتم استخراج المحتوى"
+msgstr "Saturu nevarēja izpakot"
 
 #: usr/lib/captain/captain.py:433 usr/lib/captain/captain.py:436
 #: usr/lib/captain/captain.py:438 usr/lib/captain/captain.py:482
 #, python-format
 msgid "The package '%s' could not be installed"
-msgstr "لم يتم تثبيت الحزمة '%s'"
+msgstr "Pakotni '%s' nevarēja instalēt"
 
 #: usr/lib/captain/captain.py:433
 msgid "It was not found in the repositories."
-msgstr "إنها غير موجودة في المستودعات"
+msgstr "Tas netika atrasts repozitorijos."
 
 #: usr/lib/captain/captain.py:436
 msgid "It is already installed."
-msgstr "إنها حاليا مثبتة."
+msgstr "Tas jau ir instalēts."
 
 #: usr/lib/captain/captain.py:438
 msgid "It is not installable."
-msgstr "لا يمكن تثبيتها."
+msgstr "Tas nav instalējams."
 
 #: usr/share/captain/apt_url.ui.h:1
 msgid "Install additional software?"
-msgstr "هل تريد تثبيت برامج إضافية؟"
+msgstr "Vai instalēt papildu programmatūru?"
 
 #: usr/share/captain/apt_url.ui.h:3
 #, python-format
 msgid "Do you want to install '%s'?"
-msgstr "هل تريد تثبيت '%s'؟"
+msgstr "Vai vēlaties instalēt '%s'?"
 
 #: usr/share/captain/apt_url.ui.h:4
 msgid "Description"
-msgstr "الوصف"
+msgstr "Apraksts"
 
 #: usr/share/captain/apt_url.ui.h:5
 msgid "_Install"
-msgstr "_تثبيت"
+msgstr "_Instalēt"
 
 #: usr/share/captain/deb_package.ui.h:1
 msgid "Details"
-msgstr "التّفاصيل"
+msgstr "Detalizēta informācija"
 
 #: usr/share/captain/deb_package.ui.h:2
 msgid "The following packages need to be installed:"
-msgstr "بحاجة إلى تثبيت الحزم التالية:"
+msgstr "Jāinstalē šādas pakotnes:"
 
 #: usr/share/captain/deb_package.ui.h:3
 msgid "The following packages need to be removed:"
-msgstr "بحاجة إلى حذف الحزم التالية:"
+msgstr "Ir jānoņem šādas pakotnes:"
 
 #: usr/share/captain/deb_package.ui.h:4
 msgid "Opening the package"
-msgstr "يتم فتح الحزمة"
+msgstr "Atver pakotni"
 
 #: usr/share/captain/deb_package.ui.h:5
 msgid "_Details"
-msgstr "_التفاصيل"
+msgstr "_Detalizēta informācija"
 
 #: usr/share/captain/deb_package.ui.h:6
 msgid "Maintainer:"
-msgstr "مشرف الصيانة:"
+msgstr "Uzturētājs:"
 
 #: usr/share/captain/deb_package.ui.h:7
 msgid "Size:"
-msgstr "الحجم:"
+msgstr "Lielums:"
 
 #: usr/share/captain/deb_package.ui.h:8
 msgid "Included files"
-msgstr "الملفات المضمَّنة"
+msgstr "Iekļautie faili"
 
 #: usr/share/captain/deb_package.ui.h:10
 msgid "The installation was successful"
-msgstr "نجح التثبيت"
+msgstr "Instalēšana bija veiksmīga"

@@ -1,4 +1,4 @@
-# Arabic translation for linuxmint
+# Filipino translation for linuxmint
 # Copyright (c) 2025 Rosetta Contributors and Canonical Ltd 2025
 # This file is distributed under the same license as the linuxmint package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, 2025.
@@ -8,207 +8,203 @@ msgstr ""
 "Project-Id-Version: linuxmint\n"
 "Report-Msgid-Bugs-To: FULL NAME <EMAIL@ADDRESS>\n"
 "POT-Creation-Date: 2024-09-09 13:11+0100\n"
-"PO-Revision-Date: 2025-05-14 22:43+0000\n"
-"Last-Translator: Abdualrahman Hasan <Unknown>\n"
-"Language-Team: Arabic <ar@li.org>\n"
+"PO-Revision-Date: 2025-11-01 13:51+0000\n"
+"Last-Translator: Emir Mendoza Emir's BTIN <Unknown>\n"
+"Language-Team: Filipino <fil@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=6; plural=n==0 ? 0 : n==1 ? 1 : n==2 ? 2 : n % 100 >= "
-"3 && n % 100 <= 10 ? 3 : n % 100 >= 11 && n % 100 <= 99 ? 4 : 5;\n"
+"Plural-Forms: nplurals=2; plural=n > 1;\n"
 "X-Launchpad-Export-Date: 2025-12-12 13:33+0000\n"
 "X-Generator: Launchpad (build 379e22b8475e3402088a4cdb4a6e7936a4d28414)\n"
 
 #: data/captain.desktop.in:3
 msgid "Package Installer"
-msgstr "مثبت الحزم"
+msgstr "Package Installer"
 
 #: data/captain.desktop.in:4
 msgid "Install a software package"
-msgstr "ثبت حزمة برنامج"
+msgstr "Mag-install ng software package"
 
 #: usr/lib/captain/captain.py:125 usr/lib/captain/captain.py:429
 msgid "Broken dependencies"
-msgstr "إعتماديات مفقودة"
+msgstr "Broken dependencies"
 
 #: usr/lib/captain/captain.py:125 usr/lib/captain/captain.py:339
 #: usr/lib/captain/captain.py:429
 msgid "To fix this run 'sudo apt-get install -f' in a terminal window."
-msgstr "لإصلاح هذا شغل 'sudo apt-get install -f' في نافذة الوحدة الطرفية."
+msgstr ""
+"Para ayusin ito, patakbuhin ang 'sudo apt-get install -f' sa Terminal."
 
 #: usr/lib/captain/captain.py:134
 #, python-format
 msgid "%s is not a valid package"
-msgstr "%s ليست حزمة صالحة"
+msgstr "Hindi valid na package ang %s"
 
 #: usr/lib/captain/captain.py:135
 #, python-format
 msgid "The MIME type of this file is '%s'."
-msgstr "نوع ال MIME من هذا الملف يكون '%s'."
+msgstr "'%s' ang MIME type para sa file na ito."
 
 #: usr/lib/captain/captain.py:137
 #, python-format
 msgid "Could not open %s"
-msgstr "تعذّر فتح %s"
+msgstr "Hindi mabuksan ang %s"
 
 #: usr/lib/captain/captain.py:138
 msgid "The file might be corrupted or missing permissions."
-msgstr "الملف قد يكون معطوبا أو يتطلب صلاحيات مفقودة."
+msgstr "Baka corrupt ang file o kulang ang permiso."
 
 #: usr/lib/captain/captain.py:191
 msgid "Control files"
-msgstr "تحكم بالملفات"
+msgstr "Control files"
 
 #: usr/lib/captain/captain.py:195
 msgid "Data files"
-msgstr "ملفات البيانات"
+msgstr "Data files"
 
 #: usr/lib/captain/captain.py:202
 msgid "Error while reading the content"
-msgstr "خطأ عند قراءة المحتوى"
+msgstr "Pumalya habang binabasa ang laman"
 
 #: usr/lib/captain/captain.py:229
 #, python-format
 msgid "Error: %s"
-msgstr "خطأ: %s"
+msgstr "Error: %s"
 
 #: usr/lib/captain/captain.py:229 usr/lib/captain/captain.py:236
 #: usr/lib/captain/captain.py:246 usr/share/captain/deb_package.ui.h:9
 msgid "_Install Package"
-msgstr "_ثبّت الحزمة"
+msgstr "_Mag-install ng Package"
 
 #: usr/lib/captain/captain.py:235
 #, python-format
 msgid "Error: No longer provides %s"
-msgstr "خطأ: لم يعد يوفر %s"
+msgstr "Error: Hindi na kasama ang %s"
 
 #: usr/lib/captain/captain.py:245
 #, python-format
 msgid "Requires changes in %d other package"
 msgid_plural "Requires changes in %d other packages"
-msgstr[0] "يتطلب تغييرات في %d حزمة أخرى"
-msgstr[1] "يتطلب تغييرات في %d حزم أخرى"
-msgstr[2] "يتطلب تغييرات في %d حزم أخرى"
-msgstr[3] "يتطلب تغييرات في %d حزم أخرى"
-msgstr[4] "يتطلب تغييرات في %d حزم أخرى"
-msgstr[5] "يتطلب تغييرات في %d حزم أخرى"
+msgstr[0] "Kailangang baguhin ang %d iba pang package"
+msgstr[1] "Kailangang baguhin ang %d iba pang packages"
 
 #: usr/lib/captain/captain.py:263
 msgid "KB"
-msgstr "ك.ب"
+msgstr "KB"
 
 #: usr/lib/captain/captain.py:263
 msgid "MB"
-msgstr "م.ب"
+msgstr "MB"
 
 #: usr/lib/captain/captain.py:263 usr/lib/captain/captain.py:264
 msgid "GB"
-msgstr "ج.ب"
+msgstr "GB"
 
 #: usr/lib/captain/captain.py:299
 msgid "It is safer and recommended to install from the repositories instead."
-msgstr "من المستحسن والأكثر أمانآ التنزيل من المستودعات."
+msgstr "Mas ligtas na mag-install mula sa repositories."
 
 #: usr/lib/captain/captain.py:302
 msgid "The same version is already installed"
-msgstr "إصدار مماثل مثبت حاليا"
+msgstr "Parehong bersiyon na ang naka-install"
 
 #: usr/lib/captain/captain.py:302
 msgid "_Reinstall Package"
-msgstr "_أعد تثبيت الحزمة"
+msgstr "_I-install Muli ang Package"
 
 #: usr/lib/captain/captain.py:304
 msgid "This package is available in the repositories"
-msgstr "هذه الحزمة متوفرة في المستودعات"
+msgstr "Nasa repositories ang package na ito"
 
 #: usr/lib/captain/captain.py:306
 msgid "An older version is available in the repositories"
-msgstr "هناك إصدار قديم متوفر في المستودعات"
+msgstr "Lumang bersiyon ang nasa repositories"
 
 #: usr/lib/captain/captain.py:308
 msgid "A newer version is available in the repositories"
-msgstr "هناك إصدار جديد متوفر في المستودعات"
+msgstr "Bagong bersiyon ang nasa repositories"
 
 #: usr/lib/captain/captain.py:339
 msgid "Failed to install all dependencies"
-msgstr "فشل تثبيت كل الإعتماديات"
+msgstr "Bigong mag-install ng lahat ng dependencies"
 
 #: usr/lib/captain/captain.py:346 usr/share/captain/deb_package.ui.h:12
 #, python-format
 msgid "%s is now installed."
-msgstr "%s مثبت الآن."
+msgstr "Naka-install na ang %s."
 
 #: usr/lib/captain/captain.py:372
 msgid "The content could not be extracted"
-msgstr "لم يتم استخراج المحتوى"
+msgstr "Hindi ma-extract ang laman"
 
 #: usr/lib/captain/captain.py:433 usr/lib/captain/captain.py:436
 #: usr/lib/captain/captain.py:438 usr/lib/captain/captain.py:482
 #, python-format
 msgid "The package '%s' could not be installed"
-msgstr "لم يتم تثبيت الحزمة '%s'"
+msgstr "Bigong mag-install ng '%s'"
 
 #: usr/lib/captain/captain.py:433
 msgid "It was not found in the repositories."
-msgstr "إنها غير موجودة في المستودعات"
+msgstr "Hindi ito mahanap sa repositories."
 
 #: usr/lib/captain/captain.py:436
 msgid "It is already installed."
-msgstr "إنها حاليا مثبتة."
+msgstr "Naka-install na ito."
 
 #: usr/lib/captain/captain.py:438
 msgid "It is not installable."
-msgstr "لا يمكن تثبيتها."
+msgstr "Hindi ito pwede i-install."
 
 #: usr/share/captain/apt_url.ui.h:1
 msgid "Install additional software?"
-msgstr "هل تريد تثبيت برامج إضافية؟"
+msgstr "Mag-install ng dagdag na software?"
 
 #: usr/share/captain/apt_url.ui.h:3
 #, python-format
 msgid "Do you want to install '%s'?"
-msgstr "هل تريد تثبيت '%s'؟"
+msgstr "Gusto mo bang i-install ang '%s'?"
 
 #: usr/share/captain/apt_url.ui.h:4
 msgid "Description"
-msgstr "الوصف"
+msgstr "Paglalarawan"
 
 #: usr/share/captain/apt_url.ui.h:5
 msgid "_Install"
-msgstr "_تثبيت"
+msgstr "_Mag-install"
 
 #: usr/share/captain/deb_package.ui.h:1
 msgid "Details"
-msgstr "التّفاصيل"
+msgstr "Mga Detalye"
 
 #: usr/share/captain/deb_package.ui.h:2
 msgid "The following packages need to be installed:"
-msgstr "بحاجة إلى تثبيت الحزم التالية:"
+msgstr "Kailangan i-install ang sumusunod na packages:"
 
 #: usr/share/captain/deb_package.ui.h:3
 msgid "The following packages need to be removed:"
-msgstr "بحاجة إلى حذف الحزم التالية:"
+msgstr "Kailangan tanggalin ang sumusunod na packages:"
 
 #: usr/share/captain/deb_package.ui.h:4
 msgid "Opening the package"
-msgstr "يتم فتح الحزمة"
+msgstr "Binubuksan ang package"
 
 #: usr/share/captain/deb_package.ui.h:5
 msgid "_Details"
-msgstr "_التفاصيل"
+msgstr "_Mga Detalye"
 
 #: usr/share/captain/deb_package.ui.h:6
 msgid "Maintainer:"
-msgstr "مشرف الصيانة:"
+msgstr "Maintainer:"
 
 #: usr/share/captain/deb_package.ui.h:7
 msgid "Size:"
-msgstr "الحجم:"
+msgstr "Laki:"
 
 #: usr/share/captain/deb_package.ui.h:8
 msgid "Included files"
-msgstr "الملفات المضمَّنة"
+msgstr "Kasamang files"
 
 #: usr/share/captain/deb_package.ui.h:10
 msgid "The installation was successful"
-msgstr "نجح التثبيت"
+msgstr "Tagumpay ang pag-install"

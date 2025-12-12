@@ -8,15 +8,15 @@ msgstr ""
 "Project-Id-Version: linuxmint\n"
 "Report-Msgid-Bugs-To: FULL NAME <EMAIL@ADDRESS>\n"
 "POT-Creation-Date: 2024-09-09 13:11+0100\n"
-"PO-Revision-Date: 2025-06-23 11:34+0000\n"
+"PO-Revision-Date: 2025-09-12 06:56+0000\n"
 "Last-Translator: Anthony Guechoum <a.guechoum@proton.me>\n"
 "Language-Team: Breton <br@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n > 1;\n"
-"X-Launchpad-Export-Date: 2025-08-26 15:26+0000\n"
-"X-Generator: Launchpad (build 919009172d854f2b8e4e8262db447f12f11d25eb)\n"
+"X-Launchpad-Export-Date: 2025-12-12 13:33+0000\n"
+"X-Generator: Launchpad (build 379e22b8475e3402088a4cdb4a6e7936a4d28414)\n"
 
 #: data/captain.desktop.in:3
 msgid "Package Installer"
@@ -24,7 +24,7 @@ msgstr "Meziant staliañ ar pakadoù"
 
 #: data/captain.desktop.in:4
 msgid "Install a software package"
-msgstr ""
+msgstr "Staliañ pakad ur meziant"
 
 #: usr/lib/captain/captain.py:125 usr/lib/captain/captain.py:429
 msgid "Broken dependencies"
@@ -34,21 +34,23 @@ msgstr "Amzalc'hioù torret"
 #: usr/lib/captain/captain.py:429
 msgid "To fix this run 'sudo apt-get install -f' in a terminal window."
 msgstr ""
+"A-benn ratreañ an dra-mañ, erounit 'sudo apt-get install -f' war prenestr un "
+"dermenell."
 
 #: usr/lib/captain/captain.py:134
 #, python-format
 msgid "%s is not a valid package"
-msgstr ""
+msgstr "N'eo ket %s ur pakad talvoudek"
 
 #: usr/lib/captain/captain.py:135
 #, python-format
 msgid "The MIME type of this file is '%s'."
-msgstr ""
+msgstr "'%s' eo rizh MIME ar restr-mañ."
 
 #: usr/lib/captain/captain.py:137
 #, python-format
 msgid "Could not open %s"
-msgstr ""
+msgstr "N'haller ket digeriñ %s"
 
 #: usr/lib/captain/captain.py:138
 msgid "The file might be corrupted or missing permissions."
@@ -56,15 +58,15 @@ msgstr ""
 
 #: usr/lib/captain/captain.py:191
 msgid "Control files"
-msgstr ""
+msgstr "Restroù kontrol"
 
 #: usr/lib/captain/captain.py:195
 msgid "Data files"
-msgstr ""
+msgstr "Restroù roadennoù"
 
 #: usr/lib/captain/captain.py:202
 msgid "Error while reading the content"
-msgstr ""
+msgstr "Fazi en ur lenn an endalc'had"
 
 #: usr/lib/captain/captain.py:229
 #, python-format
@@ -106,7 +108,7 @@ msgstr ""
 
 #: usr/lib/captain/captain.py:302
 msgid "The same version is already installed"
-msgstr ""
+msgstr "Un handelv heñvel a zo staliet endeo."
 
 #: usr/lib/captain/captain.py:302
 msgid "_Reinstall Package"
@@ -114,24 +116,24 @@ msgstr "_Adstaliañ ar pakad"
 
 #: usr/lib/captain/captain.py:304
 msgid "This package is available in the repositories"
-msgstr ""
+msgstr "Hegerz eo ar pakad-mañ er mirlec'hioù."
 
 #: usr/lib/captain/captain.py:306
 msgid "An older version is available in the repositories"
-msgstr ""
+msgstr "Un handelv koshoc'h a zo hegerz er mirlec'hioù."
 
 #: usr/lib/captain/captain.py:308
 msgid "A newer version is available in the repositories"
-msgstr ""
+msgstr "Un handelv neveshoc'h a zo hegerz er mirlec'hioù."
 
 #: usr/lib/captain/captain.py:339
 msgid "Failed to install all dependencies"
-msgstr ""
+msgstr "C'hwitadenn war ar staliañ an amzalc'hioù"
 
 #: usr/lib/captain/captain.py:346 usr/share/captain/deb_package.ui.h:12
 #, python-format
 msgid "%s is now installed."
-msgstr ""
+msgstr "Staliet eo %s bremañ."
 
 #: usr/lib/captain/captain.py:372
 msgid "The content could not be extracted"
@@ -141,19 +143,19 @@ msgstr ""
 #: usr/lib/captain/captain.py:438 usr/lib/captain/captain.py:482
 #, python-format
 msgid "The package '%s' could not be installed"
-msgstr ""
+msgstr "N'haller ket staliañ ar pakad '%s'"
 
 #: usr/lib/captain/captain.py:433
 msgid "It was not found in the repositories."
-msgstr ""
+msgstr "Ne oa ket bet kavet er mirlec'hioù."
 
 #: usr/lib/captain/captain.py:436
 msgid "It is already installed."
-msgstr ""
+msgstr "Staliet eo endeo."
 
 #: usr/lib/captain/captain.py:438
 msgid "It is not installable."
-msgstr ""
+msgstr "N'hall ket bezañ staliet."
 
 #: usr/share/captain/apt_url.ui.h:1
 msgid "Install additional software?"
@@ -162,7 +164,7 @@ msgstr ""
 #: usr/share/captain/apt_url.ui.h:3
 #, python-format
 msgid "Do you want to install '%s'?"
-msgstr ""
+msgstr "Ha fellout a ra deoc'h staliañ '%s'?"
 
 #: usr/share/captain/apt_url.ui.h:4
 msgid "Description"
@@ -178,15 +180,15 @@ msgstr "Munudoù"
 
 #: usr/share/captain/deb_package.ui.h:2
 msgid "The following packages need to be installed:"
-msgstr ""
+msgstr "Ret eo staliañ ar pakadoù da-heul:"
 
 #: usr/share/captain/deb_package.ui.h:3
 msgid "The following packages need to be removed:"
-msgstr ""
+msgstr "Ret eo dilemel ar pakadoù da-heul:"
 
 #: usr/share/captain/deb_package.ui.h:4
 msgid "Opening the package"
-msgstr ""
+msgstr "O tigeriñ ar pakad"
 
 #: usr/share/captain/deb_package.ui.h:5
 msgid "_Details"

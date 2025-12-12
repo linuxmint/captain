@@ -1,4 +1,4 @@
-# Arabic translation for linuxmint
+# Croatian translation for linuxmint
 # Copyright (c) 2025 Rosetta Contributors and Canonical Ltd 2025
 # This file is distributed under the same license as the linuxmint package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, 2025.
@@ -8,207 +8,206 @@ msgstr ""
 "Project-Id-Version: linuxmint\n"
 "Report-Msgid-Bugs-To: FULL NAME <EMAIL@ADDRESS>\n"
 "POT-Creation-Date: 2024-09-09 13:11+0100\n"
-"PO-Revision-Date: 2025-05-14 22:43+0000\n"
-"Last-Translator: Abdualrahman Hasan <Unknown>\n"
-"Language-Team: Arabic <ar@li.org>\n"
+"PO-Revision-Date: 2025-09-28 09:58+0000\n"
+"Last-Translator: Niko Košćina <nikokoscina@icloud.com>\n"
+"Language-Team: Croatian <hr@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=6; plural=n==0 ? 0 : n==1 ? 1 : n==2 ? 2 : n % 100 >= "
-"3 && n % 100 <= 10 ? 3 : n % 100 >= 11 && n % 100 <= 99 ? 4 : 5;\n"
+"Plural-Forms: nplurals=3; plural=n%10==1 && n%100!=11 ? 0 : n%10>=2 && "
+"n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
 "X-Launchpad-Export-Date: 2025-12-12 13:33+0000\n"
 "X-Generator: Launchpad (build 379e22b8475e3402088a4cdb4a6e7936a4d28414)\n"
 
 #: data/captain.desktop.in:3
 msgid "Package Installer"
-msgstr "مثبت الحزم"
+msgstr "Instalacija paketa"
 
 #: data/captain.desktop.in:4
 msgid "Install a software package"
-msgstr "ثبت حزمة برنامج"
+msgstr "Instaliraj softverski paket"
 
 #: usr/lib/captain/captain.py:125 usr/lib/captain/captain.py:429
 msgid "Broken dependencies"
-msgstr "إعتماديات مفقودة"
+msgstr "Slomljene zavisnosti"
 
 #: usr/lib/captain/captain.py:125 usr/lib/captain/captain.py:339
 #: usr/lib/captain/captain.py:429
 msgid "To fix this run 'sudo apt-get install -f' in a terminal window."
-msgstr "لإصلاح هذا شغل 'sudo apt-get install -f' في نافذة الوحدة الطرفية."
+msgstr ""
+"Kako biste ovo popravili, pokrenite 'sudo apt-get install -f' u terminalnom "
+"prozoru."
 
 #: usr/lib/captain/captain.py:134
 #, python-format
 msgid "%s is not a valid package"
-msgstr "%s ليست حزمة صالحة"
+msgstr "%s nije važeći paket"
 
 #: usr/lib/captain/captain.py:135
 #, python-format
 msgid "The MIME type of this file is '%s'."
-msgstr "نوع ال MIME من هذا الملف يكون '%s'."
+msgstr "MIME tip ove datoteke je '%s'."
 
 #: usr/lib/captain/captain.py:137
 #, python-format
 msgid "Could not open %s"
-msgstr "تعذّر فتح %s"
+msgstr "Ne može se otvoriti %s"
 
 #: usr/lib/captain/captain.py:138
 msgid "The file might be corrupted or missing permissions."
-msgstr "الملف قد يكون معطوبا أو يتطلب صلاحيات مفقودة."
+msgstr "Datoteka može biti oštećena ili nedostaju dozvole."
 
 #: usr/lib/captain/captain.py:191
 msgid "Control files"
-msgstr "تحكم بالملفات"
+msgstr "Kontroliraj datoteke"
 
 #: usr/lib/captain/captain.py:195
 msgid "Data files"
-msgstr "ملفات البيانات"
+msgstr "Datoteke s podacima"
 
 #: usr/lib/captain/captain.py:202
 msgid "Error while reading the content"
-msgstr "خطأ عند قراءة المحتوى"
+msgstr "Greška kod čitanja sadržaja"
 
 #: usr/lib/captain/captain.py:229
 #, python-format
 msgid "Error: %s"
-msgstr "خطأ: %s"
+msgstr "Greška: %s"
 
 #: usr/lib/captain/captain.py:229 usr/lib/captain/captain.py:236
 #: usr/lib/captain/captain.py:246 usr/share/captain/deb_package.ui.h:9
 msgid "_Install Package"
-msgstr "_ثبّت الحزمة"
+msgstr "_Instaliraj paket"
 
 #: usr/lib/captain/captain.py:235
 #, python-format
 msgid "Error: No longer provides %s"
-msgstr "خطأ: لم يعد يوفر %s"
+msgstr "Greška: Više ne omogućuje %s"
 
 #: usr/lib/captain/captain.py:245
 #, python-format
 msgid "Requires changes in %d other package"
 msgid_plural "Requires changes in %d other packages"
-msgstr[0] "يتطلب تغييرات في %d حزمة أخرى"
-msgstr[1] "يتطلب تغييرات في %d حزم أخرى"
-msgstr[2] "يتطلب تغييرات في %d حزم أخرى"
-msgstr[3] "يتطلب تغييرات في %d حزم أخرى"
-msgstr[4] "يتطلب تغييرات في %d حزم أخرى"
-msgstr[5] "يتطلب تغييرات في %d حزم أخرى"
+msgstr[0] "Potrebna promjena u %d paketu"
+msgstr[1] "Potrebne promjene u %d ostalim paketima"
+msgstr[2] "Potrebne promjene u %d drugim paketima"
 
 #: usr/lib/captain/captain.py:263
 msgid "KB"
-msgstr "ك.ب"
+msgstr "KB"
 
 #: usr/lib/captain/captain.py:263
 msgid "MB"
-msgstr "م.ب"
+msgstr "MB"
 
 #: usr/lib/captain/captain.py:263 usr/lib/captain/captain.py:264
 msgid "GB"
-msgstr "ج.ب"
+msgstr "GB"
 
 #: usr/lib/captain/captain.py:299
 msgid "It is safer and recommended to install from the repositories instead."
-msgstr "من المستحسن والأكثر أمانآ التنزيل من المستودعات."
+msgstr "Sigurnije je i preporučeno instalirati iz repozitorije."
 
 #: usr/lib/captain/captain.py:302
 msgid "The same version is already installed"
-msgstr "إصدار مماثل مثبت حاليا"
+msgstr "Ista verzija je već instalirana"
 
 #: usr/lib/captain/captain.py:302
 msgid "_Reinstall Package"
-msgstr "_أعد تثبيت الحزمة"
+msgstr "_Ponovno instaliraj paket"
 
 #: usr/lib/captain/captain.py:304
 msgid "This package is available in the repositories"
-msgstr "هذه الحزمة متوفرة في المستودعات"
+msgstr "Ovaj paket je dostupan u repozitorijima"
 
 #: usr/lib/captain/captain.py:306
 msgid "An older version is available in the repositories"
-msgstr "هناك إصدار قديم متوفر في المستودعات"
+msgstr "Starija verzija je dostupna u repozitorijima"
 
 #: usr/lib/captain/captain.py:308
 msgid "A newer version is available in the repositories"
-msgstr "هناك إصدار جديد متوفر في المستودعات"
+msgstr "Nova verzija je dostupna u repozitorijima"
 
 #: usr/lib/captain/captain.py:339
 msgid "Failed to install all dependencies"
-msgstr "فشل تثبيت كل الإعتماديات"
+msgstr "Neuspješno instaliranje svih zavisnosti"
 
 #: usr/lib/captain/captain.py:346 usr/share/captain/deb_package.ui.h:12
 #, python-format
 msgid "%s is now installed."
-msgstr "%s مثبت الآن."
+msgstr "%s je sada instaliran."
 
 #: usr/lib/captain/captain.py:372
 msgid "The content could not be extracted"
-msgstr "لم يتم استخراج المحتوى"
+msgstr "Sadržaj nije mogao biti izvučen"
 
 #: usr/lib/captain/captain.py:433 usr/lib/captain/captain.py:436
 #: usr/lib/captain/captain.py:438 usr/lib/captain/captain.py:482
 #, python-format
 msgid "The package '%s' could not be installed"
-msgstr "لم يتم تثبيت الحزمة '%s'"
+msgstr "Paket '%s' se nije mogao instalirati"
 
 #: usr/lib/captain/captain.py:433
 msgid "It was not found in the repositories."
-msgstr "إنها غير موجودة في المستودعات"
+msgstr "Nije pronađeno u repozitorijima."
 
 #: usr/lib/captain/captain.py:436
 msgid "It is already installed."
-msgstr "إنها حاليا مثبتة."
+msgstr "Već je instalirano."
 
 #: usr/lib/captain/captain.py:438
 msgid "It is not installable."
-msgstr "لا يمكن تثبيتها."
+msgstr "Ne može biti instalirano"
 
 #: usr/share/captain/apt_url.ui.h:1
 msgid "Install additional software?"
-msgstr "هل تريد تثبيت برامج إضافية؟"
+msgstr "Instaliraj dodatni softver?"
 
 #: usr/share/captain/apt_url.ui.h:3
 #, python-format
 msgid "Do you want to install '%s'?"
-msgstr "هل تريد تثبيت '%s'؟"
+msgstr "Je li želite instalirati '%s'?"
 
 #: usr/share/captain/apt_url.ui.h:4
 msgid "Description"
-msgstr "الوصف"
+msgstr "Opis"
 
 #: usr/share/captain/apt_url.ui.h:5
 msgid "_Install"
-msgstr "_تثبيت"
+msgstr "_Instaliraj"
 
 #: usr/share/captain/deb_package.ui.h:1
 msgid "Details"
-msgstr "التّفاصيل"
+msgstr "Detalji"
 
 #: usr/share/captain/deb_package.ui.h:2
 msgid "The following packages need to be installed:"
-msgstr "بحاجة إلى تثبيت الحزم التالية:"
+msgstr "Sljedeći paketi moraju biti instalirani:"
 
 #: usr/share/captain/deb_package.ui.h:3
 msgid "The following packages need to be removed:"
-msgstr "بحاجة إلى حذف الحزم التالية:"
+msgstr "Sljedeći paketi moraju biti uklonjeni:"
 
 #: usr/share/captain/deb_package.ui.h:4
 msgid "Opening the package"
-msgstr "يتم فتح الحزمة"
+msgstr "Otvaranje paketa"
 
 #: usr/share/captain/deb_package.ui.h:5
 msgid "_Details"
-msgstr "_التفاصيل"
+msgstr "_Detalji"
 
 #: usr/share/captain/deb_package.ui.h:6
 msgid "Maintainer:"
-msgstr "مشرف الصيانة:"
+msgstr "Održavatelj:"
 
 #: usr/share/captain/deb_package.ui.h:7
 msgid "Size:"
-msgstr "الحجم:"
+msgstr "Veličina:"
 
 #: usr/share/captain/deb_package.ui.h:8
 msgid "Included files"
-msgstr "الملفات المضمَّنة"
+msgstr "Uključene datoteke"
 
 #: usr/share/captain/deb_package.ui.h:10
 msgid "The installation was successful"
-msgstr "نجح التثبيت"
+msgstr "Instalacija je uspjela"

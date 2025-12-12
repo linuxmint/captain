@@ -8,24 +8,24 @@ msgstr ""
 "Project-Id-Version: linuxmint\n"
 "Report-Msgid-Bugs-To: FULL NAME <EMAIL@ADDRESS>\n"
 "POT-Creation-Date: 2024-09-09 13:11+0100\n"
-"PO-Revision-Date: 2025-01-08 16:05+0000\n"
-"Last-Translator: GoldenVadim <Unknown>\n"
+"PO-Revision-Date: 2025-10-11 11:31+0000\n"
+"Last-Translator: MySha_61 <Unknown>\n"
 "Language-Team: Ukrainian <uk@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=n%10==1 && n%100!=11 ? 0 : n%10>=2 && "
 "n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
-"X-Launchpad-Export-Date: 2025-08-26 15:26+0000\n"
-"X-Generator: Launchpad (build 919009172d854f2b8e4e8262db447f12f11d25eb)\n"
+"X-Launchpad-Export-Date: 2025-12-12 13:33+0000\n"
+"X-Generator: Launchpad (build 379e22b8475e3402088a4cdb4a6e7936a4d28414)\n"
 
 #: data/captain.desktop.in:3
 msgid "Package Installer"
-msgstr "Встановлювач пакунків"
+msgstr "Установник пакунків"
 
 #: data/captain.desktop.in:4
 msgid "Install a software package"
-msgstr "Встановити пакунок ПЗ"
+msgstr "Установити пакунок програми"
 
 #: usr/lib/captain/captain.py:125 usr/lib/captain/captain.py:429
 msgid "Broken dependencies"
@@ -45,7 +45,7 @@ msgstr "%s не є правильним пакунком"
 #: usr/lib/captain/captain.py:135
 #, python-format
 msgid "The MIME type of this file is '%s'."
-msgstr "MIME тип цього файлу — '%s'."
+msgstr "Тип MIME цього файлу — \"%s\"."
 
 #: usr/lib/captain/captain.py:137
 #, python-format
@@ -54,11 +54,11 @@ msgstr "Не вдалося відкрити %s"
 
 #: usr/lib/captain/captain.py:138
 msgid "The file might be corrupted or missing permissions."
-msgstr "Файл може бути пошкодженим або бракує дозволів."
+msgstr "Файл може бути пошкодженим або таким, якому бракує дозволів."
 
 #: usr/lib/captain/captain.py:191
 msgid "Control files"
-msgstr "Контрольні файли"
+msgstr "Керівні файли"
 
 #: usr/lib/captain/captain.py:195
 msgid "Data files"
@@ -76,7 +76,7 @@ msgstr "Помилка: %s"
 #: usr/lib/captain/captain.py:229 usr/lib/captain/captain.py:236
 #: usr/lib/captain/captain.py:246 usr/share/captain/deb_package.ui.h:9
 msgid "_Install Package"
-msgstr "Встановити пакунок"
+msgstr "_Установити пакунок"
 
 #: usr/lib/captain/captain.py:235
 #, python-format
@@ -87,13 +87,13 @@ msgstr "Помилка: більше не надає %s"
 #, python-format
 msgid "Requires changes in %d other package"
 msgid_plural "Requires changes in %d other packages"
-msgstr[0] "Потребує змін в %d іншому пакеті"
-msgstr[1] "Потребує змін в %d інших пакетів"
-msgstr[2] "Потребує змін в %d інших пакетів"
+msgstr[0] "Потребує змін в %d іншому пакунку"
+msgstr[1] "Потребує змін у %d інших пакунках"
+msgstr[2] "Потребує змін у %d інших пакунках"
 
 #: usr/lib/captain/captain.py:263
 msgid "KB"
-msgstr "КБ"
+msgstr "кБ"
 
 #: usr/lib/captain/captain.py:263
 msgid "MB"
@@ -105,7 +105,7 @@ msgstr "ГБ"
 
 #: usr/lib/captain/captain.py:299
 msgid "It is safer and recommended to install from the repositories instead."
-msgstr "Безпечніше і рекомендовано встановлювати з сховищ."
+msgstr "Безпечніше і рекомендовано натомість установлювати зі сховищ."
 
 #: usr/lib/captain/captain.py:302
 msgid "The same version is already installed"
@@ -113,7 +113,7 @@ msgstr "Та сама версія вже встановлена"
 
 #: usr/lib/captain/captain.py:302
 msgid "_Reinstall Package"
-msgstr "Перевстановити пакунок"
+msgstr "_Перевстановити пакунок"
 
 #: usr/lib/captain/captain.py:304
 msgid "This package is available in the repositories"
@@ -134,7 +134,7 @@ msgstr "Не вдалося встановити всі залежності"
 #: usr/lib/captain/captain.py:346 usr/share/captain/deb_package.ui.h:12
 #, python-format
 msgid "%s is now installed."
-msgstr "%s встановлено."
+msgstr "%s тепер установлено."
 
 #: usr/lib/captain/captain.py:372
 msgid "The content could not be extracted"
@@ -148,19 +148,19 @@ msgstr "Пакунок '%s' не може бути встановлено"
 
 #: usr/lib/captain/captain.py:433
 msgid "It was not found in the repositories."
-msgstr "Його не було знайдено в репозитаріях."
+msgstr "Його не було знайдено в сховищах."
 
 #: usr/lib/captain/captain.py:436
 msgid "It is already installed."
-msgstr "Його вже встановлено"
+msgstr "Він уже встановлений."
 
 #: usr/lib/captain/captain.py:438
 msgid "It is not installable."
-msgstr "Він не встановлювальний"
+msgstr "Він не встановлюваний."
 
 #: usr/share/captain/apt_url.ui.h:1
 msgid "Install additional software?"
-msgstr "Встановити додаткове програмне забезпечення?"
+msgstr "Чи встановити додаткові програми?"
 
 #: usr/share/captain/apt_url.ui.h:3
 #, python-format
@@ -173,19 +173,19 @@ msgstr "Опис"
 
 #: usr/share/captain/apt_url.ui.h:5
 msgid "_Install"
-msgstr "Встановити"
+msgstr "_Установити"
 
 #: usr/share/captain/deb_package.ui.h:1
 msgid "Details"
-msgstr "Подробиці"
+msgstr "Докладно"
 
 #: usr/share/captain/deb_package.ui.h:2
 msgid "The following packages need to be installed:"
-msgstr "Необхідно встановити наступні пакунки:"
+msgstr "Потрібно встановити такі пакунки:"
 
 #: usr/share/captain/deb_package.ui.h:3
 msgid "The following packages need to be removed:"
-msgstr "Необхідно вилучити наступні пакунки:"
+msgstr "Потрібно вилучити такі пакунки:"
 
 #: usr/share/captain/deb_package.ui.h:4
 msgid "Opening the package"
@@ -193,7 +193,7 @@ msgstr "Відкриття пакунка"
 
 #: usr/share/captain/deb_package.ui.h:5
 msgid "_Details"
-msgstr "Подробиці"
+msgstr "_Докладно"
 
 #: usr/share/captain/deb_package.ui.h:6
 msgid "Maintainer:"
@@ -209,4 +209,4 @@ msgstr "Включені файли"
 
 #: usr/share/captain/deb_package.ui.h:10
 msgid "The installation was successful"
-msgstr "Встановлення успішне"
+msgstr "Установлення було успішним"

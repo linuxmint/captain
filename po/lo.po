@@ -1,4 +1,4 @@
-# Arabic translation for linuxmint
+# Lao translation for linuxmint
 # Copyright (c) 2025 Rosetta Contributors and Canonical Ltd 2025
 # This file is distributed under the same license as the linuxmint package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, 2025.
@@ -8,207 +8,202 @@ msgstr ""
 "Project-Id-Version: linuxmint\n"
 "Report-Msgid-Bugs-To: FULL NAME <EMAIL@ADDRESS>\n"
 "POT-Creation-Date: 2024-09-09 13:11+0100\n"
-"PO-Revision-Date: 2025-05-14 22:43+0000\n"
-"Last-Translator: Abdualrahman Hasan <Unknown>\n"
-"Language-Team: Arabic <ar@li.org>\n"
+"PO-Revision-Date: 2025-10-13 02:21+0000\n"
+"Last-Translator: boneni <Unknown>\n"
+"Language-Team: Lao <lo@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=6; plural=n==0 ? 0 : n==1 ? 1 : n==2 ? 2 : n % 100 >= "
-"3 && n % 100 <= 10 ? 3 : n % 100 >= 11 && n % 100 <= 99 ? 4 : 5;\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
 "X-Launchpad-Export-Date: 2025-12-12 13:33+0000\n"
 "X-Generator: Launchpad (build 379e22b8475e3402088a4cdb4a6e7936a4d28414)\n"
 
 #: data/captain.desktop.in:3
 msgid "Package Installer"
-msgstr "مثبت الحزم"
+msgstr "ຕົວຕິດຕັ້ງແພັກເກດ"
 
 #: data/captain.desktop.in:4
 msgid "Install a software package"
-msgstr "ثبت حزمة برنامج"
+msgstr "ຕິດຕັ້ງແພັກເກດຊັອບແວ"
 
 #: usr/lib/captain/captain.py:125 usr/lib/captain/captain.py:429
 msgid "Broken dependencies"
-msgstr "إعتماديات مفقودة"
+msgstr "Dependencies ທີ່ຂາດຫາຍ"
 
 #: usr/lib/captain/captain.py:125 usr/lib/captain/captain.py:339
 #: usr/lib/captain/captain.py:429
 msgid "To fix this run 'sudo apt-get install -f' in a terminal window."
-msgstr "لإصلاح هذا شغل 'sudo apt-get install -f' في نافذة الوحدة الطرفية."
+msgstr ""
+"ເພື່ອແກ້ໄຂບັນຫານີ້ໃຫ້ໃຊ້ຄຳສັ່ງ 'sudo apt-get install -f' ໃນ Terminal."
 
 #: usr/lib/captain/captain.py:134
 #, python-format
 msgid "%s is not a valid package"
-msgstr "%s ليست حزمة صالحة"
+msgstr "%s ບໍ່ແມ່ນແພັກເກດທີ່ຖືກຕ້ອງ"
 
 #: usr/lib/captain/captain.py:135
 #, python-format
 msgid "The MIME type of this file is '%s'."
-msgstr "نوع ال MIME من هذا الملف يكون '%s'."
+msgstr "ປະເພດ MIME ຂອງໄຟລ໌ນີ້ແມ່ນ '%s'."
 
 #: usr/lib/captain/captain.py:137
 #, python-format
 msgid "Could not open %s"
-msgstr "تعذّر فتح %s"
+msgstr "ບໍ່ສາມາດເປີດ %s ໄດ້"
 
 #: usr/lib/captain/captain.py:138
 msgid "The file might be corrupted or missing permissions."
-msgstr "الملف قد يكون معطوبا أو يتطلب صلاحيات مفقودة."
+msgstr "ໄຟລ໌ອາດຈະເສຍຫາຍ ຫຼື ບໍ່ມີສິດໃນການເຂົ້າເຖິງ."
 
 #: usr/lib/captain/captain.py:191
 msgid "Control files"
-msgstr "تحكم بالملفات"
+msgstr "ໄຟລ໌ຄວບຄຸມ"
 
 #: usr/lib/captain/captain.py:195
 msgid "Data files"
-msgstr "ملفات البيانات"
+msgstr "ໄຟລ໌ຂໍ້ມູນ"
 
 #: usr/lib/captain/captain.py:202
 msgid "Error while reading the content"
-msgstr "خطأ عند قراءة المحتوى"
+msgstr "ຜິດພາດຂະນະອ່ານເນື້ອໃນ"
 
 #: usr/lib/captain/captain.py:229
 #, python-format
 msgid "Error: %s"
-msgstr "خطأ: %s"
+msgstr "ຜິດພາດ: %s"
 
 #: usr/lib/captain/captain.py:229 usr/lib/captain/captain.py:236
 #: usr/lib/captain/captain.py:246 usr/share/captain/deb_package.ui.h:9
 msgid "_Install Package"
-msgstr "_ثبّت الحزمة"
+msgstr "_ຕິດຕັ້ງແພັກເກດ"
 
 #: usr/lib/captain/captain.py:235
 #, python-format
 msgid "Error: No longer provides %s"
-msgstr "خطأ: لم يعد يوفر %s"
+msgstr "ຜິດພາດ: ບໍ່ຮອງຮັບ %s ອີກຕໍ່ໄປ"
 
 #: usr/lib/captain/captain.py:245
 #, python-format
 msgid "Requires changes in %d other package"
 msgid_plural "Requires changes in %d other packages"
-msgstr[0] "يتطلب تغييرات في %d حزمة أخرى"
-msgstr[1] "يتطلب تغييرات في %d حزم أخرى"
-msgstr[2] "يتطلب تغييرات في %d حزم أخرى"
-msgstr[3] "يتطلب تغييرات في %d حزم أخرى"
-msgstr[4] "يتطلب تغييرات في %d حزم أخرى"
-msgstr[5] "يتطلب تغييرات في %d حزم أخرى"
+msgstr[0] "ຕ້ອງການການປ່ຽນແປງໃນ %d ແພັກເກດອື່ນ"
 
 #: usr/lib/captain/captain.py:263
 msgid "KB"
-msgstr "ك.ب"
+msgstr "KB"
 
 #: usr/lib/captain/captain.py:263
 msgid "MB"
-msgstr "م.ب"
+msgstr "MB"
 
 #: usr/lib/captain/captain.py:263 usr/lib/captain/captain.py:264
 msgid "GB"
-msgstr "ج.ب"
+msgstr "GB"
 
 #: usr/lib/captain/captain.py:299
 msgid "It is safer and recommended to install from the repositories instead."
-msgstr "من المستحسن والأكثر أمانآ التنزيل من المستودعات."
+msgstr "ການຕິດຕັ້ງຈາກຄັງແພັກເກດຈະປອດໄພກວ່າ ແລະ ເປັນສິ່ງທີ່ແນະນຳ."
 
 #: usr/lib/captain/captain.py:302
 msgid "The same version is already installed"
-msgstr "إصدار مماثل مثبت حاليا"
+msgstr "ເວີຊັນດຽວກັນນີ້ໄດ້ຖືກຕິດຕັ້ງແລ້ວ"
 
 #: usr/lib/captain/captain.py:302
 msgid "_Reinstall Package"
-msgstr "_أعد تثبيت الحزمة"
+msgstr "_ຕິດຕັ້ງແພັກເກດຄືນໃໝ່"
 
 #: usr/lib/captain/captain.py:304
 msgid "This package is available in the repositories"
-msgstr "هذه الحزمة متوفرة في المستودعات"
+msgstr "ແພັກເກດນີ້ມີຢູ່ໃນຄັງແພັກເກດ"
 
 #: usr/lib/captain/captain.py:306
 msgid "An older version is available in the repositories"
-msgstr "هناك إصدار قديم متوفر في المستودعات"
+msgstr "ມີເວີຊັນເກົ່າກວ່າຢູ່ໃນຄັງແພັກເກດ"
 
 #: usr/lib/captain/captain.py:308
 msgid "A newer version is available in the repositories"
-msgstr "هناك إصدار جديد متوفر في المستودعات"
+msgstr "ມີເວີຊັນໃໝ່ກວ່າຢູ່ໃນຄັງແພັກເກດ"
 
 #: usr/lib/captain/captain.py:339
 msgid "Failed to install all dependencies"
-msgstr "فشل تثبيت كل الإعتماديات"
+msgstr "ຕິດຕັ້ງ dependencies ທັງໝົດບໍ່ສຳເລັດ"
 
 #: usr/lib/captain/captain.py:346 usr/share/captain/deb_package.ui.h:12
 #, python-format
 msgid "%s is now installed."
-msgstr "%s مثبت الآن."
+msgstr "%s ໄດ້ຖືກຕິດຕັ້ງແລ້ວ."
 
 #: usr/lib/captain/captain.py:372
 msgid "The content could not be extracted"
-msgstr "لم يتم استخراج المحتوى"
+msgstr "ບໍ່ສາມາດສະກັດເນື້ອໃນອອກມາໄດ້"
 
 #: usr/lib/captain/captain.py:433 usr/lib/captain/captain.py:436
 #: usr/lib/captain/captain.py:438 usr/lib/captain/captain.py:482
 #, python-format
 msgid "The package '%s' could not be installed"
-msgstr "لم يتم تثبيت الحزمة '%s'"
+msgstr "ບໍ່ສາມາດຕິດຕັ້ງແພັກເກດ '%s' ໄດ້"
 
 #: usr/lib/captain/captain.py:433
 msgid "It was not found in the repositories."
-msgstr "إنها غير موجودة في المستودعات"
+msgstr "ບໍ່ພົບໃນຄັງແພັກເກດ."
 
 #: usr/lib/captain/captain.py:436
 msgid "It is already installed."
-msgstr "إنها حاليا مثبتة."
+msgstr "ມັນໄດ້ຖືກຕິດຕັ້ງແລ້ວ."
 
 #: usr/lib/captain/captain.py:438
 msgid "It is not installable."
-msgstr "لا يمكن تثبيتها."
+msgstr "ມັນບໍ່ສາມາດຕິດຕັ້ງໄດ້."
 
 #: usr/share/captain/apt_url.ui.h:1
 msgid "Install additional software?"
-msgstr "هل تريد تثبيت برامج إضافية؟"
+msgstr "ຕິດຕັ້ງຊັອບແວເພີ່ມເຕີມບໍ່?"
 
 #: usr/share/captain/apt_url.ui.h:3
 #, python-format
 msgid "Do you want to install '%s'?"
-msgstr "هل تريد تثبيت '%s'؟"
+msgstr "ທ່ານຕ້ອງການຕິດຕັ້ງ '%s' ບໍ່?"
 
 #: usr/share/captain/apt_url.ui.h:4
 msgid "Description"
-msgstr "الوصف"
+msgstr "ລາຍລະອຽດ"
 
 #: usr/share/captain/apt_url.ui.h:5
 msgid "_Install"
-msgstr "_تثبيت"
+msgstr "_ຕິດຕັ້ງ"
 
 #: usr/share/captain/deb_package.ui.h:1
 msgid "Details"
-msgstr "التّفاصيل"
+msgstr "ລາຍລະອຽດ"
 
 #: usr/share/captain/deb_package.ui.h:2
 msgid "The following packages need to be installed:"
-msgstr "بحاجة إلى تثبيت الحزم التالية:"
+msgstr "ແພັກເກດຕໍ່ໄປນີ້ຈຳເປັນຕ້ອງຖືກຕິດຕັ້ງ:"
 
 #: usr/share/captain/deb_package.ui.h:3
 msgid "The following packages need to be removed:"
-msgstr "بحاجة إلى حذف الحزم التالية:"
+msgstr "ແພັກເກດຕໍ່ໄປນີ້ຈຳເປັນຕ້ອງຖືກລຶບອອກ:"
 
 #: usr/share/captain/deb_package.ui.h:4
 msgid "Opening the package"
-msgstr "يتم فتح الحزمة"
+msgstr "ກຳລັງເປີດແພັກເກດ"
 
 #: usr/share/captain/deb_package.ui.h:5
 msgid "_Details"
-msgstr "_التفاصيل"
+msgstr "_ລາຍລະອຽດ"
 
 #: usr/share/captain/deb_package.ui.h:6
 msgid "Maintainer:"
-msgstr "مشرف الصيانة:"
+msgstr "ຜູ້ເບິ່ງແຍງ:"
 
 #: usr/share/captain/deb_package.ui.h:7
 msgid "Size:"
-msgstr "الحجم:"
+msgstr "ຂະໜາດ:"
 
 #: usr/share/captain/deb_package.ui.h:8
 msgid "Included files"
-msgstr "الملفات المضمَّنة"
+msgstr "ໄຟລ໌ທີ່ລວມຢູ່"
 
 #: usr/share/captain/deb_package.ui.h:10
 msgid "The installation was successful"
-msgstr "نجح التثبيت"
+msgstr "ການຕິດຕັ້ງສຳເລັດ"
