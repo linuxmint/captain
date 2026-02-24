@@ -395,7 +395,7 @@ def set_description(textview, summary, description):
         else:
             summary = summary + "\n"
 
-        text = "%s\n" % summary.title()
+        text = "%s\n" % summary
 
         # Parse new lines (this is necessary because APT introduces random new lines, multiple space
         # chars and . lines)
