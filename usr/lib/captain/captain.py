@@ -325,7 +325,7 @@ class App():
                     self.ui_main_stack.set_visible_child_name("page_success")
                     pkg_str = "%s %s" % (self.deb.pkgname, self.version)
                     self.ui_success_label.set_text(_("%s is now installed.") % pkg_str)
-                    self.ui_window.set_sensitive(True)
+        self.ui_window.set_sensitive(True)
 
     @_idle
     def on_install_cancelled(self, transaction=None, exit_state=None):
