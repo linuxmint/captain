@@ -328,7 +328,7 @@ class App():
         if cache._depcache.broken_count > 0:
             self.uih.show_critical(_("Failed to install all dependencies"), _("To fix this run 'sudo apt-get install -f' in a terminal window."))
         pkg = self.get_cache_pkg(cache)
-        if pkg and self.installed_version_matches(pkg):
+        if exit_state == aptkit.enums.EXIT_SUCCESS and pkg and self.installed_version_matches(pkg):
             self.ui_main_stack.set_visible_child_name("page_success")
             pkg_str = "%s %s" % (self.deb.pkgname, self.version)
             self.ui_success_label.set_text(_("%s is now installed.") % pkg_str)
