@@ -11,6 +11,7 @@ import sys
 import threading
 import apt
 import apt.debfile
+import apt_pkg
 import re
 from mimetypes import guess_type
 from urllib.parse import urlparse
@@ -190,6 +191,9 @@ class App():
         self.ui_treeview_files.set_model(store)
         self.ui_treeview_files.expand_all()
 
+        self.ui_infobar.hide()
+        self.ui_install_button.set_label(_("_Install Package"))
+        self.ui_install_button.set_sensitive(False)
         self.ui_install_button.get_style_context().remove_class("suggested-action")
 
         self.run_checks()
@@ -253,13 +257,19 @@ class App():
             size /= 1024.0
         return f"{size:.0f} {unit}"
 
+    def get_cache_pkg(self, cache):
+        # dpkg lowercases package names; the apt cache is keyed by that canonical form
+        name = self.deb.pkgname.lower()
+        return cache.get("%s:%s" % (name, self.deb["Architecture"])) or cache.get(name)
+
+    def installed_version_matches(self, pkg):
+        return pkg.installed is not None and apt_pkg.version_compare(pkg.installed.version, self.version) == 0
+
     def get_broken_provides(self):
         provides = set()
         broken_provides = set()
-        try:
-            pkg = self.cache[self.deb.pkgname].installed
-        except (KeyError, TypeError):
-            pkg = None
+        cache_pkg = self.get_cache_pkg(self.cache)
+        pkg = cache_pkg.installed if cache_pkg else None
         if pkg:
             if pkg.provides:
                 for p in self.deb.provides:
@@ -278,11 +288,10 @@ class App():
     def compare_deb_with_cache(self):
         # check if the package is available in the repository
         all_ok = True
-        if self.deb.pkgname in self.cache:
+        pkg = self.get_cache_pkg(self.cache)
+        if pkg:
             all_ok = False
-            pkg = self.cache[self.deb.pkgname]
-            res = self.deb.compare_to_version_in_cache(use_installed=True)
-            if res == apt.debfile.DebPackage.VERSION_SAME and pkg.installed:
+            if self.installed_version_matches(pkg):
                 self.set_package_status(Gtk.MessageType.INFO, _("The same version is already installed"), _("_Reinstall Package"))
             elif pkg.candidate and pkg.candidate.downloadable:
                 msg = _("It is safer and recommended to install from the repositories instead.")
@@ -318,13 +327,13 @@ class App():
         self.show_busy_cursor(False)
         if cache._depcache.broken_count > 0:
             self.uih.show_critical(_("Failed to install all dependencies"), _("To fix this run 'sudo apt-get install -f' in a terminal window."))
-        if self.deb.pkgname in cache:
-            pkg = cache[self.deb.pkgname]
-            if pkg.is_installed:
-                if str(pkg.installed.version) == str(self.version):
-                    self.ui_main_stack.set_visible_child_name("page_success")
-                    pkg_str = "%s %s" % (self.deb.pkgname, self.version)
-                    self.ui_success_label.set_text(_("%s is now installed.") % pkg_str)
+        pkg = self.get_cache_pkg(cache)
+        if pkg and self.installed_version_matches(pkg):
+            self.ui_main_stack.set_visible_child_name("page_success")
+            pkg_str = "%s %s" % (self.deb.pkgname, self.version)
+            self.ui_success_label.set_text(_("%s is now installed.") % pkg_str)
+        else:
+            self.load_deb_file()
         self.ui_window.set_sensitive(True)
 
     @_idle
@@ -371,12 +380,10 @@ class App():
             self.added_list.append([inst])
         for rm in self.remove:
             self.removed_list.append([rm])
-        if len(self.install) <= 0:
-            self.ui_added_label.hide()
-            self.ui_added_scrolledwindow.hide()
-        if len(self.remove) <= 0:
-            self.ui_removed_label.hide()
-            self.ui_removed_scrolledwindow.hide()
+        self.ui_added_label.set_visible(len(self.install) > 0)
+        self.ui_added_scrolledwindow.set_visible(len(self.install) > 0)
+        self.ui_removed_label.set_visible(len(self.remove) > 0)
+        self.ui_removed_scrolledwindow.set_visible(len(self.remove) > 0)
         self.ui_dialog_details.set_transient_for(self.ui_window)
         self.ui_dialog_details.run()
         self.ui_dialog_details.hide()
