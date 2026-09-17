@@ -5,16 +5,8 @@ Maintainer: Linux Mint <root@linuxmint.com>
 Build-Depends:
  debhelper-compat (= 13),
  dh-sequence-python3,
- gir1.2-gtk-3.0,
- intltool,
+ gettext,
  meson,
- python3-all,
- python3-apt,
- python3-gi,
- python3-nose,
- python3-setuptools,
- xauth,
- xvfb,
 Standards-Version: 4.6.2
 
 Package: captain
