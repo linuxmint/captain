@@ -1,3 +1,19 @@
+captain (1.1.3) adrien; urgency=medium
+
+  [ Michael Webster ]
+  * .github/workflows: Add generate-test-packages trigger.
+  * Remove unused build-deps, stop using intltool in makepot.
+  * Match packages the way dpkg does.
+  * captain.py: Don't report success when the transaction failed.
+
+  [ Georg Sieber ]
+  * remove .title() (#20)
+
+  [ Bob-A-Dook ]
+  * Make window responsive again even if installation fails (#23)
+
+ -- Clement Lefebvre <root@linuxmint.com>  Tue, 13 Oct 2026 14:58:00 +0100
+
 captain (1.1.2) zena; urgency=medium
 
   * l10n: Update translations
