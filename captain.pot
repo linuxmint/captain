@@ -8,202 +8,195 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-09-09 13:11+0100\n"
+"POT-Creation-Date: 2026-10-26 12:21+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "Language: \n"
 "MIME-Version: 1.0\n"
-"Content-Type: text/plain; charset=CHARSET\n"
+"Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=INTEGER; plural=EXPRESSION;\n"
 
-#: data/captain.desktop.in:3
+#: data/captain.desktop.in:2
 msgid "Package Installer"
 msgstr ""
 
-#: data/captain.desktop.in:4
+#: data/captain.desktop.in:3
 msgid "Install a software package"
 msgstr ""
 
-#: usr/lib/captain/captain.py:125 usr/lib/captain/captain.py:429
+#: usr/lib/captain/captain.py:136 usr/lib/captain/captain.py:455
 msgid "Broken dependencies"
 msgstr ""
 
-#: usr/lib/captain/captain.py:125 usr/lib/captain/captain.py:339
-#: usr/lib/captain/captain.py:429
+#: usr/lib/captain/captain.py:136 usr/lib/captain/captain.py:329
+#: usr/lib/captain/captain.py:455
 msgid "To fix this run 'sudo apt-get install -f' in a terminal window."
 msgstr ""
 
-#: usr/lib/captain/captain.py:134
+#: usr/lib/captain/captain.py:159
 #, python-format
 msgid "%s is not a valid package"
 msgstr ""
 
-#: usr/lib/captain/captain.py:135
+#: usr/lib/captain/captain.py:160
 #, python-format
 msgid "The MIME type of this file is '%s'."
 msgstr ""
 
-#: usr/lib/captain/captain.py:137
+#: usr/lib/captain/captain.py:162
 #, python-format
 msgid "Could not open %s"
 msgstr ""
 
-#: usr/lib/captain/captain.py:138
+#: usr/lib/captain/captain.py:163
 msgid "The file might be corrupted or missing permissions."
 msgstr ""
 
-#: usr/lib/captain/captain.py:191
+#: usr/lib/captain/captain.py:179
 msgid "Control files"
 msgstr ""
 
-#: usr/lib/captain/captain.py:195
+#: usr/lib/captain/captain.py:183
 msgid "Data files"
 msgstr ""
 
-#: usr/lib/captain/captain.py:202
+#: usr/lib/captain/captain.py:190
 msgid "Error while reading the content"
 msgstr ""
 
-#: usr/lib/captain/captain.py:229
+#: usr/lib/captain/captain.py:195 usr/lib/captain/captain.py:220
+#: usr/lib/captain/captain.py:227 usr/lib/captain/captain.py:237
+#: usr/share/captain/deb_package.ui:402
+msgid "_Install Package"
+msgstr ""
+
+#: usr/lib/captain/captain.py:220
 #, python-format
 msgid "Error: %s"
 msgstr ""
 
-#: usr/lib/captain/captain.py:229 usr/lib/captain/captain.py:236
-#: usr/lib/captain/captain.py:246 usr/share/captain/deb_package.ui.h:9
-msgid "_Install Package"
-msgstr ""
-
-#: usr/lib/captain/captain.py:235
+#: usr/lib/captain/captain.py:226
 #, python-format
 msgid "Error: No longer provides %s"
 msgstr ""
 
-#: usr/lib/captain/captain.py:245
+#: usr/lib/captain/captain.py:236
 #, python-format
 msgid "Requires changes in %d other package"
 msgid_plural "Requires changes in %d other packages"
 msgstr[0] ""
 msgstr[1] ""
 
-#: usr/lib/captain/captain.py:263
+#: usr/lib/captain/captain.py:254
 msgid "KB"
 msgstr ""
 
-#: usr/lib/captain/captain.py:263
+#: usr/lib/captain/captain.py:254
 msgid "MB"
 msgstr ""
 
-#: usr/lib/captain/captain.py:263 usr/lib/captain/captain.py:264
+#: usr/lib/captain/captain.py:254 usr/lib/captain/captain.py:255
 msgid "GB"
 msgstr ""
 
-#: usr/lib/captain/captain.py:299
-msgid "It is safer and recommended to install from the repositories instead."
-msgstr ""
-
-#: usr/lib/captain/captain.py:302
+#: usr/lib/captain/captain.py:295
 msgid "The same version is already installed"
 msgstr ""
 
-#: usr/lib/captain/captain.py:302
+#: usr/lib/captain/captain.py:295
 msgid "_Reinstall Package"
 msgstr ""
 
-#: usr/lib/captain/captain.py:304
+#: usr/lib/captain/captain.py:297
+msgid "It is safer and recommended to install from the repositories instead."
+msgstr ""
+
+#: usr/lib/captain/captain.py:298
 msgid "This package is available in the repositories"
 msgstr ""
 
-#: usr/lib/captain/captain.py:306
-msgid "An older version is available in the repositories"
-msgstr ""
-
-#: usr/lib/captain/captain.py:308
-msgid "A newer version is available in the repositories"
-msgstr ""
-
-#: usr/lib/captain/captain.py:339
+#: usr/lib/captain/captain.py:329
 msgid "Failed to install all dependencies"
 msgstr ""
 
-#: usr/lib/captain/captain.py:346 usr/share/captain/deb_package.ui.h:12
+#: usr/lib/captain/captain.py:334 usr/share/captain/deb_package.ui:587
 #, python-format
 msgid "%s is now installed."
 msgstr ""
 
-#: usr/lib/captain/captain.py:372
+#: usr/lib/captain/captain.py:362
 msgid "The content could not be extracted"
 msgstr ""
 
-#: usr/lib/captain/captain.py:433 usr/lib/captain/captain.py:436
-#: usr/lib/captain/captain.py:438 usr/lib/captain/captain.py:482
+#: usr/lib/captain/captain.py:479 usr/lib/captain/captain.py:482
+#: usr/lib/captain/captain.py:484 usr/lib/captain/captain.py:542
 #, python-format
 msgid "The package '%s' could not be installed"
 msgstr ""
 
-#: usr/lib/captain/captain.py:433
+#: usr/lib/captain/captain.py:479
 msgid "It was not found in the repositories."
 msgstr ""
 
-#: usr/lib/captain/captain.py:436
+#: usr/lib/captain/captain.py:482
 msgid "It is already installed."
 msgstr ""
 
-#: usr/lib/captain/captain.py:438
+#: usr/lib/captain/captain.py:484
 msgid "It is not installable."
 msgstr ""
 
-#: usr/share/captain/apt_url.ui.h:1
-msgid "Install additional software?"
-msgstr ""
-
-#: usr/share/captain/apt_url.ui.h:3
+#: usr/lib/captain/captain.py:503 usr/share/captain/apt_url.ui:50
 #, python-format
 msgid "Do you want to install '%s'?"
 msgstr ""
 
-#: usr/share/captain/apt_url.ui.h:4
+#: usr/share/captain/apt_url.ui:8
+msgid "Install additional software?"
+msgstr ""
+
+#: usr/share/captain/apt_url.ui:97
 msgid "Description"
 msgstr ""
 
-#: usr/share/captain/apt_url.ui.h:5
+#: usr/share/captain/apt_url.ui:147
 msgid "_Install"
 msgstr ""
 
-#: usr/share/captain/deb_package.ui.h:1
+#: usr/share/captain/deb_package.ui:8
 msgid "Details"
 msgstr ""
 
-#: usr/share/captain/deb_package.ui.h:2
+#: usr/share/captain/deb_package.ui:56
 msgid "The following packages need to be installed:"
 msgstr ""
 
-#: usr/share/captain/deb_package.ui.h:3
+#: usr/share/captain/deb_package.ui:92
 msgid "The following packages need to be removed:"
 msgstr ""
 
-#: usr/share/captain/deb_package.ui.h:4
+#: usr/share/captain/deb_package.ui:175
 msgid "Opening the package"
 msgstr ""
 
-#: usr/share/captain/deb_package.ui.h:5
+#: usr/share/captain/deb_package.ui:227
 msgid "_Details"
 msgstr ""
 
-#: usr/share/captain/deb_package.ui.h:6
+#: usr/share/captain/deb_package.ui:316
 msgid "Maintainer:"
 msgstr ""
 
-#: usr/share/captain/deb_package.ui.h:7
+#: usr/share/captain/deb_package.ui:358
 msgid "Size:"
 msgstr ""
 
-#: usr/share/captain/deb_package.ui.h:8
+#: usr/share/captain/deb_package.ui:383
 msgid "Included files"
 msgstr ""
 
-#: usr/share/captain/deb_package.ui.h:10
+#: usr/share/captain/deb_package.ui:571
 msgid "The installation was successful"
 msgstr ""
