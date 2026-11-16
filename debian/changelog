@@ -1,3 +1,9 @@
+captain (1.1.5) adrien; urgency=medium
+
+  * l10n: Update translations
+
+ -- Clement Lefebvre <root@linuxmint.com>  Mon, 16 Nov 2026 13:27:05 +0000
+
 captain (1.1.4) adrien; urgency=medium
 
   * l10n: Update POT
