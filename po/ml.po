@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: linuxmint\n"
 "Report-Msgid-Bugs-To: FULL NAME <EMAIL@ADDRESS>\n"
-"POT-Creation-Date: 2024-09-09 13:11+0100\n"
+"POT-Creation-Date: 2026-10-26 12:21+0000\n"
 "PO-Revision-Date: 2025-07-17 07:13+0000\n"
 "Last-Translator: MOHAMMED RASHITH KP <Unknown>\n"
 "Language-Team: Malayalam <ml@li.org>\n"
@@ -15,199 +15,192 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Launchpad-Export-Date: 2026-01-08 15:44+0000\n"
-"X-Generator: Launchpad (build 99c00f518760bdd50fc6e353e7736d2fff8fba4a)\n"
+"X-Launchpad-Export-Date: 2026-11-16 12:01+0000\n"
+"X-Generator: Launchpad (build 72ba15af7e009b17d4aa1467977127ac8392a4de)\n"
 
-#: data/captain.desktop.in:3
+#: data/captain.desktop.in:2
 msgid "Package Installer"
 msgstr "പാക്കേജ് ഇൻസ്റ്റാളർ"
 
-#: data/captain.desktop.in:4
+#: data/captain.desktop.in:3
 msgid "Install a software package"
 msgstr "ഒരു സോഫ്റ്റ്വെയർ പാക്കേജ് ഇൻസ്റ്റാൾ ചെയ്യുക"
 
-#: usr/lib/captain/captain.py:125 usr/lib/captain/captain.py:429
+#: usr/lib/captain/captain.py:136 usr/lib/captain/captain.py:455
 msgid "Broken dependencies"
 msgstr "തകർന്ന ആശ്രിതത്വങ്ങൾ"
 
-#: usr/lib/captain/captain.py:125 usr/lib/captain/captain.py:339
-#: usr/lib/captain/captain.py:429
+#: usr/lib/captain/captain.py:136 usr/lib/captain/captain.py:329
+#: usr/lib/captain/captain.py:455
 msgid "To fix this run 'sudo apt-get install -f' in a terminal window."
 msgstr ""
 "ഇത് പരിഹരിക്കാൻ ഒരു ടെർമിനൽ വിൻഡോയിൽ 'sudo apt-get install -f' "
 "പ്രവർത്തിപ്പിക്കുക."
 
-#: usr/lib/captain/captain.py:134
+#: usr/lib/captain/captain.py:159
 #, python-format
 msgid "%s is not a valid package"
 msgstr "%s ഒരു സാധുവായ പാക്കേജ് അല്ല."
 
-#: usr/lib/captain/captain.py:135
+#: usr/lib/captain/captain.py:160
 #, python-format
 msgid "The MIME type of this file is '%s'."
 msgstr "ഈ ഫയലിന്റെ MIME തരം '%s' ആണ്."
 
-#: usr/lib/captain/captain.py:137
+#: usr/lib/captain/captain.py:162
 #, python-format
 msgid "Could not open %s"
 msgstr "%s തുറക്കുവാന്‍ സാധിച്ചില്ല"
 
-#: usr/lib/captain/captain.py:138
+#: usr/lib/captain/captain.py:163
 msgid "The file might be corrupted or missing permissions."
 msgstr "ഫയൽ കേടായിരിക്കാം അല്ലെങ്കിൽ അനുമതികൾ നഷ്ടപ്പെട്ടിരിക്കാം."
 
-#: usr/lib/captain/captain.py:191
+#: usr/lib/captain/captain.py:179
 msgid "Control files"
 msgstr "കണ്ട്രോൾ ഫയലുകൾ"
 
-#: usr/lib/captain/captain.py:195
+#: usr/lib/captain/captain.py:183
 msgid "Data files"
 msgstr "ഡാറ്റ ഫയലുകൾ"
 
-#: usr/lib/captain/captain.py:202
+#: usr/lib/captain/captain.py:190
 msgid "Error while reading the content"
 msgstr "ഉള്ളടക്കം വായിക്കുമ്പോൾ പിശക്"
 
-#: usr/lib/captain/captain.py:229
+#: usr/lib/captain/captain.py:195 usr/lib/captain/captain.py:220
+#: usr/lib/captain/captain.py:227 usr/lib/captain/captain.py:237
+#: usr/share/captain/deb_package.ui:402
+msgid "_Install Package"
+msgstr "_പാക്കേജ് ഇൻസ്റ്റാൾ ചെയ്യുക"
+
+#: usr/lib/captain/captain.py:220
 #, python-format
 msgid "Error: %s"
 msgstr "പിശക്: %s"
 
-#: usr/lib/captain/captain.py:229 usr/lib/captain/captain.py:236
-#: usr/lib/captain/captain.py:246 usr/share/captain/deb_package.ui.h:9
-msgid "_Install Package"
-msgstr "_പാക്കേജ് ഇൻസ്റ്റാൾ ചെയ്യുക"
-
-#: usr/lib/captain/captain.py:235
+#: usr/lib/captain/captain.py:226
 #, python-format
 msgid "Error: No longer provides %s"
 msgstr "പിശക്: ഇനി %s നൽകുന്നില്ല."
 
-#: usr/lib/captain/captain.py:245
+#: usr/lib/captain/captain.py:236
 #, python-format
 msgid "Requires changes in %d other package"
 msgid_plural "Requires changes in %d other packages"
 msgstr[0] "മറ്റ് %d പാക്കേജിൽ മാറ്റങ്ങൾ ആവശ്യമാണ്."
 msgstr[1] "മറ്റ് %d പാക്കേജുകളിലും മാറ്റങ്ങൾ ആവശ്യമാണ്."
 
-#: usr/lib/captain/captain.py:263
+#: usr/lib/captain/captain.py:254
 msgid "KB"
 msgstr "KB"
 
-#: usr/lib/captain/captain.py:263
+#: usr/lib/captain/captain.py:254
 msgid "MB"
 msgstr "MB"
 
-#: usr/lib/captain/captain.py:263 usr/lib/captain/captain.py:264
+#: usr/lib/captain/captain.py:254 usr/lib/captain/captain.py:255
 msgid "GB"
 msgstr "GB"
 
-#: usr/lib/captain/captain.py:299
+#: usr/lib/captain/captain.py:295
+msgid "The same version is already installed"
+msgstr "അതേ പതിപ്പ് ഇതിനകം ഇൻസ്റ്റാൾ ചെയ്തിട്ടുണ്ട്."
+
+#: usr/lib/captain/captain.py:295
+msgid "_Reinstall Package"
+msgstr "_പാക്കേജ് വീണ്ടും ഇൻസ്റ്റാൾ ചെയ്യുക"
+
+#: usr/lib/captain/captain.py:297
 msgid "It is safer and recommended to install from the repositories instead."
 msgstr ""
 "ഇത് സുരക്ഷിതമാണ്, പകരം റിപ്പോസിറ്ററികളിൽ നിന്ന് ഇൻസ്റ്റാൾ ചെയ്യുന്നതാണ് "
 "ശുപാർശ ചെയ്യുന്നത്."
 
-#: usr/lib/captain/captain.py:302
-msgid "The same version is already installed"
-msgstr "അതേ പതിപ്പ് ഇതിനകം ഇൻസ്റ്റാൾ ചെയ്തിട്ടുണ്ട്."
-
-#: usr/lib/captain/captain.py:302
-msgid "_Reinstall Package"
-msgstr "_പാക്കേജ് വീണ്ടും ഇൻസ്റ്റാൾ ചെയ്യുക"
-
-#: usr/lib/captain/captain.py:304
+#: usr/lib/captain/captain.py:298
 msgid "This package is available in the repositories"
 msgstr "ഈ പാക്കേജ് റിപ്പോസിറ്ററികളിൽ ലഭ്യമാണ്."
 
-#: usr/lib/captain/captain.py:306
-msgid "An older version is available in the repositories"
-msgstr "റിപ്പോസിറ്ററികളിൽ ഒരു പഴയ പതിപ്പ് ലഭ്യമാണ്."
-
-#: usr/lib/captain/captain.py:308
-msgid "A newer version is available in the repositories"
-msgstr "റിപ്പോസിറ്ററികളിൽ ഒരു പുതിയ പതിപ്പ് ലഭ്യമാണ്."
-
-#: usr/lib/captain/captain.py:339
+#: usr/lib/captain/captain.py:329
 msgid "Failed to install all dependencies"
 msgstr "എല്ലാ ഡിപൻഡൻസികളും ഇൻസ്റ്റാൾ ചെയ്യുന്നതിൽ പരാജയപ്പെട്ടു"
 
-#: usr/lib/captain/captain.py:346 usr/share/captain/deb_package.ui.h:12
+#: usr/lib/captain/captain.py:334 usr/share/captain/deb_package.ui:587
 #, python-format
 msgid "%s is now installed."
 msgstr "%s ഇപ്പോൾ ഇൻസ്റ്റാൾ ചെയ്തു."
 
-#: usr/lib/captain/captain.py:372
+#: usr/lib/captain/captain.py:362
 msgid "The content could not be extracted"
 msgstr "ഉള്ളടക്കം വേർതിരിച്ചെടുക്കാൻ കഴിഞ്ഞില്ല."
 
-#: usr/lib/captain/captain.py:433 usr/lib/captain/captain.py:436
-#: usr/lib/captain/captain.py:438 usr/lib/captain/captain.py:482
+#: usr/lib/captain/captain.py:479 usr/lib/captain/captain.py:482
+#: usr/lib/captain/captain.py:484 usr/lib/captain/captain.py:542
 #, python-format
 msgid "The package '%s' could not be installed"
 msgstr "'%s' പാക്കേജ് ഇൻസ്റ്റാൾ ചെയ്യാൻ കഴിഞ്ഞില്ല."
 
-#: usr/lib/captain/captain.py:433
+#: usr/lib/captain/captain.py:479
 msgid "It was not found in the repositories."
 msgstr "അത് സംഭരണികളിൽ കണ്ടെത്തിയില്ല."
 
-#: usr/lib/captain/captain.py:436
+#: usr/lib/captain/captain.py:482
 msgid "It is already installed."
 msgstr "ഇത് ഇതിനകം ഇൻസ്റ്റാൾ ചെയ്തിട്ടുണ്ട്."
 
-#: usr/lib/captain/captain.py:438
+#: usr/lib/captain/captain.py:484
 msgid "It is not installable."
 msgstr "ഇത് ഇൻസ്റ്റാൾ ചെയ്യാൻ കഴിയില്ല."
 
-#: usr/share/captain/apt_url.ui.h:1
-msgid "Install additional software?"
-msgstr "അധിക സോഫ്‌റ്റ്‌വെയർ ഇൻസ്റ്റാൾ ചെയ്യണോ?"
-
-#: usr/share/captain/apt_url.ui.h:3
+#: usr/lib/captain/captain.py:503 usr/share/captain/apt_url.ui:50
 #, python-format
 msgid "Do you want to install '%s'?"
 msgstr "'%s' ഇൻസ്റ്റാൾ ചെയ്യണോ?"
 
-#: usr/share/captain/apt_url.ui.h:4
+#: usr/share/captain/apt_url.ui:8
+msgid "Install additional software?"
+msgstr "അധിക സോഫ്‌റ്റ്‌വെയർ ഇൻസ്റ്റാൾ ചെയ്യണോ?"
+
+#: usr/share/captain/apt_url.ui:97
 msgid "Description"
 msgstr "വിവരണം (description)"
 
-#: usr/share/captain/apt_url.ui.h:5
+#: usr/share/captain/apt_url.ui:147
 msgid "_Install"
 msgstr "ഇന്‍സ്റ്റോള്‍ ചെയ്യുക (_I)"
 
-#: usr/share/captain/deb_package.ui.h:1
+#: usr/share/captain/deb_package.ui:8
 msgid "Details"
 msgstr "വിശദാംശങ്ങള്‍"
 
-#: usr/share/captain/deb_package.ui.h:2
+#: usr/share/captain/deb_package.ui:56
 msgid "The following packages need to be installed:"
 msgstr "താഴെ പറയുന്ന പാക്കേജുകൾ ഇൻസ്റ്റാൾ ചെയ്യേണ്ടതുണ്ട്:"
 
-#: usr/share/captain/deb_package.ui.h:3
+#: usr/share/captain/deb_package.ui:92
 msgid "The following packages need to be removed:"
 msgstr "ഇനിപ്പറയുന്ന പാക്കേജുകൾ നീക്കം ചെയ്യേണ്ടതുണ്ട്:"
 
-#: usr/share/captain/deb_package.ui.h:4
+#: usr/share/captain/deb_package.ui:175
 msgid "Opening the package"
 msgstr "പാക്കേജ് തുറക്കുന്നു"
 
-#: usr/share/captain/deb_package.ui.h:5
+#: usr/share/captain/deb_package.ui:227
 msgid "_Details"
 msgstr "വിശദാംശങ്ങള്‍ (_D)"
 
-#: usr/share/captain/deb_package.ui.h:6
+#: usr/share/captain/deb_package.ui:316
 msgid "Maintainer:"
 msgstr "Maintainer:"
 
-#: usr/share/captain/deb_package.ui.h:7
+#: usr/share/captain/deb_package.ui:358
 msgid "Size:"
 msgstr "Size:"
 
-#: usr/share/captain/deb_package.ui.h:8
+#: usr/share/captain/deb_package.ui:383
 msgid "Included files"
 msgstr "ഉൾപ്പെടുത്തിയ ഫയലുകൾ"
 
-#: usr/share/captain/deb_package.ui.h:10
+#: usr/share/captain/deb_package.ui:571
 msgid "The installation was successful"
 msgstr "ഇൻസ്റ്റാളേഷൻ വിജയകരമായിരുന്നു"

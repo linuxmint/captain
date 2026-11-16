@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: linuxmint\n"
 "Report-Msgid-Bugs-To: FULL NAME <EMAIL@ADDRESS>\n"
-"POT-Creation-Date: 2024-09-09 13:11+0100\n"
+"POT-Creation-Date: 2026-10-26 12:21+0000\n"
 "PO-Revision-Date: 2025-11-01 13:51+0000\n"
 "Last-Translator: Emir Mendoza Emir's BTIN <Unknown>\n"
 "Language-Team: Filipino <fil@li.org>\n"
@@ -15,196 +15,189 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n > 1;\n"
-"X-Launchpad-Export-Date: 2026-01-08 15:44+0000\n"
-"X-Generator: Launchpad (build 99c00f518760bdd50fc6e353e7736d2fff8fba4a)\n"
+"X-Launchpad-Export-Date: 2026-11-16 12:01+0000\n"
+"X-Generator: Launchpad (build 72ba15af7e009b17d4aa1467977127ac8392a4de)\n"
 
-#: data/captain.desktop.in:3
+#: data/captain.desktop.in:2
 msgid "Package Installer"
 msgstr "Package Installer"
 
-#: data/captain.desktop.in:4
+#: data/captain.desktop.in:3
 msgid "Install a software package"
 msgstr "Mag-install ng software package"
 
-#: usr/lib/captain/captain.py:125 usr/lib/captain/captain.py:429
+#: usr/lib/captain/captain.py:136 usr/lib/captain/captain.py:455
 msgid "Broken dependencies"
 msgstr "Broken dependencies"
 
-#: usr/lib/captain/captain.py:125 usr/lib/captain/captain.py:339
-#: usr/lib/captain/captain.py:429
+#: usr/lib/captain/captain.py:136 usr/lib/captain/captain.py:329
+#: usr/lib/captain/captain.py:455
 msgid "To fix this run 'sudo apt-get install -f' in a terminal window."
 msgstr ""
 "Para ayusin ito, patakbuhin ang 'sudo apt-get install -f' sa Terminal."
 
-#: usr/lib/captain/captain.py:134
+#: usr/lib/captain/captain.py:159
 #, python-format
 msgid "%s is not a valid package"
 msgstr "Hindi valid na package ang %s"
 
-#: usr/lib/captain/captain.py:135
+#: usr/lib/captain/captain.py:160
 #, python-format
 msgid "The MIME type of this file is '%s'."
 msgstr "'%s' ang MIME type para sa file na ito."
 
-#: usr/lib/captain/captain.py:137
+#: usr/lib/captain/captain.py:162
 #, python-format
 msgid "Could not open %s"
 msgstr "Hindi mabuksan ang %s"
 
-#: usr/lib/captain/captain.py:138
+#: usr/lib/captain/captain.py:163
 msgid "The file might be corrupted or missing permissions."
 msgstr "Baka corrupt ang file o kulang ang permiso."
 
-#: usr/lib/captain/captain.py:191
+#: usr/lib/captain/captain.py:179
 msgid "Control files"
 msgstr "Control files"
 
-#: usr/lib/captain/captain.py:195
+#: usr/lib/captain/captain.py:183
 msgid "Data files"
 msgstr "Data files"
 
-#: usr/lib/captain/captain.py:202
+#: usr/lib/captain/captain.py:190
 msgid "Error while reading the content"
 msgstr "Pumalya habang binabasa ang laman"
 
-#: usr/lib/captain/captain.py:229
+#: usr/lib/captain/captain.py:195 usr/lib/captain/captain.py:220
+#: usr/lib/captain/captain.py:227 usr/lib/captain/captain.py:237
+#: usr/share/captain/deb_package.ui:402
+msgid "_Install Package"
+msgstr "_Mag-install ng Package"
+
+#: usr/lib/captain/captain.py:220
 #, python-format
 msgid "Error: %s"
 msgstr "Error: %s"
 
-#: usr/lib/captain/captain.py:229 usr/lib/captain/captain.py:236
-#: usr/lib/captain/captain.py:246 usr/share/captain/deb_package.ui.h:9
-msgid "_Install Package"
-msgstr "_Mag-install ng Package"
-
-#: usr/lib/captain/captain.py:235
+#: usr/lib/captain/captain.py:226
 #, python-format
 msgid "Error: No longer provides %s"
 msgstr "Error: Hindi na kasama ang %s"
 
-#: usr/lib/captain/captain.py:245
+#: usr/lib/captain/captain.py:236
 #, python-format
 msgid "Requires changes in %d other package"
 msgid_plural "Requires changes in %d other packages"
 msgstr[0] "Kailangang baguhin ang %d iba pang package"
 msgstr[1] "Kailangang baguhin ang %d iba pang packages"
 
-#: usr/lib/captain/captain.py:263
+#: usr/lib/captain/captain.py:254
 msgid "KB"
 msgstr "KB"
 
-#: usr/lib/captain/captain.py:263
+#: usr/lib/captain/captain.py:254
 msgid "MB"
 msgstr "MB"
 
-#: usr/lib/captain/captain.py:263 usr/lib/captain/captain.py:264
+#: usr/lib/captain/captain.py:254 usr/lib/captain/captain.py:255
 msgid "GB"
 msgstr "GB"
 
-#: usr/lib/captain/captain.py:299
-msgid "It is safer and recommended to install from the repositories instead."
-msgstr "Mas ligtas na mag-install mula sa repositories."
-
-#: usr/lib/captain/captain.py:302
+#: usr/lib/captain/captain.py:295
 msgid "The same version is already installed"
 msgstr "Parehong bersiyon na ang naka-install"
 
-#: usr/lib/captain/captain.py:302
+#: usr/lib/captain/captain.py:295
 msgid "_Reinstall Package"
 msgstr "_I-install Muli ang Package"
 
-#: usr/lib/captain/captain.py:304
+#: usr/lib/captain/captain.py:297
+msgid "It is safer and recommended to install from the repositories instead."
+msgstr "Mas ligtas na mag-install mula sa repositories."
+
+#: usr/lib/captain/captain.py:298
 msgid "This package is available in the repositories"
 msgstr "Nasa repositories ang package na ito"
 
-#: usr/lib/captain/captain.py:306
-msgid "An older version is available in the repositories"
-msgstr "Lumang bersiyon ang nasa repositories"
-
-#: usr/lib/captain/captain.py:308
-msgid "A newer version is available in the repositories"
-msgstr "Bagong bersiyon ang nasa repositories"
-
-#: usr/lib/captain/captain.py:339
+#: usr/lib/captain/captain.py:329
 msgid "Failed to install all dependencies"
 msgstr "Bigong mag-install ng lahat ng dependencies"
 
-#: usr/lib/captain/captain.py:346 usr/share/captain/deb_package.ui.h:12
+#: usr/lib/captain/captain.py:334 usr/share/captain/deb_package.ui:587
 #, python-format
 msgid "%s is now installed."
 msgstr "Naka-install na ang %s."
 
-#: usr/lib/captain/captain.py:372
+#: usr/lib/captain/captain.py:362
 msgid "The content could not be extracted"
 msgstr "Hindi ma-extract ang laman"
 
-#: usr/lib/captain/captain.py:433 usr/lib/captain/captain.py:436
-#: usr/lib/captain/captain.py:438 usr/lib/captain/captain.py:482
+#: usr/lib/captain/captain.py:479 usr/lib/captain/captain.py:482
+#: usr/lib/captain/captain.py:484 usr/lib/captain/captain.py:542
 #, python-format
 msgid "The package '%s' could not be installed"
 msgstr "Bigong mag-install ng '%s'"
 
-#: usr/lib/captain/captain.py:433
+#: usr/lib/captain/captain.py:479
 msgid "It was not found in the repositories."
 msgstr "Hindi ito mahanap sa repositories."
 
-#: usr/lib/captain/captain.py:436
+#: usr/lib/captain/captain.py:482
 msgid "It is already installed."
 msgstr "Naka-install na ito."
 
-#: usr/lib/captain/captain.py:438
+#: usr/lib/captain/captain.py:484
 msgid "It is not installable."
 msgstr "Hindi ito pwede i-install."
 
-#: usr/share/captain/apt_url.ui.h:1
-msgid "Install additional software?"
-msgstr "Mag-install ng dagdag na software?"
-
-#: usr/share/captain/apt_url.ui.h:3
+#: usr/lib/captain/captain.py:503 usr/share/captain/apt_url.ui:50
 #, python-format
 msgid "Do you want to install '%s'?"
 msgstr "Gusto mo bang i-install ang '%s'?"
 
-#: usr/share/captain/apt_url.ui.h:4
+#: usr/share/captain/apt_url.ui:8
+msgid "Install additional software?"
+msgstr "Mag-install ng dagdag na software?"
+
+#: usr/share/captain/apt_url.ui:97
 msgid "Description"
 msgstr "Paglalarawan"
 
-#: usr/share/captain/apt_url.ui.h:5
+#: usr/share/captain/apt_url.ui:147
 msgid "_Install"
 msgstr "_Mag-install"
 
-#: usr/share/captain/deb_package.ui.h:1
+#: usr/share/captain/deb_package.ui:8
 msgid "Details"
 msgstr "Mga Detalye"
 
-#: usr/share/captain/deb_package.ui.h:2
+#: usr/share/captain/deb_package.ui:56
 msgid "The following packages need to be installed:"
 msgstr "Kailangan i-install ang sumusunod na packages:"
 
-#: usr/share/captain/deb_package.ui.h:3
+#: usr/share/captain/deb_package.ui:92
 msgid "The following packages need to be removed:"
 msgstr "Kailangan tanggalin ang sumusunod na packages:"
 
-#: usr/share/captain/deb_package.ui.h:4
+#: usr/share/captain/deb_package.ui:175
 msgid "Opening the package"
 msgstr "Binubuksan ang package"
 
-#: usr/share/captain/deb_package.ui.h:5
+#: usr/share/captain/deb_package.ui:227
 msgid "_Details"
 msgstr "_Mga Detalye"
 
-#: usr/share/captain/deb_package.ui.h:6
+#: usr/share/captain/deb_package.ui:316
 msgid "Maintainer:"
 msgstr "Maintainer:"
 
-#: usr/share/captain/deb_package.ui.h:7
+#: usr/share/captain/deb_package.ui:358
 msgid "Size:"
 msgstr "Laki:"
 
-#: usr/share/captain/deb_package.ui.h:8
+#: usr/share/captain/deb_package.ui:383
 msgid "Included files"
 msgstr "Kasamang files"
 
-#: usr/share/captain/deb_package.ui.h:10
+#: usr/share/captain/deb_package.ui:571
 msgid "The installation was successful"
 msgstr "Tagumpay ang pag-install"
