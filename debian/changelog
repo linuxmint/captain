@@ -1,3 +1,10 @@
+captain (1.1.6) adrien; urgency=medium
+
+  [ Michael Webster ]
+  * deb_package.ui: Fix misnamed ui element
+
+ -- Clement Lefebvre <root@linuxmint.com>  Tue, 17 Nov 2026 17:21:51 +0000
+
 captain (1.1.5) adrien; urgency=medium
 
   * l10n: Update translations
