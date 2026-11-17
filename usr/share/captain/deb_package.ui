@@ -63,7 +63,7 @@
               </packing>
             </child>
             <child>
-              <object class="GtkScrolledWindow" id="add_scrolledwindow">
+              <object class="GtkScrolledWindow" id="added_scrolledwindow">
                 <property name="visible">True</property>
                 <property name="can-focus">True</property>
                 <property name="shadow-type">in</property>
